@@ -1,0 +1,574 @@
+fileFormatVersion: 2
+guid: 45efcd037c8cd8441a78b3136c4b952f
+timeCreated: 1496414722
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sprites ve se da_0
+    21300002: sprites ve se da_1
+    21300004: sprites ve se da_2
+    21300006: sprites ve se da_3
+    21300008: sprites ve se da_4
+    21300010: sprites ve se da_5
+    21300012: sprites ve se da_6
+    21300014: sprites ve se da_7
+    21300016: sprites ve se da_8
+    21300018: sprites ve se da_9
+    21300020: sprites ve se da_10
+    21300022: sprites ve se da_11
+    21300024: sprites ve se da_12
+    21300026: sprites ve se da_13
+    21300028: sprites ve se da_14
+    21300030: sprites ve se da_15
+    21300032: sprites ve se da_16
+    21300034: sprites ve se da_17
+    21300036: sprites ve se da_18
+    21300038: sprites ve se da_19
+    21300040: sprites ve se da_20
+    21300042: sprites ve se da_21
+    21300044: sprites ve se da_22
+    21300046: sprites ve se da_23
+    21300048: sprites ve se da_24
+    21300050: sprites ve se da_25
+    21300052: sprites ve se da_26
+    21300054: sprites ve se da_27
+    21300056: sprites ve se da_28
+    21300058: sprites ve se da_29
+    21300060: sprites ve se da_30
+    21300062: sprites ve se da_31
+    21300064: sprites ve se da_32
+    21300066: sprites ve se da_33
+    21300068: sprites ve se da_34
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprites ve se da_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1765
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1767
+        width: 655
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_2
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 733
+        width: 202
+        height: 1059
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_3
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 733
+        width: 204
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_4
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 733
+        width: 201
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_5
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 733
+        width: 202
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_6
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 733
+        width: 201
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 733
+        width: 204
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_8
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 733
+        width: 204
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_9
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 733
+        width: 202
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_10
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 733
+        width: 202
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_11
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 733
+        width: 204
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_12
+      rect:
+        serializedVersion: 2
+        x: 3023
+        y: 733
+        width: 202
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_13
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 733
+        width: 202
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_14
+      rect:
+        serializedVersion: 2
+        x: 3458
+        y: 699
+        width: 200
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1590
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1592
+        width: 655
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1415
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1417
+        width: 655
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1240
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1242
+        width: 655
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1051
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_22
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1055
+        width: 655
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 876
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_24
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 880
+        width: 655
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 701
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_26
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 705
+        width: 655
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 526
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 530
+        width: 655
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 344
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_30
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 346
+        width: 655
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_32
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 171
+        width: 655
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites ve se da_34
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 655
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

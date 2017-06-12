@@ -1,0 +1,145 @@
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEditor.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.xml
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEditor.xml
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\aluno\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\aluno\Desktop\Dragon 3D\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Desktop\Dragon 3D\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\aluno\Desktop\Dragon 3D\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEditor.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.xml
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEditor.xml
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\jg\Desktop\Dragon 3D\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\jg\Desktop\Dragon 3D\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\jg\Desktop\Dragon 3D\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\jg\Desktop\Dragon 3D\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEditor.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.xml
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEditor.xml
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\aluno\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\aluno\Desktop\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Desktop\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\aluno\Desktop\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEditor.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.xml
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEditor.xml
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\jg\Desktop\Dragon 3D0001\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\jg\Desktop\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\jg\Desktop\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\jg\Desktop\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEditor.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.xml
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEditor.xml
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\jg\Desktop\Projetos Unity\Dragon 3D0001\obj\Debug\Assembly-CSharp-firstpass.pdb

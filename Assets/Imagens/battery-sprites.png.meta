@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: 364a79d20e5b11841b6d49b384943c14
+timeCreated: 1495145601
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: battery-sprites_0
+    21300002: battery-sprites_1
+    21300004: battery-sprites_2
+    21300006: battery-sprites_3
+    21300008: battery-sprites_4
+    21300010: battery-sprites_5
+    21300012: battery-sprites_6
+    21300014: battery-sprites_7
+    21300016: battery-sprites_8
+    21300018: battery-sprites_9
+    21300020: battery-sprites_10
+    21300022: battery-sprites_11
+    21300024: battery-sprites_12
+    21300026: battery-sprites_13
+    21300028: battery-sprites_14
+    21300030: battery-sprites_15
+    21300032: battery-sprites_16
+    21300034: battery-sprites_17
+    21300036: battery-sprites_18
+    21300038: battery-sprites_19
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 4
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: battery-sprites_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2991
+        width: 900
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_1
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 3003
+        width: 889
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2707
+        width: 889
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_3
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 2706
+        width: 889
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_4
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2411
+        width: 889
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_5
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 2411
+        width: 889
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2116
+        width: 889
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 2117
+        width: 889
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_8
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1822
+        width: 889
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1822
+        width: 889
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1527
+        width: 889
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_11
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1527
+        width: 889
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_12
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1231
+        width: 889
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_13
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1230
+        width: 889
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_14
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 935
+        width: 889
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_15
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 935
+        width: 889
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 641
+        width: 889
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_17
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 641
+        width: 889
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 344
+        width: 889
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: battery-sprites_19
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 51
+        width: 889
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
