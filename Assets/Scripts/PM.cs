@@ -11,11 +11,12 @@ public class PM : MonoBehaviour {
 	public Text txt;
 	int soma=5;
 	int gambiarra;
-	bool test;
+	bool test, controle;
+
 	void Start(){
 		test = false;
 		shiel = FindObjectOfType<EarthLife> ();
-
+		controle = false;
 
 
 	
@@ -27,25 +28,32 @@ void Update ()
 
 		}
 	void OnTriggerEnter(Collider coll){
-		if (coll.gameObject.tag=="NaoSai") {
-			aviso.SetActive (false);
-			test = false;
-			soma = 5;
+		
+			if (coll.gameObject.tag=="NaoSai") {
+				aviso.SetActive (false);
+				test = false;
+				soma = 5;
+			controle = false;
+
 		}
+
 	}
 	void OnTriggerExit(Collider coll){
-		if (coll.gameObject.tag=="NaoSai") {
-			aviso.SetActive (true);
-			test = true;
-			gambiarra += 1;
-			if (gambiarra==2) {
-				soma -= 1;
-				txt.text = "Você está se distanciando do seu objetivo, retorne em até: " + soma + "s";
-				gambiarra = 0;
+		if (!controle) {
+			
+		
+			if (coll.gameObject.tag == "NaoSai") {
+				StartCoroutine (cont ());
+				Debug.Log (name);
+
+				aviso.SetActive (true);
+				test = true;
+
 			}
 
-
+			controle = true;
 		}
+
 	}
 
 	void OnCollisionEnter(Collision coll ){
@@ -77,7 +85,13 @@ void Update ()
 		}
 
 	}
-
+	IEnumerator cont(){
+		while (true) {
+			yield return new WaitForSeconds (1f);
+			soma-= 1;
+			txt.text = "Você está se distanciando do seu objetivo, retorne em até: " + soma + "s";
+		}
+	}
 
 }
 

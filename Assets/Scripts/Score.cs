@@ -7,7 +7,7 @@ public class Score : MonoBehaviour {
 	public float dificuldade;
 	SpawInimigo spaw;
 	bool survivor;
-	float mais;
+
 
 	void Start()
 	{
