@@ -21,7 +21,7 @@ public class EarthLife : MonoBehaviour {
 			text.SetActive (true);
 		}
 			if (coll.gameObject.tag == "Inimigo") {
-				perdervida (coll.gameObject,1);
+				perdervida (coll.gameObject,6);
 				text.SetActive (true);
 			}
 			if (coll.gameObject.tag == "ShotEM") {

@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{93345F8E-9B49-5F1F-48F6-D0A282BBD374}</ProjectGuid>
+    <ProjectGuid>{4F865972-8B95-0496-9429-F537EE50CC88}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -48,8 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\GalaxyBox1\examplescene.cs" />
      <Compile Include="Assets\Planet Earth Free\SpinFree.cs" />
-     <Compile Include="Assets\Scripts\Arcade\ScoreArcade.cs" />
-     <Compile Include="Assets\Scripts\Arcade\ShotArcade.cs" />
      <Compile Include="Assets\Scripts\Arcade\SpawInimArcade.cs" />
      <Compile Include="Assets\Scripts\Done_DestroyByContact.cs" />
      <Compile Include="Assets\Scripts\EM.cs" />
@@ -108,7 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{10EFFF6A-DA7D-7A8D-E482-DE00306DB17A}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{20F654D1-44E7-0543-8A8F-BD89EBD9B971}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

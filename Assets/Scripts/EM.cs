@@ -14,7 +14,7 @@ public class EM : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		inimigo = GetComponent<Rigidbody> ();
-
+		speed = 0.1f;
 		test = false;
 	}
 	
@@ -37,6 +37,8 @@ public class EM : MonoBehaviour {
 			test = true;
 		}
 	}
+
+
 
 
 }
