@@ -14,10 +14,10 @@ public class Score : MonoBehaviour {
 		survivor = PlayerPrefs.GetInt ("Survival") == 1;
 		spaw = FindObjectOfType<SpawInimigo> ();
 		pontos = 0;
-		total.text = "Score: " + pontos;
+
 		if (survivor) {
 			StartCoroutine (gg ());
-		
+			total.text = "Score: " + pontos;
 		}
 	}
 	void Update(){
@@ -34,8 +34,9 @@ public class Score : MonoBehaviour {
 				dificuldade = 0;
 				Debug.Log (dificuldade);
 			}
+			total.text = "Score: " + pontos;
 		}
-		total.text = "Score: " + pontos;
+
 
 	}
 
