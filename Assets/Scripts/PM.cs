@@ -12,6 +12,7 @@ public class PM : MonoBehaviour {
 	int soma=11;
 	int gambiarra;
 	bool controle;
+	float vc;
 
 	void Start(){
 		
