@@ -31,11 +31,10 @@ void Update ()
 	}
 	void OnTriggerExit(Collider coll){
 		controle = true;
-		if (coll.gameObject.tag == "NaoSai" && controle) {
-			controle = false;
+		if (coll.gameObject.tag == "NaoSai") {
 			print ("fora");
-			StartCoroutine (cont ());
 			aviso.SetActive (true);
+			StartCoroutine (cont ());
 		}
 	}
 
@@ -74,11 +73,12 @@ void Update ()
 	IEnumerator cont(){
 		while (controle) {
 			yield return new WaitForSeconds (1);
-	         soma-= 1;
+			soma-= 1;
 			txt.text = "Você está se distanciando do seu objetivo, retorne em até: " + soma + "s";
+			Debug.Log (soma);
+		
 			if (soma <= 0f) {
-				//gameOver
-			}
+				SceneManager.LoadScene (7);			}
 		}
 	}
 
