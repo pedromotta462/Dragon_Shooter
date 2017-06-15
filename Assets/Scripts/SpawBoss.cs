@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawBoss : MonoBehaviour {
-	ublic GameObject obj;
+	public GameObject obj;
 	public Transform um,um1,dois,dois2,tres,tres3,quatro,quatro4;
 	public float minTime , maxTime ;
 	public bool status;
