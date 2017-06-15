@@ -8,12 +8,15 @@ public class SpawBoss : MonoBehaviour {
 	public float minTime , maxTime ;
 	public bool status;
 	int PosiX ;
-
+	bool survival;
 	Vector3[] position=new Vector3[4];
 	// Use this for initialization
-	void Start () {
+	void Start () {survival=PlayerPrefs.GetInt("Survival")==1;
 		status = true;
-		StartCoroutine (Spawn ());
+		if (survival) {
+			StartCoroutine (Spawn ());
+		}
+
 
 	}
 	void Update(){
