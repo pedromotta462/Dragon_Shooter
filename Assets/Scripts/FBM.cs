@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class FBM : MonoBehaviour {
-    Score jesus;
+    
 	public Slider sl;
 	Rigidbody shot;
 	float gambiarra;
@@ -15,7 +15,7 @@ public class FBM : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		jesus = FindObjectOfType<Score> ();
+
 
 
 	}
@@ -58,7 +58,7 @@ public class FBM : MonoBehaviour {
 		void OnCollisionEnter(Collision coll){
 			if (coll.gameObject.tag == "Inimigo") {
 				Destroy (coll.gameObject);
-			jesus.pontos = jesus.pontos + 25;
+			Score.pontos = Score.pontos + 25;
 
 			}
 	}

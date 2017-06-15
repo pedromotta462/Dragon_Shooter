@@ -29,7 +29,7 @@ public class SpawBoss : MonoBehaviour {
 			position [3] = new Vector3 ( quatro.position.x, 0,(Random.Range (tres.position.z, tres3.position.z)));
 
 			yield return new WaitForSeconds (Random.Range (minTime, maxTime));
-			if (status) {
+			if (Score.pontos>300) {
 				PosiX= Random.Range (0, 4);
 				Debug.Log (PosiX);
 				Instantiate (obj, position [PosiX], Quaternion.identity);

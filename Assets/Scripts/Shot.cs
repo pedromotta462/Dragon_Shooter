@@ -30,7 +30,7 @@ public class Shot : MonoBehaviour {
 		if (coll.gameObject.tag == "Inimigo") {
 			Destroy (coll.gameObject);
 				Destroy (gameObject);
-				plus.pontos += 10;
+			Score.pontos += 10;
 				plus.dificuldade += 10;
 			}
 		 

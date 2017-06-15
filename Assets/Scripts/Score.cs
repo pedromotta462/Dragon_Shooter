@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 public class Score : MonoBehaviour {
 	public Text total;
-	public int pontos;
+	public static int pontos;
 	public float dificuldade;
 	SpawInimigo spaw;
 	bool survivor;
