@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MoveOBS : MonoBehaviour {
 	public Rigidbody obs;
-	public float speed;
+	public static float speed;
 	public int vidas = 3;
 	public int random,randon;	
 	public GameObject shield;
@@ -13,6 +13,7 @@ public class MoveOBS : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		speed = 0.5f;
 		
 	}
 	void Update(){

@@ -7,8 +7,7 @@ public class Score : MonoBehaviour {
 	public float dificuldade;
 	SpawInimigo spaw;
 	bool survivor;
-
-
+	public GameObject boss;
 	void Start()
 	{
 		survivor = PlayerPrefs.GetInt ("Survival") == 1;
@@ -55,7 +54,9 @@ public class Score : MonoBehaviour {
 		}
 
 	}
+
+	}
 		
 
-}
+
 

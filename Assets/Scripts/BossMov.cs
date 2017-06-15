@@ -7,23 +7,20 @@ using UnityEngine.SceneManagement;
 
 public class BossMov : MonoBehaviour {
 
-	public Transform pl;
+	public Vector3 pl;
 	Rigidbody inimigo;
 	public GameObject tiro;
-
 	public float speed;
 	bool test;
 	float time;
-
 	public float vidaBoss;
-
-	public Slider life;
-
+	PM life;
 	public float danoNoPlayer;
+
 
 	// Use this for initialization
 	void Start () {
-
+		life = FindObjectOfType<PM> ();
 		inimigo = GetComponent<Rigidbody> ();
 
 		test = false;		
@@ -31,15 +28,17 @@ public class BossMov : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		
+		pl = GameObject.FindGameObjectWithTag ("Player").transform.position;
 		transform.LookAt (pl);
+
 		inimigo.MovePosition(inimigo.position + transform.forward * speed);
 		if (test) {
 			
 			time += Time.deltaTime;
 			if (time>=5) {
 				GameObject g = Instantiate (tiro, transform.position, Quaternion.identity) as GameObject;
-				g.transform.LookAt (pl.position);
+				g.transform.LookAt (pl);
 				time = 0;
 
 			}
@@ -53,6 +52,7 @@ public class BossMov : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision coll){
+		Debug.Log (vidaBoss);
 		if (coll.gameObject.tag=="Shot") {
 			Destroy (coll.gameObject);
 			vidaBoss --;
@@ -62,10 +62,8 @@ public class BossMov : MonoBehaviour {
 			}
 		}
 		if (coll.gameObject.tag=="Player") {
-			life.value -= danoNoPlayer;
-			if (life.value == 0) {
-				SceneManager.LoadScene("Over");
-			}
+			life.sl.value -= danoNoPlayer;
+
 		}
 	}
 

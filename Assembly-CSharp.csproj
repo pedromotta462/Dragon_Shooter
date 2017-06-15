@@ -49,6 +49,7 @@
      <Compile Include="Assets\GalaxyBox1\examplescene.cs" />
      <Compile Include="Assets\Planet Earth Free\SpinFree.cs" />
      <Compile Include="Assets\Scripts\Arcade\SpawInimArcade.cs" />
+     <Compile Include="Assets\Scripts\BossMov.cs" />
      <Compile Include="Assets\Scripts\Done_DestroyByContact.cs" />
      <Compile Include="Assets\Scripts\EM.cs" />
      <Compile Include="Assets\Scripts\EarthLife.cs" />
@@ -66,6 +67,7 @@
      <Compile Include="Assets\Scripts\Shield.cs" />
      <Compile Include="Assets\Scripts\Shot.cs" />
      <Compile Include="Assets\Scripts\ShotEn.cs" />
+     <Compile Include="Assets\Scripts\SpawBoss.cs" />
      <Compile Include="Assets\Scripts\SpawInimigo.cs" />
      <Compile Include="Assets\Scripts\SpawOBS.cs" />
      <Compile Include="Assets\Scripts\TrocadeCena.cs" />

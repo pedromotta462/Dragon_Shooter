@@ -7,7 +7,7 @@ public class SpawOBS : MonoBehaviour {
 	public Transform um,dois,tres,quatro;
 	public float minTime , maxTime ;
 	int PosiX ;
-	public MoveOBS nops; 
+
 	Vector3[] position=new Vector3[2];
 	// Use this for initialization
 	void Start () {
@@ -29,9 +29,9 @@ public class SpawOBS : MonoBehaviour {
 			PosiX= Random.Range (0, 2);
 			Debug.Log (PosiX);
 			if (PosiX==1) {
-				nops.speed = -0.5f;
+				MoveOBS.speed = -0.5f;
 			} else {
-				nops.speed = 0.5f;
+				MoveOBS.speed = 0.5f;
 			}
 			Instantiate (obj, position [PosiX], Quaternion.identity);
 
