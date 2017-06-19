@@ -27,26 +27,19 @@ public class BossMov : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-
 		transform.LookAt (pl);
-
 		inimigo.MovePosition(inimigo.position + transform.forward * speed);
 	          time += Time.deltaTime;
-			if (time>=5) {
+			if (time>=3) {
 				GameObject g = Instantiate (tiro, transform.position, Quaternion.identity) as GameObject;
 				g.transform.LookAt (pl);
 				time = 0;
-
-
 		}		
 	}
 
 	void OnTriggerEnter(Collider coll){
 		if (coll.gameObject.tag=="Player") {
 			pl = GameObject.FindGameObjectWithTag ("Player").transform.position;
-
-
 
 		}
 	}
@@ -64,11 +57,13 @@ public class BossMov : MonoBehaviour {
 
 		}
 	}
+
 	void OnTriggerExit(Collider coll){
 		if (coll.gameObject.tag=="Player") {
 			pl = GameObject.FindGameObjectWithTag ("Earth").transform.position;
 		}
 	}
+
 	void OnDestroy(){
 		go = true;
 	}

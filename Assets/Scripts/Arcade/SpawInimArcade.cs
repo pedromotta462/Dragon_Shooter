@@ -9,7 +9,7 @@ public class SpawInimArcade : MonoBehaviour {
 	public bool status;
 	int PosiX ;
 	public GameObject boss;
-	public bool boss1,boss2,boss3;
+	public bool spawboss;
 	Vector3[] position=new Vector3[4];
 	// Use this for initialization
 	void Start () {
@@ -37,10 +37,10 @@ public class SpawInimArcade : MonoBehaviour {
 
 			}
 			if (Score.pontos>100 && Score.pontos<=200) {
-				if (boss1) {
+				if (spawboss) {
 					Instantiate (boss, position [0], Quaternion.identity);
-					boss1 = false;
-					Debug.Log ("pegou porraaaaaaaa");
+					spawboss = false;
+
 				}
 				if (BossMov.go) {
 					Instantiate (obj, position [1], Quaternion.identity);
@@ -51,9 +51,9 @@ public class SpawInimArcade : MonoBehaviour {
 
 			}
 			if (Score.pontos>200 && Score.pontos<=300) {
-				if (boss2) {
+				if (spawboss==false) {
 					Instantiate (boss, position [1], Quaternion.identity);
-					boss2 = false;
+					spawboss = true;
 					BossMov.go = false;
 						}
 				if (BossMov.go) {
@@ -64,9 +64,9 @@ public class SpawInimArcade : MonoBehaviour {
 			
 			}
 			if (Score.pontos>300 && Score.pontos<=400) {
-				if (boss3) {
+				if (spawboss) {
 					Instantiate (boss, position [2], Quaternion.identity);
-					boss3 = false;
+					spawboss = false;
 					BossMov.go = false;
 				}
 				if (BossMov.go) {
@@ -77,9 +77,17 @@ public class SpawInimArcade : MonoBehaviour {
 
 			}
 			if (Score.pontos>400 && Score.pontos<=500) {
-				PosiX = Random.Range (0, 4);
-				maxTime = 3;
-				Instantiate (obj, position [PosiX], Quaternion.identity);
+				if (spawboss==false) {
+					Instantiate (boss, position [3], Quaternion.identity);
+					spawboss = true;
+					BossMov.go = false;
+				}
+				if (BossMov.go) {
+					PosiX = Random.Range (0, 4);
+					maxTime = 3;
+					Instantiate (obj, position [PosiX], Quaternion.identity);
+				}
+
 			}
 		}
 

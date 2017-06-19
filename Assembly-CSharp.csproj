@@ -53,7 +53,6 @@
      <Compile Include="Assets\Scripts\Done_DestroyByContact.cs" />
      <Compile Include="Assets\Scripts\EM.cs" />
      <Compile Include="Assets\Scripts\EarthLife.cs" />
-     <Compile Include="Assets\Scripts\EscolhaCena.cs" />
      <Compile Include="Assets\Scripts\EscolhaCenaSurva.cs" />
      <Compile Include="Assets\Scripts\FBM.cs" />
      <Compile Include="Assets\Scripts\FirstPersonController.cs" />
