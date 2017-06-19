@@ -22,42 +22,41 @@ public class BossMov : MonoBehaviour {
 	void Start () {
 		life = FindObjectOfType<PM> ();
 		inimigo = GetComponent<Rigidbody> ();
-
+		pl = GameObject.FindGameObjectWithTag ("Earth").transform.position;
 		test = false;		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-		pl = GameObject.FindGameObjectWithTag ("Player").transform.position;
+
 		transform.LookAt (pl);
 
 		inimigo.MovePosition(inimigo.position + transform.forward * speed);
-		if (test) {
-			
-			time += Time.deltaTime;
+	          time += Time.deltaTime;
 			if (time>=5) {
 				GameObject g = Instantiate (tiro, transform.position, Quaternion.identity) as GameObject;
 				g.transform.LookAt (pl);
 				time = 0;
 
-			}
+
 		}		
 	}
 
 	void OnTriggerEnter(Collider coll){
 		if (coll.gameObject.tag=="Player") {
-			test = true;
+			pl = GameObject.FindGameObjectWithTag ("Player").transform.position;
+
+
+
 		}
 	}
 
 	void OnCollisionEnter(Collision coll){
-		Debug.Log (vidaBoss);
 		if (coll.gameObject.tag=="Shot") {
 			Destroy (coll.gameObject);
 			vidaBoss --;
-			Debug.Log (vidaBoss);
-			if (vidaBoss == 0) {
+		if (vidaBoss == 0) {
 				Destroy (gameObject);
 			}
 		}
@@ -66,5 +65,9 @@ public class BossMov : MonoBehaviour {
 
 		}
 	}
-
+	void OnTriggerExit(Collider coll){
+		if (coll.gameObject.tag=="Player") {
+			pl = GameObject.FindGameObjectWithTag ("Earth").transform.position;
+		}
+	}
 }

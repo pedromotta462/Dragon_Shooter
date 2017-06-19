@@ -8,7 +8,7 @@ public class SpawInimArcade : MonoBehaviour {
 	public float minTime , maxTime ;
 	public bool status;
 	int PosiX ;
-
+	public GameObject boss;
 
 
 	Vector3[] position=new Vector3[4];
@@ -36,8 +36,10 @@ public class SpawInimArcade : MonoBehaviour {
 
 			if (Score.pontos<=100) {
 				Instantiate (obj, position [0], Quaternion.identity);
+				Instantiate (boss, position [0], Quaternion.identity);
 			}
 			if (Score.pontos>100 && Score.pontos<=200) {
+
 				Instantiate (obj, position [1], Quaternion.identity);
 				EM.speed = 0.3f;
 				minTime = 2;

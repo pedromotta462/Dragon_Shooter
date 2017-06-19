@@ -42,11 +42,8 @@ void Update ()
 		if (coll.gameObject.tag=="Obstaculo") {
 			sl.value -= 0.5f;
 		}
-		if (coll.gameObject.tag=="shield") {
-			shield.value += 0.2f;
 
-			Destroy (coll.gameObject);
-		}
+
 		if (coll.gameObject.tag=="Inimigo") {
 			sl.value -= 0.2f;
 			Destroy (coll.gameObject);
@@ -62,7 +59,9 @@ void Update ()
 			Destroy (coll.gameObject);
 			shiel.sl.value += 0.5f;
 			}
-
+		if (coll.gameObject.tag=="Boss") {
+			sl.value -= 0.5f;
+		}
 		if (sl.value==0) {
 			Cursor.lockState = CursorLockMode.None;
 			SceneManager.LoadScene (7);
