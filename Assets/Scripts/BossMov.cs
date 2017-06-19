@@ -11,19 +11,18 @@ public class BossMov : MonoBehaviour {
 	Rigidbody inimigo;
 	public GameObject tiro;
 	public float speed;
-	bool test;
 	float time;
 	public float vidaBoss;
 	PM life;
 	public float danoNoPlayer;
-
+	public static bool go;
 
 	// Use this for initialization
 	void Start () {
+		go = false;
 		life = FindObjectOfType<PM> ();
 		inimigo = GetComponent<Rigidbody> ();
 		pl = GameObject.FindGameObjectWithTag ("Earth").transform.position;
-		test = false;		
 	}
 	
 	// Update is called once per frame
@@ -69,5 +68,8 @@ public class BossMov : MonoBehaviour {
 		if (coll.gameObject.tag=="Player") {
 			pl = GameObject.FindGameObjectWithTag ("Earth").transform.position;
 		}
+	}
+	void OnDestroy(){
+		go = true;
 	}
 }
