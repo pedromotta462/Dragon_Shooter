@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class BossMov : MonoBehaviour {
 
-	public Vector3 pl;
+	public Vector3 segue;
 	Rigidbody inimigo;
 	public GameObject tiro;
 	public float speed;
@@ -22,26 +22,25 @@ public class BossMov : MonoBehaviour {
 		go = false;
 		life = FindObjectOfType<PM> ();
 		inimigo = GetComponent<Rigidbody> ();
-		pl = GameObject.FindGameObjectWithTag ("Earth").transform.position;
+		segue = GameObject.FindGameObjectWithTag ("Earth").transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.LookAt (pl);
+		transform.LookAt (segue);
 		inimigo.MovePosition(inimigo.position + transform.forward * speed);
 	          time += Time.deltaTime;
 			if (time>=3) {
 				GameObject g = Instantiate (tiro, transform.position, Quaternion.identity) as GameObject;
-				g.transform.LookAt (pl);
+				g.transform.LookAt (segue);
 				time = 0;
 		}		
 	}
 
 	void OnTriggerEnter(Collider coll){
 		if (coll.gameObject.tag=="Player") {
-			pl = GameObject.FindGameObjectWithTag ("Player").transform.position;
-
-		}
+			segue = GameObject.FindGameObjectWithTag ("Player").transform.position;
+		} 
 	}
 
 	void OnCollisionEnter(Collision coll){
@@ -58,11 +57,14 @@ public class BossMov : MonoBehaviour {
 		}
 	}
 
+
 	void OnTriggerExit(Collider coll){
 		if (coll.gameObject.tag=="Player") {
-			pl = GameObject.FindGameObjectWithTag ("Earth").transform.position;
+			Debug.Log ("conmt");
+			segue = GameObject.FindGameObjectWithTag ("Earth").transform.position;
 		}
 	}
+
 
 	void OnDestroy(){
 		go = true;

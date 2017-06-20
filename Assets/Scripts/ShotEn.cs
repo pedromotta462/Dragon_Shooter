@@ -19,8 +19,7 @@ public class ShotEn : MonoBehaviour {
 			transform.LookAt (world.position);
 			shot.MovePosition(shot.position + transform.forward * speed);
 		}
-
-		shot.MovePosition(shot.position + transform.forward * speed);
+			shot.MovePosition(shot.position + transform.forward * speed);
 
 
 }

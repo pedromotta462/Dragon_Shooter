@@ -12,8 +12,7 @@ public class pauseButton : MonoBehaviour {
 	void Start () {
 		paused = false;
 		Time.timeScale = 1;
-	
-		painel.SetActive (false);
+        painel.SetActive (false);
 	}
 	
 	// Update is called once per frame

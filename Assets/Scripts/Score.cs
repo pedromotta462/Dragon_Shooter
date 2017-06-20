@@ -34,15 +34,14 @@ public class Score : MonoBehaviour {
 				Debug.Log (dificuldade);
 			}
 			total.text = "Score: " + pontos;
+			PlayerPrefs.SetInt ("Score",pontos);
+			PlayerPrefs.Save ();
 		}
 
 
 	}
 
-	void OnDestroy() {
-		PlayerPrefs.SetFloat ("Score",pontos);
-		PlayerPrefs.Save ();
-	}
+
 
 	IEnumerator gg(){
 		while (true) {
