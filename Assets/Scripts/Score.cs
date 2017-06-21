@@ -8,6 +8,7 @@ public class Score : MonoBehaviour {
 	SpawInimigo spaw;
 	bool survivor;
 	public GameObject boss;
+	public static int rank;
 	void Start()
 	{
 		survivor = PlayerPrefs.GetInt ("Survival") == 1;
@@ -34,19 +35,24 @@ public class Score : MonoBehaviour {
 				Debug.Log (dificuldade);
 			}
 			total.text = "Score: " + pontos;
-			PlayerPrefs.SetInt ("Score",pontos);
-			PlayerPrefs.Save ();
+
 		}
 
 
 	}
+	void OnDestroy(){
+		PlayerPrefs.SetInt ("Score",pontos);
+		PlayerPrefs.SetInt ("Rank", rank);
+		PlayerPrefs.Save ();
 
+	}
 
 
 	IEnumerator gg(){
 		while (true) {
 			yield return new WaitForSeconds (1.5f);
 			pontos = pontos + 1;
+			rank += 1;
 			dificuldade =dificuldade + 1;
 
 

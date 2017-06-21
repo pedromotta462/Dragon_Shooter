@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/cenas/Game.unity
+- path: Assets/cenas/Over.unity
   isLoaded: 1
   isActive: 1
