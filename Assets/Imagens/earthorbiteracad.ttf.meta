@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: cb534a4f24eabdd4f937969e603ef349
+timeCreated: 1498496442
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Earth Orbiter Academy
+  fontNames:
+  - Earth Orbiter Academy
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

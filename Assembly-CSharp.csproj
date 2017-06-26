@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\EM.cs" />
      <Compile Include="Assets\Scripts\EarthLife.cs" />
      <Compile Include="Assets\Scripts\EscolhaCenaSurva.cs" />
+     <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\FBM.cs" />
      <Compile Include="Assets\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Scripts\GameOver.cs" />
