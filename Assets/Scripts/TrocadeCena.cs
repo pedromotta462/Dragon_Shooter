@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class TrocadeCena : MonoBehaviour {
 	bool suva;
-	public Text txt;
 	void Start(){
 		Cursor.lockState = CursorLockMode.None;
 		Cursor.visible = true;

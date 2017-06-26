@@ -12,6 +12,7 @@ public class audio : MonoBehaviour {
 		DontDestroyOnLoad (canva);
 		som= GetComponent<AudioSource> ();
 		if (SceneManager.GetActiveScene ().name == "pregame") {
+			Score.pontos = 0;
 			SceneManager.LoadScene ("Play");	
 		}
 

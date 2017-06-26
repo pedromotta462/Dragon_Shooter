@@ -42,9 +42,9 @@ public class Score : MonoBehaviour {
 	}
 	void OnDestroy(){
 		PlayerPrefs.SetInt ("Score",pontos);
+		PlayerPrefs.Save ();
 		PlayerPrefs.SetInt ("Rank", rank);
 		PlayerPrefs.Save ();
-
 	}
 
 
