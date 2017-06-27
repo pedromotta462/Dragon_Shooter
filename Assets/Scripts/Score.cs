@@ -5,9 +5,9 @@ public class Score : MonoBehaviour {
 	public Text total;
 	public static int pontos;
 	public float dificuldade;
-	SpawInimigo spaw;
+    SpawInimigo spaw;
 	bool survivor;
-	public GameObject boss;
+	public static bool control = true;
 	public static int rank;
 	void Start()
 	{
@@ -52,7 +52,10 @@ public class Score : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds (1.5f);
 			pontos = pontos + 1;
-			rank += 1;
+			if (control) {
+				rank += 1;
+				Debug.Log ("test");
+			}
 			dificuldade =dificuldade + 1;
 
 

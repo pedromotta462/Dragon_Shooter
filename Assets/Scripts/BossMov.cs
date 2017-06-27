@@ -57,7 +57,6 @@ public class BossMov : MonoBehaviour {
 		}
 	}
 
-
 	void OnTriggerExit(Collider coll){
 		if (coll.gameObject.tag=="Player") {
 			Debug.Log ("conmt");
