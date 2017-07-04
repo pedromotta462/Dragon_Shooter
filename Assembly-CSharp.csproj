@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\HeadBob.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\MoveOBS.cs" />
+     <Compile Include="Assets\Scripts\Opções.cs" />
      <Compile Include="Assets\Scripts\PM.cs" />
      <Compile Include="Assets\Scripts\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
