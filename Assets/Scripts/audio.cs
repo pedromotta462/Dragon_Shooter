@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class audio : MonoBehaviour {
 	public AudioSource som; 
-	public GameObject canva;
-	public GameObject show;
+	public GameObject canva,show,slider;
+	public Slider sl;
 	// Use this for initialization
 	void Awake () {
 		DontDestroyOnLoad (canva);
 		som= GetComponent<AudioSource> ();
-
 		if (SceneManager.GetActiveScene ().name == "pregame") {
 			Score.pontos = 0;
 			SceneManager.LoadScene ("Play");	
@@ -21,6 +20,12 @@ public class audio : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		AudioListener.volume = sl.value;
+		if (SceneManager.GetActiveScene().name=="Opçoes") {
+			slider.SetActive (true);
+		} else {
+			slider.SetActive (false);
+		}
 		if (SceneManager.GetActiveScene().name=="Game") {
 			som.Pause ();
 			show.SetActive (false);
