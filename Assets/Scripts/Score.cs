@@ -5,14 +5,12 @@ public class Score : MonoBehaviour {
 	public Text total;
 	public static int pontos;
 	public float dificuldade;
-    SpawInimigo spaw;
 	bool survivor;
 	public static bool control = true;
 	public static int rank;
 	void Start()
 	{
 		survivor = PlayerPrefs.GetInt ("Survival") == 1;
-		spaw = FindObjectOfType<SpawInimigo> ();
 		pontos = 0;
 
 		if (survivor) {
@@ -24,8 +22,8 @@ public class Score : MonoBehaviour {
 		if (survivor) {
 			
 			if (dificuldade >= 100) {
-				if (spaw.maxTime > 1) {
-					spaw.maxTime -= 1;
+				if (SpawInimigo.maxTime > 1) {
+					SpawInimigo.maxTime -= 1;
 				}
 				if (EM.speed < 0.6f) {
 					EM.speed += 0.1f;
