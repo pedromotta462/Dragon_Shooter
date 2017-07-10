@@ -27,14 +27,16 @@ public class BossMov : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.LookAt (segue);
-		inimigo.MovePosition(inimigo.position + transform.forward * speed);
-	          time += Time.deltaTime;
-			if (time>=3) {
+		if (Time.timeScale==1) {
+			transform.LookAt (segue);
+			inimigo.MovePosition (inimigo.position + transform.forward * speed);
+			time += Time.deltaTime;
+			if (time >= 3) {
 				GameObject g = Instantiate (tiro, transform.position, Quaternion.identity) as GameObject;
 				g.transform.LookAt (segue);
 				time = 0;
-		}		
+			}
+		}
 	}
 
 	void OnTriggerEnter(Collider coll){

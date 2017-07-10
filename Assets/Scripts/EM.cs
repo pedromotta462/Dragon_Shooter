@@ -20,15 +20,16 @@ public class EM : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-		transform.LookAt (world);
-		inimigo.MovePosition(inimigo.position + transform.forward * speed);
-		if (test) {
-			time += Time.deltaTime;
-			if (time>=5) {
-				Instantiate (tiro, transform.position, Quaternion.identity);
-	          time = 0;
+		if (Time.timeScale==1) {
+			transform.LookAt (world);
+			inimigo.MovePosition (inimigo.position + transform.forward * speed);
+			if (test) {
+				time += Time.deltaTime;
+				if (time >= 5) {
+					Instantiate (tiro, transform.position, Quaternion.identity);
+					time = 0;
 			
+				}
 			}
 		}
 	}
