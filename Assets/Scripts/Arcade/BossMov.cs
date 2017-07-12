@@ -7,67 +7,66 @@ using UnityEngine.SceneManagement;
 
 public class BossMov : MonoBehaviour {
 
-	public Vector3 segue;
+	public Transform pl;
 	Rigidbody inimigo;
 	public GameObject tiro;
+
 	public float speed;
+	bool test;
 	float time;
+
 	public float vidaBoss;
-	PM life;
+
+	public Slider life;
+
 	public float danoNoPlayer;
-	public static bool go;
 
 	// Use this for initialization
 	void Start () {
-		go = false;
-		life = FindObjectOfType<PM> ();
+
 		inimigo = GetComponent<Rigidbody> ();
-		segue = GameObject.FindGameObjectWithTag ("Earth").transform.position;
+
+		test = false;		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Time.timeScale==1) {
-			transform.LookAt (segue);
-			inimigo.MovePosition (inimigo.position + transform.forward * speed);
+
+		transform.LookAt (pl);
+		inimigo.MovePosition(inimigo.position + transform.forward * speed);
+		if (test) {
+			
 			time += Time.deltaTime;
-			if (time >= 3) {
+			if (time>=5) {
 				GameObject g = Instantiate (tiro, transform.position, Quaternion.identity) as GameObject;
-				g.transform.LookAt (segue);
+				g.transform.LookAt (pl.position);
 				time = 0;
+
 			}
-		}
+		}		
 	}
 
 	void OnTriggerEnter(Collider coll){
 		if (coll.gameObject.tag=="Player") {
-			segue = GameObject.FindGameObjectWithTag ("Player").transform.position;
-		} 
+			test = true;
+		}
 	}
 
 	void OnCollisionEnter(Collision coll){
 		if (coll.gameObject.tag=="Shot") {
 			Destroy (coll.gameObject);
 			vidaBoss --;
-		if (vidaBoss == 0) {
+			Debug.Log (vidaBoss);
+			if (vidaBoss == 0) {
 				Destroy (gameObject);
 			}
 		}
 		if (coll.gameObject.tag=="Player") {
-			life.sl.value -= danoNoPlayer;
-
+			life.value -= danoNoPlayer;
+			if (life.value == 0) {
+				SceneManager.LoadScene("Over");
+			}
 		}
 	}
 
-	void OnTriggerExit(Collider coll){
-		if (coll.gameObject.tag=="Player") {
-			Debug.Log ("conmt");
-			segue = GameObject.FindGameObjectWithTag ("Earth").transform.position;
-		}
-	}
-
-
-	void OnDestroy(){
-		go = true;
-	}
 }

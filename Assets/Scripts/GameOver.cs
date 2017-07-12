@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour {
 	public Text txt,ranked;
 	bool surva;
@@ -27,5 +27,12 @@ public class GameOver : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+	public void click(){
+		if (surva) {
+			SceneManager.LoadScene ("Game");
+		} else {
+			SceneManager.LoadScene ("Arcade");
+		}
 	}
 }

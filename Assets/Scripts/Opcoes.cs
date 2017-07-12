@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Opções : MonoBehaviour {
-	public GameObject botoes,opçoes;
+public class Opcoes : MonoBehaviour {
+	public GameObject botoes,somfundo;
 	// Use this for initialization
 	void Start () {
 		botoes.SetActive (true);
-		opçoes.SetActive (false);
+		somfundo.SetActive (false);
+
 	}
 	
 	// Update is called once per frame
@@ -16,10 +17,12 @@ public class Opções : MonoBehaviour {
 	}
 	public void click(){
 		botoes.SetActive (false);
-		opçoes.SetActive (true);
+		somfundo.SetActive (true);
+
 	}
 	public void back(){
 		botoes.SetActive (true);
-		opçoes.SetActive (false);
+		somfundo.SetActive (false);
+
 	}
 }

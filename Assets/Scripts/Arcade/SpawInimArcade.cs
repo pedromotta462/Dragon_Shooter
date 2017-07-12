@@ -18,8 +18,6 @@ public class SpawInimArcade : MonoBehaviour {
 	}
 	void Update(){
 
-
-
 	}
 	// Update is called once per frame
 	IEnumerator Spawn() {
@@ -34,6 +32,7 @@ public class SpawInimArcade : MonoBehaviour {
 
 			if (Score.pontos<=100) {
 				Instantiate (obj, position [0], Quaternion.identity);
+
 			}
 			if (Score.pontos>100 && Score.pontos<=200) {
 				if (spawboss) {
@@ -41,7 +40,7 @@ public class SpawInimArcade : MonoBehaviour {
 					spawboss = false;
 
 				}
-				if (BossMov.go) {
+				if (BossMoviment.go) {
 					Instantiate (obj, position [1], Quaternion.identity);
 					EM.speed = 0.3f;
 					minTime = 2;
@@ -53,9 +52,9 @@ public class SpawInimArcade : MonoBehaviour {
 				if (spawboss==false) {
 					Instantiate (boss, position [1], Quaternion.identity);
 					spawboss = true;
-					BossMov.go = false;
+					BossMoviment.go = false;
 						}
-				if (BossMov.go) {
+				if (BossMoviment.go) {
 					Instantiate (obj, position [2], Quaternion.identity);
 					minTime = 1;
 					maxTime = 5;
@@ -66,9 +65,9 @@ public class SpawInimArcade : MonoBehaviour {
 				if (spawboss) {
 					Instantiate (boss, position [2], Quaternion.identity);
 					spawboss = false;
-					BossMov.go = false;
+					BossMoviment.go = false;
 				}
-				if (BossMov.go) {
+				if (BossMoviment.go) {
 					Instantiate (obj, position [3], Quaternion.identity);
 					EM.speed = 0.4f;
 					maxTime = 4;
@@ -79,9 +78,9 @@ public class SpawInimArcade : MonoBehaviour {
 				if (spawboss==false) {
 					Instantiate (boss, position [3], Quaternion.identity);
 					spawboss = true;
-					BossMov.go = false;
+					BossMoviment.go = false;
 				}
-				if (BossMov.go) {
+				if (BossMoviment.go) {
 					PosiX = Random.Range (0, 4);
 					maxTime = 3;
 					Instantiate (obj, position [PosiX], Quaternion.identity);
