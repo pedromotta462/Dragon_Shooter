@@ -19,19 +19,15 @@ public class FBM : MonoBehaviour {
 
 
 	}
+	public void click(){
+		if (sl.value<1f) {
 
-	// Update is called once per frame
-	void Update () {
-		
-		if (Input.GetKeyUp("space")) {
-			if (sl.value<1f) {
-				
-				Quaternion q = Quaternion.Euler (fpscontroller.rotation.eulerAngles.x,transform.rotation.eulerAngles.y,0f);
-				sl.value += 0.2f; 
-				shot = (Instantiate (reta, transform.position, q) as GameObject).GetComponent<Rigidbody>();
+			Quaternion q = Quaternion.Euler (fpscontroller.rotation.eulerAngles.x,transform.rotation.eulerAngles.y,0f);
+			sl.value += 0.2f; 
+			shot = (Instantiate (reta, transform.position, q) as GameObject).GetComponent<Rigidbody>();
 
-			}
 		}
+		//}
 		if (sl.value<1) {
 			gambiara += Time.deltaTime;
 			if (gambiara>=1) {
@@ -40,14 +36,21 @@ public class FBM : MonoBehaviour {
 			}
 		}
 		if (sl.value>=1) {
-		 gambiarra += Time.deltaTime;
+			gambiarra += Time.deltaTime;
 			if (gambiarra>=5) {
 				sl.value = 0;
 				gambiarra = 0;
 			}
-			
+
 
 		}
+		
+	}
+	// Update is called once per frame
+	void Update () {
+		
+	//	if (Input.GetKeyUp("space")) {
+			
 		}
 
 
