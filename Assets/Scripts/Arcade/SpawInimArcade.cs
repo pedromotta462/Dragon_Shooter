@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class SpawInimArcade : MonoBehaviour {
 	public GameObject obj;
 	public Transform um,um1,dois,dois2,tres,tres3,quatro,quatro4;
@@ -86,6 +86,15 @@ public class SpawInimArcade : MonoBehaviour {
 					Instantiate (obj, position [PosiX], Quaternion.identity);
 				}
 
+			}
+			if (Score.pontos>500) {
+				if (spawboss) {
+					PosiX = Random.Range (0, 4);
+					Instantiate (boss, position [PosiX], Quaternion.identity);
+				}
+				if (BossMoviment.go) {
+					SceneManager.LoadScene (9);
+				}
 			}
 		}
 

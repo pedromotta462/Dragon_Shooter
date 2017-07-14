@@ -15,7 +15,7 @@ public class Shot : MonoBehaviour {
 		plus = FindObjectOfType<Score> ();
 		AudioSource som = GetComponent<AudioSource> ();
 		som.Play ();
-		 
+		Destroy (this.gameObject, 5f);
 	}
 	
 	// Update is called once per frame

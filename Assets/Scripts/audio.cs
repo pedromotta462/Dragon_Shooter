@@ -36,6 +36,9 @@ public class audio : MonoBehaviour {
 		if (SceneManager.GetActiveScene().name=="Over") {
 			som.UnPause ();
 		} 
+		if (SceneManager.GetActiveScene().name=="PLay") {
+			som.UnPause ();
+		}
 	}
 	public void onClick()
 	{

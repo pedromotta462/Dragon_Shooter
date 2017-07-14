@@ -32,6 +32,10 @@ public class EarthLife : MonoBehaviour {
 				perdervida (coll.gameObject,1);
 
 			}
+			if (coll.gameObject.tag == "Boss") {
+				perdervida (coll.gameObject,6);
+				text.SetActive (true);
+			}
 				
 			}
 		if (coll.gameObject.tag=="Shot") {

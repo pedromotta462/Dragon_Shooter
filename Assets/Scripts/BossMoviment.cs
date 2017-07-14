@@ -16,7 +16,7 @@ public class BossMoviment : MonoBehaviour {
 	PM life;
 	public float danoNoPlayer;
 	public static bool go;
-	int i = 0;
+
 
 	// Use this for initialization
 	void Start () {
