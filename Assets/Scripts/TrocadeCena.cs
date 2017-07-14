@@ -16,6 +16,7 @@ public class TrocadeCena : MonoBehaviour {
 	}
 	public void troca(string x){
 		SceneManager.LoadScene (x);
+		Time.timeScale = 1;
 
 	}
 }

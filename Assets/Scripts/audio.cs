@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class audio : MonoBehaviour {
 	public AudioSource som; 
-	public GameObject canva,show,slider;
+	public GameObject canva,slider;
 	public Slider sl;
 	// Use this for initialization
 	void Awake () {
@@ -20,6 +20,7 @@ public class audio : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 		AudioListener.volume = sl.value;
 		if (SceneManager.GetActiveScene().name=="Opçoes") {
 			slider.SetActive (true);
@@ -28,17 +29,13 @@ public class audio : MonoBehaviour {
 		}
 		if (SceneManager.GetActiveScene().name=="Game") {
 			som.Pause ();
-			show.SetActive (false);
 		}
 		if (SceneManager.GetActiveScene().name=="Arcade") {
 			som.Pause ();
-			show.SetActive (false);
-		}
+		} 
 		if (SceneManager.GetActiveScene().name=="Over") {
-			Debug.Log ("pqqq");
-			show.SetActive (true);
-			som.Play ();
-		}
+			som.UnPause ();
+		} 
 	}
 	public void onClick()
 	{

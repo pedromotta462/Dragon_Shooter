@@ -25,7 +25,7 @@ public class EM : MonoBehaviour {
 			inimigo.MovePosition (inimigo.position + transform.forward * speed);
 			if (test) {
 				time += Time.deltaTime;
-				if (time >= 5) {
+				if (time >= 7) {
 					Instantiate (tiro, transform.position, Quaternion.identity);
 					time = 0;
 			
