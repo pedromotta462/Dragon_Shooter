@@ -59,7 +59,7 @@ public class SpawInimArcade : MonoBehaviour {
 					Instantiate (boss, position [1], Quaternion.identity);
 					spawboss = true;
 					BossMoviment.go = false;
-						}
+				}
 				if (BossMoviment.go) {
 					Instantiate (obj, position [2], Quaternion.identity);
 					minTime = 1;

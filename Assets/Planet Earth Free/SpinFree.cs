@@ -18,8 +18,18 @@ public class SpinFree : MonoBehaviour {
 	[HideInInspector]
 	public float directionChangeSpeed = 2f;
 
+	Vector3 startPosition;
+
+	void Start(){
+		startPosition = transform.position;
+	}
+
 	// Update is called once per frame
 	void Update() {
 		transform.Rotate (Vector3.forward * speed * Time.deltaTime);
+	}
+
+	void LateUpdate() {
+		transform.position = startPosition;
 	}
 }

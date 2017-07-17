@@ -17,7 +17,6 @@ public class ShotEn : MonoBehaviour {
 	void Update () {
 		if (Time.timeScale==1) {
 			if (boss == false) {
-				
 				shot.MovePosition (shot.position + transform.forward * speed);
 			}
 			shot.MovePosition (shot.position + transform.forward * speed);

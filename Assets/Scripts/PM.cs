@@ -12,8 +12,10 @@ public class PM : MonoBehaviour {
 	int soma=11;
 	bool controle;
 	public Score score;
+	public float startYPosition;
 
 	void Start(){
+		startYPosition = transform.position.y;
 		shiel = FindObjectOfType<EarthLife> ();
 		controle = false;
 }
@@ -78,5 +80,10 @@ public class PM : MonoBehaviour {
 		}
 	}
 
+	void LateUpdate() {
+		Vector3 v = transform.position;
+		v.y = startYPosition;
+		transform.position = v;
+	}
 }
 
