@@ -17,6 +17,11 @@ public class EM : MonoBehaviour {
 		speed = 0.2f;
 		test = false;
 	}
+	void Awake() {
+		if (PlayerPrefs.GetInt("Survival") == 0) {
+			SpawInimArcade.enemy.Add (this);							
+		}
+	}
 	
 	// Update is called once per frame
 	void Update () {

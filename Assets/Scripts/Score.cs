@@ -8,8 +8,14 @@ public class Score : MonoBehaviour {
 	bool survivor;
 	public static bool control = true;
 	public static int rank;
+
+	void Awake() {
+		rank = PlayerPrefs.GetInt ("Score");
+	}
+
 	void Start()
 	{
+		
 		survivor = PlayerPrefs.GetInt ("Survival") == 1;
 		pontos = 0;
 
@@ -40,7 +46,6 @@ public class Score : MonoBehaviour {
 	}
 	void OnDestroy(){
 		PlayerPrefs.SetInt ("Score",pontos);
-		PlayerPrefs.Save ();
 		PlayerPrefs.SetInt ("Rank", rank);
 		PlayerPrefs.Save ();
 	}

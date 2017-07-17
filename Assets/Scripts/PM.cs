@@ -11,16 +11,13 @@ public class PM : MonoBehaviour {
 	public Text txt;
 	int soma=11;
 	bool controle;
+	public Score score;
 
 	void Start(){
 		shiel = FindObjectOfType<EarthLife> ();
 		controle = false;
 }
 	// Update is called once per frame
-void Update ()
-	{
-
-		}
 	void OnTriggerEnter(Collider coll){
 		controle = false;
 		if (coll.gameObject.tag=="NaoSai") {

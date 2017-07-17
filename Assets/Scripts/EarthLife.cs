@@ -24,20 +24,21 @@ public class EarthLife : MonoBehaviour {
 				perdervida (coll.gameObject,6);
 				text.SetActive (true);
 			}
-			if (coll.gameObject.tag == "ShotEM") {
+		if (coll.gameObject.tag == "ShotEM") {
 			sl.value -= 0.2f;
 			text.SetActive (true);
 			Destroy (coll.gameObject);
-			if (sl.value<=0) {
-				perdervida (coll.gameObject,1);
-
-			}
+		}
+			
 			if (coll.gameObject.tag == "Boss") {
 				perdervida (coll.gameObject,6);
 				text.SetActive (true);
 			}
-				
-			}
+		if (sl.value<=0) {
+			perdervida (coll.gameObject,1);
+
+		}
+
 		if (coll.gameObject.tag=="Shot") {
 			perdervida (coll.gameObject, 1);
 			text.SetActive (true);

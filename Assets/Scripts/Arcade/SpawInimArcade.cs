@@ -11,13 +11,19 @@ public class SpawInimArcade : MonoBehaviour {
 	public GameObject boss;
 	public bool spawboss;
 	Vector3[] position=new Vector3[4];
+	public static List<EM> enemy;
+
+	void Awake() {
+		enemy = new List<EM> ();
+	}
+
 	// Use this for initialization
 	void Start () {
 		status = true;
 		StartCoroutine (Spawn ());
 	}
 	void Update(){
-
+		
 	}
 	// Update is called once per frame
 	IEnumerator Spawn() {
@@ -83,14 +89,19 @@ public class SpawInimArcade : MonoBehaviour {
 				if (BossMoviment.go) {
 					PosiX = Random.Range (0, 4);
 					maxTime = 3;
-					Instantiate (obj, position [PosiX], Quaternion.identity);
+					int cont = 0;
+					if (cont<=20) {
+						Instantiate (obj, position [PosiX], Quaternion.identity);
+						cont += 1;
+					}
 				}
 
 			}
 			if (Score.pontos>500) {
-				if (spawboss) {
+				if (enemy.Count == 0) {
 					PosiX = Random.Range (0, 4);
 					Instantiate (boss, position [PosiX], Quaternion.identity);
+					BossMoviment.go = false;
 				}
 				if (BossMoviment.go) {
 					SceneManager.LoadScene (9);
