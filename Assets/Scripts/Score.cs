@@ -56,8 +56,11 @@ public class Score : MonoBehaviour {
 			yield return new WaitForSeconds (1.5f);
 			pontos = pontos + 1;
 			if (control) {
-				rank += 1;
-				Debug.Log ("test");
+				if (PlayerPrefs.GetInt("Rank")==0) {
+					rank += 1;
+					Debug.Log ("test");
+				}
+
 			}
 			dificuldade =dificuldade + 1;
 

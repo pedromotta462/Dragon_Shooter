@@ -33,8 +33,7 @@ public class BossMoviment : MonoBehaviour {
 			inimigo.MovePosition (inimigo.position + transform.forward * speed);
 			time += Time.deltaTime;
 			if (time >= 3) {
-				GameObject g = Instantiate (tiro, transform.position, Quaternion.identity) as GameObject;
-				g.transform.LookAt (segue.position);
+				Instantiate (tiro, transform.position, transform.rotation);
 				time = 0;
 			}
 		}

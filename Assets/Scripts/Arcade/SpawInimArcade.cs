@@ -38,13 +38,13 @@ public class SpawInimArcade : MonoBehaviour {
 
 			if (Score.pontos<=100) {
 				Instantiate (obj, position [0], Quaternion.identity);
-
+			
 			}
 			if (Score.pontos>100 && Score.pontos<=200) {
 				if (spawboss) {
-					Instantiate (boss, position [0], Quaternion.identity);
+					
 					spawboss = false;
-
+					Instantiate (boss, position [0], Quaternion.identity);
 				}
 				if (BossMoviment.go) {
 					Instantiate (obj, position [1], Quaternion.identity);

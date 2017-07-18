@@ -18,6 +18,7 @@ public class ShotEn : MonoBehaviour {
 		if (Time.timeScale==1) {
 			if (boss == false) {
 				shot.MovePosition (shot.position + transform.forward * speed);
+				transform.LookAt (world);
 			}
 			shot.MovePosition (shot.position + transform.forward * speed);
 

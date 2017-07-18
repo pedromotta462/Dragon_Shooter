@@ -19,6 +19,13 @@ public class PM : MonoBehaviour {
 		shiel = FindObjectOfType<EarthLife> ();
 		controle = false;
 }
+	void Update(){
+		if (sl.value==0) {
+			Debug.Log ("bug");
+			Cursor.lockState = CursorLockMode.None;
+			SceneManager.LoadScene (7);
+		}
+	}
 	// Update is called once per frame
 	void OnTriggerEnter(Collider coll){
 		controle = false;
@@ -26,6 +33,11 @@ public class PM : MonoBehaviour {
 			aviso.SetActive (false);
 			soma = 11;
 			Debug.Log ("dentro");
+		}
+		if (coll.gameObject.tag=="ShotEM") {
+			sl.value -= 0.2f;
+			print ("oi");
+			Destroy (coll.gameObject);
 		}
 	}
 	void OnTriggerExit(Collider coll){
@@ -42,18 +54,12 @@ public class PM : MonoBehaviour {
 			sl.value -= 0.5f;
 		}
 
-
 		if (coll.gameObject.tag=="Inimigo") {
 			sl.value -= 0.2f;
 			Destroy (coll.gameObject);
 
 		}
-		if (coll.gameObject.tag=="ShotEM") {
-			sl.value -= 0.2f;
-			Destroy (coll.gameObject);
 
-
-		}
 		if (coll.gameObject.tag=="Shield") {
 			Destroy (coll.gameObject);
 			shiel.sl.value += 0.5f;
@@ -61,10 +67,7 @@ public class PM : MonoBehaviour {
 		if (coll.gameObject.tag=="Boss") {
 			sl.value -= 0.5f;
 		}
-		if (sl.value==0) {
-			Cursor.lockState = CursorLockMode.None;
-			SceneManager.LoadScene (7);
-		}
+
 	}
 
 
@@ -72,7 +75,7 @@ public class PM : MonoBehaviour {
 		while (controle) {
 			yield return new WaitForSeconds (1);
 			soma-= 1;
-			txt.text = "Você está se distanciando do seu objetivo, retorne em até: " + soma + "s";
+			txt.text = "Você está se distanciando do seu objetivo, retorne em até: " + soma + " " + "segundos";
 			Debug.Log (soma);
 		
 			if (soma <= 0f) {
