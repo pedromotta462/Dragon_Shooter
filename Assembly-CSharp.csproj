@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\FBM.cs" />
      <Compile Include="Assets\Scripts\FirstPersonController.cs" />
+     <Compile Include="Assets\Scripts\Folego.cs" />
      <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\HeadBob.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />

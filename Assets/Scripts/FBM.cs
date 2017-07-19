@@ -23,7 +23,6 @@ public class FBM : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
 		if (sl.value<1) {
 			gambiara += Time.deltaTime;
 			if (gambiara>=1) {
@@ -47,6 +46,7 @@ public class FBM : MonoBehaviour {
 		    Quaternion q = Quaternion.Euler (fpscontroller.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0f);
 			sl.value += 0.2f; 
 			shot = (Instantiate (reta, transform.position, q) as GameObject).GetComponent<Rigidbody> ();
+		
 
 		}
 	}

@@ -4,13 +4,13 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class pauseButton : MonoBehaviour {
 	
-	public GameObject painel;
+	public GameObject painel, interfac;
 	public FirstPersonController desative;
 
 
 	// Use this for initialization
 	void Start () {
-		
+		interfac.SetActive (true);
 		Time.timeScale = 1;
         painel.SetActive (false);
 	}
@@ -23,9 +23,9 @@ public class pauseButton : MonoBehaviour {
 	}
 
 	public void pause()
-	{ 
-		painel.SetActive (true);
-
+	{       
+		    painel.SetActive (true);
+		    interfac.SetActive (false);
 			desative.enabled = false;
 			Time.timeScale = 0;
 			Cursor.lockState = CursorLockMode.None;
@@ -37,6 +37,7 @@ public class pauseButton : MonoBehaviour {
 	}
 	public void close(){
 		desative.enabled = true;
+		interfac.SetActive (true);
 		painel.SetActive (false);
 		Time.timeScale = 1;
 	}

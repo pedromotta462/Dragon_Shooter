@@ -42,7 +42,6 @@ public class SpawInimArcade : MonoBehaviour {
 			}
 			if (Score.pontos>100 && Score.pontos<=200) {
 				if (spawboss) {
-					
 					spawboss = false;
 					Instantiate (boss, position [0], Quaternion.identity);
 				}
@@ -95,13 +94,14 @@ public class SpawInimArcade : MonoBehaviour {
 						cont += 1;
 					}
 				}
-
-			}
+		 }
 			if (Score.pontos>500) {
 				if (enemy.Count == 0) {
-					PosiX = Random.Range (0, 4);
-					Instantiate (boss, position [PosiX], Quaternion.identity);
-					BossMoviment.go = false;
+					if (spawboss) {
+						PosiX = Random.Range (0, 4);
+						Instantiate (boss, position [PosiX], Quaternion.identity);
+						BossMoviment.go = false;
+					}
 				}
 				if (BossMoviment.go) {
 					SceneManager.LoadScene (9);

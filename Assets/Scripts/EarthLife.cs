@@ -10,22 +10,36 @@ public class EarthLife : MonoBehaviour {
 	public Sprite[] spr;
 	public int vidas = 6;
 	public GameObject text;
+	public ParticleSystem pp;
+	float i = 1;
 	void Start(){
 		text.SetActive (false);
 		StartCoroutine (msn ());
+		pp = GetComponent<ParticleSystem> ();
 
 	}
 	void OnCollisionEnter (Collision coll){
 		if (coll.gameObject.tag=="Obstaculo") {
-			perdervida (coll.gameObject, 3);
-			text.SetActive (true);
+			
+			sl.value = -0.4f;
+			if (sl.value<=0) {
+				perdervida (coll.gameObject, 3);
+			}
+			    text.SetActive (true);
 		}
 			if (coll.gameObject.tag == "Inimigo") {
+			sl.value -= 0.4f;	
+			if (sl.value<=0) {
 				perdervida (coll.gameObject,6);
+			}
 				text.SetActive (true);
+			Destroy (coll.gameObject);
 			}
 		if (coll.gameObject.tag == "ShotEM") {
 			sl.value -= 0.2f;
+			if (sl.value<=0) {
+				perdervida (coll.gameObject,1);
+			}
 			text.SetActive (true);
 			Destroy (coll.gameObject);
 		}
@@ -33,14 +47,15 @@ public class EarthLife : MonoBehaviour {
 			if (coll.gameObject.tag == "Boss") {
 				perdervida (coll.gameObject,6);
 				text.SetActive (true);
-			}
-		if (sl.value<=0) {
-			perdervida (coll.gameObject,1);
-
 		}
 
 		if (coll.gameObject.tag=="Shot") {
-			perdervida (coll.gameObject, 1);
+			sl.value -= 0.4f;
+			Destroy (coll.gameObject);
+			if (sl.value<=0) {
+				perdervida (coll.gameObject, 1);
+			}
+
 			text.SetActive (true);
 		}
 		}
