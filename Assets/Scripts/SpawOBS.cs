@@ -28,12 +28,13 @@ public class SpawOBS : MonoBehaviour {
 			yield return new WaitForSeconds (Random.Range (minTime, maxTime));
 			PosiX= Random.Range (0, 2);
 			Debug.Log (PosiX);
+			Instantiate (obj, position [PosiX], Quaternion.identity);
 			if (PosiX==1) {
 				MoveOBS.speed = -0.5f;
 			} else {
 				MoveOBS.speed = 0.5f;
 			}
-			Instantiate (obj, position [PosiX], Quaternion.identity);
+		
 
 		}
 	}

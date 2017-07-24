@@ -7,11 +7,13 @@ public class SpawInimArcade : MonoBehaviour {
 	public Transform um,um1,dois,dois2,tres,tres3,quatro,quatro4;
 	public float minTime , maxTime ;
 	public bool status;
-	int PosiX ;
+	int PosiX,cont,spaw ;
 	public GameObject boss;
 	public bool spawboss;
 	Vector3[] position=new Vector3[4];
 	public static List<EM> enemy;
+
+	public int nEnemy;
 
 	void Awake() {
 		enemy = new List<EM> ();
@@ -35,81 +37,96 @@ public class SpawInimArcade : MonoBehaviour {
 			position [3] = new Vector3 ( quatro.position.x, 0,(Random.Range (tres.position.z, tres3.position.z)));
 
 			yield return new WaitForSeconds (Random.Range(minTime,maxTime));
-
-			if (Score.pontos<=100) {
+			//Espama um número de inimigos
+			if (cont <= nEnemy && spaw==0) {
+				cont++;
 				Instantiate (obj, position [0], Quaternion.identity);
-			
 			}
-			if (Score.pontos>100 && Score.pontos<=200) {
+
+			//Espama o boss
+			if (enemy.Count==0 && cont >= nEnemy && spaw == 0) {
 				if (spawboss) {
 					spawboss = false;
 					Instantiate (boss, position [0], Quaternion.identity);
+					cont = 0;
+					spaw++;
 				}
-				if (BossMoviment.go) {
-					Instantiate (obj, position [1], Quaternion.identity);
-					EM.speed = 0.3f;
-					minTime = 2;
-					maxTime = 7;
-				}
-
 			}
-			if (Score.pontos>200 && Score.pontos<=300) {
+			//Espama um número de inimigos
+			if (BossMoviment.go && spaw==1 && cont <= nEnemy + 2) {
+				Instantiate (obj, position [1], Quaternion.identity);
+				EM.speed = 0.3f;
+				cont++;
+				minTime = 2;
+				maxTime = 7;
+			}
+			//Espama o boss
+			if (enemy.Count==0 && cont >= nEnemy && spaw == 1) {
 				if (spawboss==false) {
 					Instantiate (boss, position [1], Quaternion.identity);
 					spawboss = true;
+					cont = 0;
+					spaw++;
 					BossMoviment.go = false;
 				}
-				if (BossMoviment.go) {
-					Instantiate (obj, position [2], Quaternion.identity);
-					minTime = 1;
-					maxTime = 5;
-				}
-			
 			}
-			if (Score.pontos>300 && Score.pontos<=400) {
+			//Espama um número de inimigos
+			if (BossMoviment.go && spaw==2&& cont <= nEnemy + 4) {
+				Instantiate (obj, position [2], Quaternion.identity);
+				minTime = 1;
+				maxTime = 5;
+				cont++;
+			}
+			//Espama o boss
+			if (enemy.Count==0 && cont >= nEnemy && spaw == 2) {
 				if (spawboss) {
 					Instantiate (boss, position [2], Quaternion.identity);
 					spawboss = false;
+					cont = 0;
+					spaw++;
 					BossMoviment.go = false;
 				}
-				if (BossMoviment.go) {
-					Instantiate (obj, position [3], Quaternion.identity);
-					EM.speed = 0.4f;
-					maxTime = 4;
-				}
-
 			}
-			if (Score.pontos>400 && Score.pontos<=500) {
+			//Espama um número de inimigos
+			if (BossMoviment.go && spaw==3 && cont <= nEnemy + 6) {
+				Instantiate (obj, position [3], Quaternion.identity);
+				EM.speed = 0.4f;
+				cont++;
+				maxTime = 4;
+			}
+			//Espama o boss
+			if (enemy.Count==0 && cont >= nEnemy && spaw == 3) {
 				if (spawboss==false) {
 					Instantiate (boss, position [3], Quaternion.identity);
 					spawboss = true;
+					cont = 0;
+					spaw++;
 					BossMoviment.go = false;
 				}
-				if (BossMoviment.go) {
-					PosiX = Random.Range (0, 4);
-					maxTime = 3;
-					int cont = 0;
-					if (cont<=20) {
-						Instantiate (obj, position [PosiX], Quaternion.identity);
-						cont += 1;
-					}
+			}
+			//Espama um número de inimigos
+			if (BossMoviment.go && spaw==4 && cont <= nEnemy + 8) {
+				PosiX = Random.Range (0, 4);
+				cont++;
+				maxTime = 3;
+				Instantiate (obj, position [PosiX], Quaternion.identity);
 				}
-		 }
-			if (Score.pontos>500) {
-				if (enemy.Count == 0) {
+			//Espama o boss
+			if (enemy.Count==0 && cont >= nEnemy && spaw == 4) {
 					if (spawboss) {
-						PosiX = Random.Range (0, 4);
-						Instantiate (boss, position [PosiX], Quaternion.identity);
-						BossMoviment.go = false;
+							PosiX = Random.Range (0, 4);
+					cont = 0;
+					spaw++;
+							Instantiate (boss, position [PosiX], Quaternion.identity);
+							BossMoviment.go = false;
 					}
-				}
-				if (BossMoviment.go) {
-					SceneManager.LoadScene (9);
+					if (BossMoviment.go) {
+						SceneManager.LoadScene ("WIN");
+					}
+
 				}
 			}
 		}
-
-	}
 
 	public void MudarEstadoDoSpawn()
 	{

@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class PM : MonoBehaviour {
 	
 	public GameObject aviso;
-	public Slider sl,shield;
+	public float sl;
 	EarthLife shiel;
 	public Text txt;
-	int soma=11;
+	int soma = 11;
 	bool controle;
 	public Score score;
 	public float startYPosition;
+	public RectTransform pl;
 
 	void Start(){
 		startYPosition = transform.position.y;
@@ -20,13 +21,14 @@ public class PM : MonoBehaviour {
 		controle = false;
 }
 	void Update(){
-		if (sl.value==0) {
-			Debug.Log ("bug");
+
+		pl.sizeDelta = new Vector2 (sl, 30f);
+		if (sl<=0) {
 			Cursor.lockState = CursorLockMode.None;
 			SceneManager.LoadScene (7);
 		}
 	}
-	// Update is called once per frame
+
 	void OnTriggerEnter(Collider coll){
 		controle = false;
 		if (coll.gameObject.tag=="NaoSai") {
@@ -35,15 +37,13 @@ public class PM : MonoBehaviour {
 			Debug.Log ("dentro");
 		}
 		if (coll.gameObject.tag=="ShotEM") {
-			sl.value -= 0.2f;
-			print ("oi");
+			sl -= 41;
 			Destroy (coll.gameObject);
 		}
 	}
 	void OnTriggerExit(Collider coll){
 		controle = true;
 		if (coll.gameObject.tag == "NaoSai") {
-			print ("fora");
 			aviso.SetActive (true);
 			StartCoroutine (cont ());
 		}
@@ -51,21 +51,21 @@ public class PM : MonoBehaviour {
 
 	void OnControllerColliderHit(ControllerColliderHit coll){
 		if (coll.gameObject.tag=="Obstaculo") {
-			sl.value -= 0.5f;
+			sl -= 125;
 		}
 
 		if (coll.gameObject.tag=="Inimigo") {
-			sl.value -= 0.2f;
+			sl -= 41;
 			Destroy (coll.gameObject);
 
 		}
 
 		if (coll.gameObject.tag=="Shield") {
 			Destroy (coll.gameObject);
-			shiel.sl.value += 0.5f;
+			shiel.sl += 21;
 			}
 		if (coll.gameObject.tag=="Boss") {
-			sl.value -= 0.5f;
+			sl -= 80;
 		}
 
 	}
@@ -77,9 +77,9 @@ public class PM : MonoBehaviour {
 			soma-= 1;
 			txt.text = "Você está se distanciando do seu objetivo, retorne em até: " + soma + " " + "segundos";
 			Debug.Log (soma);
-		
-			if (soma <= 0f) {
-				SceneManager.LoadScene (7);			}
+		if (soma <= 0f) {
+				SceneManager.LoadScene (7);			
+			}
 		}
 	}
 

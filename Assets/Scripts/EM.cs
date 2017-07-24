@@ -19,7 +19,7 @@ public class EM : MonoBehaviour {
 	}
 	void Awake() {
 		if (PlayerPrefs.GetInt("Survival") == 0) {
-			SpawInimArcade.enemy.Add (this);							
+			SpawInimArcade.enemy.Add (this);	
 		}
 	}
 	
@@ -42,6 +42,10 @@ public class EM : MonoBehaviour {
 		if (coll.gameObject.tag=="Sentido") {
 			test = true;
 		}
+	}
+
+	void OnDestroy(){
+		SpawInimArcade.enemy.RemoveAt (0);
 	}
 
 

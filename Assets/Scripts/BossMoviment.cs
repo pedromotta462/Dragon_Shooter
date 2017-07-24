@@ -53,10 +53,7 @@ public class BossMoviment : MonoBehaviour {
 				Destroy (gameObject);
 			}
 		}
-		if (coll.gameObject.tag=="Player") {
-			life.sl.value -= danoNoPlayer;
 
-		}
 	}
 
 	void OnTriggerExit(Collider coll){
