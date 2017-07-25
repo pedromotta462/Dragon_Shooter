@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MoveOBS : MonoBehaviour {
 	public Rigidbody obs;
 	public static float speed;
-	public int vidas = 3;
+	public int vidas;
 	public int random,randon;	
 	public GameObject shield;
 	public GameObject explosion;
@@ -32,7 +32,10 @@ public class MoveOBS : MonoBehaviour {
 	public void perdervida(int dano){
 		vidas = vidas - dano; 
 		if (vidas<=0) {
-		Instantiate (shield, transform.position, transform.rotation);
+			int i = Random.Range (random, randon);
+			if (i==1) {
+				Instantiate (shield, transform.position, transform.rotation);
+			}
 		Instantiate(explosion, transform.position, transform.rotation);
 		Destroy (gameObject);
 		}

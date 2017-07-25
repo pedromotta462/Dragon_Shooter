@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EarthLife : MonoBehaviour {
 	
-	public float sl;
-	public int vidas = 125;
+	public float sl,dPlayer,dInimigo,dBoss,dObs,vidas;
 	public GameObject text;
 	public ParticleSystem pp;
 	public RectTransform terra, escudo;
@@ -25,7 +24,7 @@ public class EarthLife : MonoBehaviour {
 	}
 	void OnCollisionEnter (Collision coll){
 		if (coll.gameObject.tag=="Obstaculo") {
-			sl -= 40;
+			sl -= dObs;
 			Destroy (coll.gameObject);
 			if (sl<=0) {
 				perdervida (coll.gameObject, 125);
@@ -33,7 +32,7 @@ public class EarthLife : MonoBehaviour {
 			    text.SetActive (true);
 		}
 			if (coll.gameObject.tag == "Inimigo") {
-			sl -= 40;	
+			sl -= dInimigo;	
 			if (sl<=0) {
 				perdervida (coll.gameObject,125);
 			}
@@ -41,9 +40,9 @@ public class EarthLife : MonoBehaviour {
 			Destroy (coll.gameObject);
 			}
 		if (coll.gameObject.tag == "ShotEM") {
-			sl -= 21;
+			sl -= dInimigo;
 			if (sl<=0) {
-				perdervida (coll.gameObject,21);
+				perdervida (coll.gameObject,dInimigo);
 			}
 			text.SetActive (true);
 			Destroy (coll.gameObject);
@@ -55,17 +54,17 @@ public class EarthLife : MonoBehaviour {
 		}
 
 		if (coll.gameObject.tag=="Shot") {
-			sl -= 21;
+			sl -= dPlayer;
 			Destroy (coll.gameObject);
 			if (sl<=0) {
-				perdervida (coll.gameObject, 21);
+				perdervida (coll.gameObject, dPlayer);
 			}
 				text.SetActive (true);
 			Debug.Log ("vida: " + vidas + "dano: " + sl);
 
 		}
 }
-	public void perdervida(GameObject g, int dano){
+	public void perdervida(GameObject g, float dano){
 		vidas -=  dano; 
 		Debug.Log ("vida: " + vidas);
 		Destroy (g);

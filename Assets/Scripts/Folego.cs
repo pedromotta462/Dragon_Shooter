@@ -20,7 +20,6 @@ public class Folego : MonoBehaviour {
 		if (i<1&&i>0.05f) {
 			gambiarra += Time.deltaTime;
 			if (gambiarra>=1) {
-				
 				i += 0.1f;
 				gambiarra = 0;
 			}

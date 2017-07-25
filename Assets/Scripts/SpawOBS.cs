@@ -30,9 +30,9 @@ public class SpawOBS : MonoBehaviour {
 			Debug.Log (PosiX);
 			Instantiate (obj, position [PosiX], Quaternion.identity);
 			if (PosiX==1) {
-				MoveOBS.speed = -0.5f;
-			} else {
 				MoveOBS.speed = 0.5f;
+			} else {
+				MoveOBS.speed = -0.5f;
 			}
 		
 

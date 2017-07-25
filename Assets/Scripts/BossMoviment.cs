@@ -10,18 +10,13 @@ public class BossMoviment : MonoBehaviour {
 	public Transform segue;
 	Rigidbody inimigo;
 	public GameObject tiro;
-	public float speed;
-	float time;
-	public float vidaBoss;
-	PM life;
-	public float danoNoPlayer;
+	public float speed,danoNoPlayer,vidaBoss,time,shot;
 	public static bool go;
 
 
 	// Use this for initialization
 	void Start () {
 		go = false;
-		life = FindObjectOfType<PM> ();
 		inimigo = GetComponent<Rigidbody> ();
 		segue = GameObject.FindGameObjectWithTag ("Earth").transform;
 	}
@@ -32,7 +27,7 @@ public class BossMoviment : MonoBehaviour {
 			transform.LookAt (segue.position);
 			inimigo.MovePosition (inimigo.position + transform.forward * speed);
 			time += Time.deltaTime;
-			if (time >= 3) {
+			if (time >= shot) {
 				Instantiate (tiro, transform.position, transform.rotation);
 				time = 0;
 			}

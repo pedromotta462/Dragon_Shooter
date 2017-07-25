@@ -6,10 +6,9 @@ public class EM : MonoBehaviour {
 	public Transform world;
 	Rigidbody inimigo;
 	public GameObject tiro;
-
 	public static float speed;
-	public bool test;
-	float time;
+	public bool test; 
+	public float time,dificuldade,shot;
 
 	// Use this for initialization
 	void Start () {
@@ -27,13 +26,12 @@ public class EM : MonoBehaviour {
 	void Update () {
 		if (Time.timeScale==1) {
 			transform.LookAt (world);
-			inimigo.MovePosition (inimigo.position + transform.forward * speed);
+			inimigo.MovePosition (inimigo.position + transform.forward * (speed+ dificuldade));
 			if (test) {
 				time += Time.deltaTime;
-				if (time >= 7) {
+				if (time >= shot) {
 					Instantiate (tiro, transform.position, Quaternion.identity);
 					time = 0;
-			
 				}
 			}
 		}

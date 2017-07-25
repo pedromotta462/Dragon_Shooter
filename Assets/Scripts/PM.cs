@@ -12,7 +12,7 @@ public class PM : MonoBehaviour {
 	int soma = 11;
 	bool controle;
 	public Score score;
-	public float startYPosition;
+	public float startYPosition,dInimigo,dBoss;
 	public RectTransform pl;
 
 	void Start(){
@@ -37,7 +37,7 @@ public class PM : MonoBehaviour {
 			Debug.Log ("dentro");
 		}
 		if (coll.gameObject.tag=="ShotEM") {
-			sl -= 41;
+			sl -= dInimigo;
 			Destroy (coll.gameObject);
 		}
 	}
@@ -55,17 +55,19 @@ public class PM : MonoBehaviour {
 		}
 
 		if (coll.gameObject.tag=="Inimigo") {
-			sl -= 41;
+			sl -= dInimigo;
 			Destroy (coll.gameObject);
 
 		}
 
 		if (coll.gameObject.tag=="Shield") {
 			Destroy (coll.gameObject);
-			shiel.sl += 21;
+			if (shiel.sl<=125) {
+				shiel.sl += 21;
+			}
 			}
 		if (coll.gameObject.tag=="Boss") {
-			sl -= 80;
+			sl -= dBoss;
 		}
 
 	}
@@ -75,7 +77,7 @@ public class PM : MonoBehaviour {
 		while (controle) {
 			yield return new WaitForSeconds (1);
 			soma-= 1;
-			txt.text = "Você está se distanciando do seu objetivo, retorne em até: " + soma + " " + "segundos";
+			txt.text = "you are distancing yourself from your objective,retun in: " + soma + " " + "seconds";
 			Debug.Log (soma);
 		if (soma <= 0f) {
 				SceneManager.LoadScene (7);			

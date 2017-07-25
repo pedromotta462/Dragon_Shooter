@@ -30,13 +30,16 @@ public class audio : MonoBehaviour {
 		if (SceneManager.GetActiveScene().name=="Game") {
 			som.Pause ();
 		}
-		if (SceneManager.GetActiveScene().name=="Arcade") {
+		if (SceneManager.GetActiveScene().name=="Terra") {
 			som.Pause ();
 		} 
 		if (SceneManager.GetActiveScene().name=="Over") {
 			som.UnPause ();
 		} 
 		if (SceneManager.GetActiveScene().name=="PLay") {
+			som.UnPause ();
+		}
+		if (SceneManager.GetActiveScene().name=="Win") {
 			som.UnPause ();
 		}
 	}
