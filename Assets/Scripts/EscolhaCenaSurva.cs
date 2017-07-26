@@ -7,6 +7,7 @@ public class EscolhaCenaSurva : MonoBehaviour {
 	void Start () {
 		
 		PlayerPrefs.SetInt ("Survival", 0);
+
 	}
 
 	public void troca(int x){

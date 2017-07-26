@@ -115,6 +115,7 @@ public class SpawInimArcade : MonoBehaviour {
 			if (enemy.Count==0 && cont >= nEnemy && spaw == 4) {
 					if (spawboss) {
 							PosiX = Random.Range (0, 4);
+					spaw++;
 					  		BossMoviment.go = false;
 							Instantiate (boss, position [PosiX], Quaternion.identity);
 					if (BossMoviment.go) {

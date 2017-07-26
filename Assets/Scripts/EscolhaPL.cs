@@ -5,23 +5,23 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EscolhaPL : MonoBehaviour {
-
+	public static int lvl;
 	public Camera cm;
 	public float reach=9999f;
 	public List<Transform> planetas;
 	public Text txt;
 	public GameObject painel, button;
-	int scene;
+	string scene;
 
 	// Use this for initialization
 	void Start () {
+		lvl=PlayerPrefs.GetInt ("Level");
 		painel.SetActive (false);
 		button.SetActive (true);
 	}
 
 	void Update ()
 	{
-		
 		RaycastHit hit;
 		if (Input.GetMouseButtonDown (0)) {
 			//hit.collider.gameObject.GetComponent<Click> ().o = !hit.collider.gameObject.GetComponent<Click> ().o;
@@ -34,15 +34,20 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Mercury";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = 10;
-					break;
+					if (lvl>=0) {
+						scene = "Mercurio";
+					}
+						break;
 				case "Vênus":
 					cm.transform.LookAt (planetas [1]);
 					Camera.main.fieldOfView = 10;
 					txt.text="Venus";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = 11;
+					if (lvl>=1) {
+						scene = "Venus";
+					}
+
 					break;
 
 				case "Earth":
@@ -51,7 +56,10 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Earth";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = 12;
+					if (lvl>=4) {
+						scene = "Terra";
+					}
+
 					break;
 
 				case "Marte":
@@ -60,7 +68,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Mars";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = 13;
+					scene = "Marte";
 					break;
 
 				case "Júpiter":
@@ -69,7 +77,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Jupiter";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = 14;
+					scene = "Júpiter";
 					break;
 
 				case "Saturno":
@@ -78,7 +86,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Saturn";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = 15;
+					scene = "Saturno";
 					break;
 
 				case "Urano":
@@ -86,7 +94,7 @@ public class EscolhaPL : MonoBehaviour {
 					Camera.main.fieldOfView = 10;
 					txt.text="Uranus";
 					painel.SetActive (true);
-					scene = 16;
+					scene = "Urano";
 					break;
 
 				case "Netuno":
@@ -95,7 +103,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Neptune";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = 17;
+					scene = "Netuno";
 					break;
 
 				case "Plutão":
@@ -104,11 +112,12 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Pluto";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = 18;
+					scene = "Plutão";
 					break;
 				}
 			}
 		}
+
 	
 	}
 	public void close(){
@@ -121,7 +130,13 @@ public class EscolhaPL : MonoBehaviour {
 	}
 	public void Play()
 	{
-		SceneManager.LoadScene (scene);
+		if (scene=="Terra") {
+			SceneManager.LoadScene (scene);
+		}
+		if (scene=="Mercurio") {
+			SceneManager.LoadScene (scene);
+
+		}
 	}
 }
 
