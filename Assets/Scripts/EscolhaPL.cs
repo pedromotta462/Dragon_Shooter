@@ -11,7 +11,7 @@ public class EscolhaPL : MonoBehaviour {
 	public List<Transform> planetas;
 	public Text txt;
 	public GameObject painel, button;
-	string scene;
+	public static string scene;
 
 	// Use this for initialization
 	void Start () {
@@ -34,7 +34,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Mercury";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=0) {
+					if (lvl>=1) {
 						scene = "Mercurio";
 					}
 						break;
@@ -44,7 +44,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Venus";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=1) {
+					if (lvl>=3) {
 						scene = "Venus";
 					}
 
@@ -68,7 +68,9 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Mars";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = "Marte";
+					if (lvl>=2) {
+						scene = "Marte";
+					}
 					break;
 
 				case "Júpiter":
@@ -77,7 +79,9 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Jupiter";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = "Júpiter";
+					if (lvl>=8) {
+						scene = "Júpiter";
+					}
 					break;
 
 				case "Saturno":
@@ -86,7 +90,9 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Saturn";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = "Saturno";
+					if (lvl>=7) {
+						scene = "Saturno";
+					}
 					break;
 
 				case "Urano":
@@ -94,7 +100,9 @@ public class EscolhaPL : MonoBehaviour {
 					Camera.main.fieldOfView = 10;
 					txt.text="Uranus";
 					painel.SetActive (true);
-					scene = "Urano";
+					if (lvl>=6) {
+						scene = "Urano";
+					}
 					break;
 
 				case "Netuno":
@@ -103,7 +111,9 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Neptune";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = "Netuno";
+					if (lvl>=5) {
+						scene = "Netuno";
+					}
 					break;
 
 				case "Plutão":
@@ -112,7 +122,10 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Pluto";
 					painel.SetActive (true);
 					button.SetActive (false);
-					scene = "Plutão";
+					if (lvl>=0) {
+						scene = "Plutão";
+					}
+
 					break;
 				}
 			}
@@ -129,7 +142,28 @@ public class EscolhaPL : MonoBehaviour {
 
 	}
 	public void Play()
-	{
+	{ 
+		if (scene=="Plutão") {
+			SceneManager.LoadScene (scene);
+		}
+		if (scene=="Venus") {
+			SceneManager.LoadScene (scene);
+		}
+		if (scene=="Marte") {
+			SceneManager.LoadScene (scene);
+		}
+		if (scene=="Júpiter") {
+			SceneManager.LoadScene (scene);
+		}
+		if (scene=="Saturno") {
+			SceneManager.LoadScene (scene);
+		}
+		if (scene=="Urano") {
+			SceneManager.LoadScene (scene);
+		}
+		if (scene=="Netuno") {
+			SceneManager.LoadScene (scene);
+		}
 		if (scene=="Terra") {
 			SceneManager.LoadScene (scene);
 		}

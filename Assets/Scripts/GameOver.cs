@@ -32,7 +32,7 @@ public class GameOver : MonoBehaviour {
 		if (surva) {
 			SceneManager.LoadScene ("Game");
 		} else {
-			SceneManager.LoadScene ("Arcade");
+			SceneManager.LoadScene (EscolhaPL.scene);
 		}
 	}
 }

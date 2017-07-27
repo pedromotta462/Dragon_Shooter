@@ -60,18 +60,17 @@ public class EarthLife : MonoBehaviour {
 				perdervida (coll.gameObject, dPlayer);
 			}
 				text.SetActive (true);
-			Debug.Log ("vida: " + vidas + "dano: " + sl);
+
 
 		}
 }
 	public void perdervida(GameObject g, float dano){
 		vidas -=  dano; 
-		Debug.Log ("vida: " + vidas);
 		Destroy (g);
 		terra.sizeDelta = new Vector2 (vidas, 30f);
 		if (vidas <= 0) {
 			Cursor.lockState = CursorLockMode.None;
-			SceneManager.LoadScene (7);
+			SceneManager.LoadScene ("Over");
 		}
 
 	}

@@ -22,6 +22,7 @@ public class SpawInimArcade : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		dificuldade = 6;
 		status = true;
 		StartCoroutine (Spawn ());
 	}
@@ -54,12 +55,12 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==1 && cont <= nEnemy + 2) {
+			if (BossMoviment.go && spaw==1 && cont <= nEnemy + 1) {
 				Instantiate (obj, position [1], Quaternion.identity);
 				EM.speed = 0.3f;
 				cont++;
 				minTime = 1;
-				maxTime = dificuldade+5;
+				maxTime = dificuldade;
 			}
 			//Espama o boss
 			if (enemy.Count==0 && cont >= nEnemy && spaw == 1) {
@@ -72,7 +73,7 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==2&& cont <= nEnemy + 4) {
+			if (BossMoviment.go && spaw==2&& cont <= nEnemy + 2) {
 				Instantiate (obj, position [2], Quaternion.identity);
 
 				maxTime = dificuldade+3;
@@ -89,10 +90,10 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==3 && cont <= nEnemy + 6) {
+			if (BossMoviment.go && spaw==3 && cont <= nEnemy + 4) {
 				Instantiate (obj, position [3], Quaternion.identity);
 				cont++;
-				maxTime = dificuldade+2;
+				maxTime = dificuldade;
 			}
 			//Espama o boss
 			if (enemy.Count==0 && cont >= nEnemy && spaw == 3) {
@@ -105,23 +106,23 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==4 && cont <= nEnemy + 8) {
+			if (BossMoviment.go && spaw==4 && cont <= nEnemy + 5) {
 				PosiX = Random.Range (0, 4);
 				cont++;
-				maxTime = dificuldade+1;
+				maxTime = dificuldade;
 				Instantiate (obj, position [PosiX], Quaternion.identity);
 				}
 			//Espama o boss
 			if (enemy.Count==0 && cont >= nEnemy && spaw == 4) {
 					if (spawboss) {
+					Debug.Log ("É ELE");
 							PosiX = Random.Range (0, 4);
-					spaw++;
-					  		BossMoviment.go = false;
+							spaw++;
 							Instantiate (boss, position [PosiX], Quaternion.identity);
-					if (BossMoviment.go) {
-						SceneManager.LoadScene (planeta);
 					}
-				}
+			}
+			if (BossMoviment.go && spaw >= 5) {
+				SceneManager.LoadScene ("Twin");
 			}
 		}
 	}
