@@ -26,7 +26,6 @@ public class Score : MonoBehaviour {
 	}
 	void Update(){
 		if (survivor) {
-			
 			if (dificuldade >= 100) {
 				if (SpawInimigo.maxTime > 1) {
 					SpawInimigo.maxTime -= 1;
@@ -34,7 +33,6 @@ public class Score : MonoBehaviour {
 				if (EM.speed < 0.6f) {
 					EM.speed += 0.1f;
 				}
-				
 				dificuldade = 0;
 				Debug.Log (dificuldade);
 			}

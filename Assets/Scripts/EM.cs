@@ -6,14 +6,16 @@ public class EM : MonoBehaviour {
 	public Transform world;
 	Rigidbody inimigo;
 	public GameObject tiro;
+	GameObject player;
 	public static float speed;
 	public bool test; 
-	public float time,dificuldade,shot;
-
+	public float time;
+	PM dificuldade;
 	// Use this for initialization
 	void Start () {
+		player=GameObject.FindWithTag("Player");
 		inimigo = GetComponent<Rigidbody> ();
-		speed = 0.2f;
+		dificuldade = player.GetComponent<PM> ();
 		test = false;
 	}
 	void Awake() {
@@ -26,10 +28,10 @@ public class EM : MonoBehaviour {
 	void Update () {
 		if (Time.timeScale==1) {
 			transform.LookAt (world);
-			inimigo.MovePosition (inimigo.position + transform.forward * (speed+ dificuldade));
+			inimigo.MovePosition (inimigo.position + transform.forward * (speed+ dificuldade.vInimigo));
 			if (test) {
 				time += Time.deltaTime;
-				if (time >= shot) {
+				if (time >= dificuldade.cadenciaShot) {
 					Instantiate (tiro, transform.position, Quaternion.identity);
 					time = 0;
 				}

@@ -6,15 +6,14 @@ public class SpawInimArcade : MonoBehaviour {
 	public GameObject obj;
 	public Transform um,um1,dois,dois2,tres,tres3,quatro,quatro4;
 	public float minTime , maxTime ;
-	public bool status;
+	public bool status,fasesfinais;
 	int PosiX,cont,spaw ;
 	public GameObject boss;
 	public bool spawboss;
 	Vector3[] position=new Vector3[4];
 	public static List<EM> enemy;
-	public string planeta;
-
-	public int nEnemy,dificuldade;
+	int WTF;
+	public int nEnemy;
 
 	void Awake() {
 		enemy = new List<EM> ();
@@ -22,7 +21,6 @@ public class SpawInimArcade : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		dificuldade = 6;
 		status = true;
 		StartCoroutine (Spawn ());
 	}
@@ -42,7 +40,16 @@ public class SpawInimArcade : MonoBehaviour {
 			//Espama um número de inimigos
 			if (cont <= nEnemy && spaw==0) {
 				cont++;
-				Instantiate (obj, position [0], Quaternion.identity);
+				if (fasesfinais) {
+					if (WTF==0) {
+						WTF++;
+						PosiX = Random.Range (0, 4);
+					}
+						Instantiate (obj, position [PosiX], Quaternion.identity);
+				} else {
+					Instantiate (obj, position [0], Quaternion.identity);
+				}		
+
 			}
 
 			//Espama o boss
@@ -55,12 +62,19 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==1 && cont <= nEnemy + 1) {
-				Instantiate (obj, position [1], Quaternion.identity);
+			if (BossMoviment.go && spaw==1 && cont <= nEnemy + 2) {
+				if (fasesfinais) {
+					if (WTF==1) {
+						WTF++;
+						PosiX = Random.Range (0, 4);
+					}
+					Instantiate (obj, position [PosiX], Quaternion.identity);
+				} else {
+					Instantiate (obj, position [1], Quaternion.identity);
+				}		
 				EM.speed = 0.3f;
 				cont++;
 				minTime = 1;
-				maxTime = dificuldade;
 			}
 			//Espama o boss
 			if (enemy.Count==0 && cont >= nEnemy && spaw == 1) {
@@ -73,10 +87,16 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==2&& cont <= nEnemy + 2) {
-				Instantiate (obj, position [2], Quaternion.identity);
-
-				maxTime = dificuldade+3;
+			if (BossMoviment.go && spaw==2&& cont <= nEnemy + 4) {
+				if (fasesfinais) {
+					if (WTF==2) {
+						WTF++;
+						PosiX = Random.Range (0, 4);
+					}
+					Instantiate (obj, position [PosiX], Quaternion.identity);
+				} else {
+					Instantiate (obj, position [2], Quaternion.identity);
+				}		
 				cont++;
 			}
 			//Espama o boss
@@ -90,10 +110,18 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==3 && cont <= nEnemy + 4) {
-				Instantiate (obj, position [3], Quaternion.identity);
+			if (BossMoviment.go && spaw==3 && cont <= nEnemy + 6) {
+				if (fasesfinais) {
+					if (WTF==3) {
+						WTF++;
+						PosiX = Random.Range (0, 4);
+					}
+					Instantiate (obj, position [PosiX], Quaternion.identity);
+				} else {
+					Instantiate (obj, position [3], Quaternion.identity);
+				}		
 				cont++;
-				maxTime = dificuldade;
+			
 			}
 			//Espama o boss
 			if (enemy.Count==0 && cont >= nEnemy && spaw == 3) {
@@ -106,19 +134,19 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==4 && cont <= nEnemy + 5) {
+			if (BossMoviment.go && spaw==4 && cont <= nEnemy + 8) {
 				PosiX = Random.Range (0, 4);
 				cont++;
-				maxTime = dificuldade;
+			
 				Instantiate (obj, position [PosiX], Quaternion.identity);
 				}
 			//Espama o boss
 			if (enemy.Count==0 && cont >= nEnemy && spaw == 4) {
-					if (spawboss) {
-					Debug.Log ("É ELE");
+				if (spawboss) {
 							PosiX = Random.Range (0, 4);
 							spaw++;
-							Instantiate (boss, position [PosiX], Quaternion.identity);
+						Instantiate (boss, position [PosiX], Quaternion.identity);
+					BossMoviment.go = false;
 					}
 			}
 			if (BossMoviment.go && spaw >= 5) {

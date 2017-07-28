@@ -14,7 +14,7 @@ public class PM : MonoBehaviour {
 	public Score score;
 	public float startYPosition,dInimigo,dBoss;
 	public RectTransform pl;
-
+	public float vInimigo,vShotIni,cadenciaShot;
 	void Start(){
 		startYPosition = transform.position.y;
 		shiel = FindObjectOfType<EarthLife> ();
