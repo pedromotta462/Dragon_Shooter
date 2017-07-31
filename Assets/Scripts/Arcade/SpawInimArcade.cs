@@ -25,6 +25,7 @@ public class SpawInimArcade : MonoBehaviour {
 	void Start () {
 		status = true;
 		StartCoroutine (Spawn ());
+	
 
 	}
 	void Update(){
@@ -151,6 +152,7 @@ public class SpawInimArcade : MonoBehaviour {
 						Instantiate (boss, position [PosiX], Quaternion.identity);
 					BossMoviment.go = false;
 					}
+				Debug.Log ("ta ai: " + spaw);
 			}
 			if (BossMoviment.go && spaw >= 5) {
 				SceneManager.LoadScene (nextscene);
