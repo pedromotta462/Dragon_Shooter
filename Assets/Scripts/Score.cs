@@ -8,14 +8,14 @@ public class Score : MonoBehaviour {
 	bool survivor;
 	public static bool control = true;
 	public static int rank;
-
+	PM bonus;
 	void Awake() {
 		rank = PlayerPrefs.GetInt ("Rank");
 	}
 
 	void Start()
 	{
-		
+		bonus = GetComponent<PM> ();
 		survivor = PlayerPrefs.GetInt ("Survival") == 1;
 		pontos = 0;
 
@@ -30,8 +30,14 @@ public class Score : MonoBehaviour {
 				if (SpawInimigo.maxTime > 1) {
 					SpawInimigo.maxTime -= 1;
 				}
-				if (EM.speed < 0.6f) {
+				if (EM.speed < 0.8f) {
 					EM.speed += 0.1f;
+				}
+				if (bonus.cadenciaShot<=3) {
+					bonus.cadenciaShot -= 1;
+				}
+				if (bonus.vShotIni<=8) {
+					bonus.vShotIni += 0.5f;
 				}
 				dificuldade = 0;
 				Debug.Log (dificuldade);

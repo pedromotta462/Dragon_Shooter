@@ -25,8 +25,8 @@ public class PM : MonoBehaviour {
 		pl.sizeDelta = new Vector2 (sl, 30f);
 		if (sl<=0) {
 			Cursor.lockState = CursorLockMode.None;
-			SceneManager.LoadScene (7);
-		}
+			SceneManager.LoadScene ("Over");
+		}			
 	}
 
 	void OnTriggerEnter(Collider coll){
@@ -80,7 +80,7 @@ public class PM : MonoBehaviour {
 			txt.text = "you are distancing yourself from your objective,retun in: " + soma + " " + "seconds";
 			Debug.Log (soma);
 		if (soma <= 0f) {
-				SceneManager.LoadScene (7);			
+				SceneManager.LoadScene ("Over");			
 			}
 		}
 	}

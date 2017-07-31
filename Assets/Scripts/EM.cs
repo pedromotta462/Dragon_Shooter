@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class EM : MonoBehaviour {
+	
 	public Transform world;
 	Rigidbody inimigo;
 	public GameObject tiro;
 	GameObject player;
-	public static float speed;
+	public static float speed=0.2f;
 	public bool test; 
 	public float time;
 	PM dificuldade;
+
 	// Use this for initialization
 	void Start () {
+		
 		player=GameObject.FindWithTag("Player");
 		inimigo = GetComponent<Rigidbody> ();
 		dificuldade = player.GetComponent<PM> ();
 		test = false;
+
 	}
 	void Awake() {
 		if (PlayerPrefs.GetInt("Survival") == 0) {
@@ -45,7 +49,10 @@ public class EM : MonoBehaviour {
 	}
 
 	void OnDestroy(){
-		SpawInimArcade.enemy.RemoveAt (0);
+		if (PlayerPrefs.GetInt("Survival") == 0) {
+			SpawInimArcade.enemy.RemoveAt (0);
+		}
+			
 	}
 
 

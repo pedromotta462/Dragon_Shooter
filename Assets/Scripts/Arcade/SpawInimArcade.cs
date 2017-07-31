@@ -15,6 +15,8 @@ public class SpawInimArcade : MonoBehaviour {
 	int WTF;
 	public int nEnemy;
 
+	public string nextscene;
+
 	void Awake() {
 		enemy = new List<EM> ();
 	}
@@ -23,6 +25,7 @@ public class SpawInimArcade : MonoBehaviour {
 	void Start () {
 		status = true;
 		StartCoroutine (Spawn ());
+
 	}
 	void Update(){
 		
@@ -150,7 +153,7 @@ public class SpawInimArcade : MonoBehaviour {
 					}
 			}
 			if (BossMoviment.go && spaw >= 5) {
-				SceneManager.LoadScene ("Twin");
+				SceneManager.LoadScene (nextscene);
 			}
 		}
 	}

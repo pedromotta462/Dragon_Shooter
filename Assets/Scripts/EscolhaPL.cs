@@ -81,7 +81,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text="Mars";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=2) {
+					if (lvl>=2) {Debug.Log ("ue");
 						cadeado.SetActive (false);
 						scene = "Marte";
 					}else {
@@ -180,31 +180,40 @@ public class EscolhaPL : MonoBehaviour {
 	public void Play()
 	{ 
 		if (scene=="Plutão") {
-			SceneManager.LoadScene (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 		}
 		if (scene=="Venus") {
-			SceneManager.LoadScene (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 		}
 		if (scene=="Marte") {
 			SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 		}
 		if (scene=="Júpiter") {
-			SceneManager.LoadScene (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 		}
 		if (scene=="Saturno") {
-			SceneManager.LoadScene (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 		}
 		if (scene=="Urano") {
-			SceneManager.LoadScene (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 		}
 		if (scene=="Netuno") {
-			SceneManager.LoadScene (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 		}
 		if (scene=="Terra") {
-			SceneManager.LoadScene (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 		}
 		if (scene=="Mercurio") {
-			SceneManager.LoadScene (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
 
 		}
 	}
