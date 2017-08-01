@@ -44,7 +44,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-
+		public static float bonusSpedd,rotacao;
         // Use this for initialization
         private void Start()
         {
@@ -219,7 +219,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_IsWalking = !Input.GetKey(KeyCode.LeftShift);
 #endif
             // set the desired speed to be walking or running
-            speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed;
+			speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed+bonusSpedd;
             m_Input = new Vector2(horizontal, vertical);
 
             // normalize input if it exceeds 1 in combined length:
@@ -240,7 +240,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-			transform.Rotate(Vector3.up * CrossPlatformInputManager.GetAxis ("Horizontal") * turnSpeed);
+			transform.Rotate(Vector3.up * CrossPlatformInputManager.GetAxis ("Horizontal") * (turnSpeed+rotacao));
         //    m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 

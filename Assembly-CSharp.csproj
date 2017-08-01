@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Arcade\BossMov.cs" />
      <Compile Include="Assets\Scripts\Arcade\NextLevel.cs" />
      <Compile Include="Assets\Scripts\Arcade\SpawInimArcade.cs" />
+     <Compile Include="Assets\Scripts\Atributos.cs" />
      <Compile Include="Assets\Scripts\BossMoviment.cs" />
      <Compile Include="Assets\Scripts\Done_DestroyByContact.cs" />
      <Compile Include="Assets\Scripts\EM.cs" />

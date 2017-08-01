@@ -6,6 +6,7 @@ public class Folego : MonoBehaviour {
 	ParticleSystem pp;
 	float i,gambiarra;
 	public static bool test;
+	public static float folego=0.2f;
 	// Use this for initialization
 	void Start () {
 		test = false;
@@ -36,7 +37,7 @@ public class Folego : MonoBehaviour {
 	}
 	public void shot(){
 		if (test==false) {
-			i -= 0.2f;
+			i -= folego;
 		}
 
 	}

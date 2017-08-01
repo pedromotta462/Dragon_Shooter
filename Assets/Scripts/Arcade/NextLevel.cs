@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour {
 	public static int lvl; 
+	public static int up;
 	// Use this for initialization
 	void Start () {
-		
+		up++;
 		switch (SceneManager.GetActiveScene ().name) {
 		case"Twin":
 			lvl = 5;
@@ -44,7 +45,7 @@ public class NextLevel : MonoBehaviour {
 			lvl = 1;
 			break;
 		}
-
+		PlayerPrefs.SetInt ("Up", up);
 		PlayerPrefs.SetInt ("Level",lvl);
 		PlayerPrefs.Save ();
 

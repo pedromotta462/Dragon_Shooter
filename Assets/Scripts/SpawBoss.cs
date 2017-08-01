@@ -9,6 +9,7 @@ public class SpawBoss : MonoBehaviour {
 	public bool status;
 	int PosiX ;
 	bool survival;
+
 	Vector3[] position=new Vector3[4];
 	// Use this for initialization
 	void Start () {survival=PlayerPrefs.GetInt("Survival")==1;

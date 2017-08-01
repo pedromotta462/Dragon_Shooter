@@ -25,8 +25,6 @@ public class SpawInimArcade : MonoBehaviour {
 	void Start () {
 		status = true;
 		StartCoroutine (Spawn ());
-	
-
 	}
 	void Update(){
 		
