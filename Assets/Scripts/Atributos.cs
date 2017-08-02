@@ -16,26 +16,28 @@ public class Atributos : MonoBehaviour {
 	public void speed(){
 		if (PlayerPrefs.GetInt("Up")>=1) {
 			FirstPersonController.bonusSpedd += 5;
-			} else {
-			Debug.Log ("funfou");
-		}
+			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
+			}
 
 	}
 	public void folego(){
 		if (PlayerPrefs.GetInt("Up")>=1) {
 			Folego.folego -= 0.05f;
+			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
 		}
 
 	}
 	public void sorte(){
 		if (PlayerPrefs.GetInt("Up")>=1) {
 			SpawOBS.sorte -= 1;
+			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
 		}
 
 	}
 	public void rotação(){
 		if (PlayerPrefs.GetInt("Up")>=1) {
 			FirstPersonController.rotacao += 1;
+			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
 		}
 
 	}

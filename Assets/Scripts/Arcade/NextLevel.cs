@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour {
 	public static int lvl; 
 	public static int up;
+
 	// Use this for initialization
 	void Start () {
 		up++;
@@ -38,13 +39,16 @@ public class NextLevel : MonoBehaviour {
 			break;
 
 		case"Nwin":
+			
 			lvl = 6;
 			break;
 
 		case"Pwin":
-			lvl = 1;
+			PlayerPrefs.SetInt ("Mercurio", 1);
+
 			break;
 		}
+
 		PlayerPrefs.SetInt ("Up", up);
 		PlayerPrefs.SetInt ("Level",lvl);
 		PlayerPrefs.Save ();

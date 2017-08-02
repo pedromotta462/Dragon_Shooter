@@ -35,7 +35,8 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Mercury";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=1) {
+
+					if (PlayerPrefs.GetInt("Mercurio")==1) {
 						cadeado.SetActive (false);
 						scene = "Mercurio";
 					}else {
