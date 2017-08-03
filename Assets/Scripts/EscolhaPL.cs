@@ -35,25 +35,24 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Mercury";
 					painel.SetActive (true);
 					button.SetActive (false);
-
-					if (PlayerPrefs.GetInt("Mercurio")==1) {
+					if (PlayerPrefs.GetInt ("Mercurio") == 1) {
 						cadeado.SetActive (false);
 						scene = "Mercurio";
-					}else {
+					} else {
 						cadeado.SetActive (true);
 						scene = "";
 					}
-						break;
+					break;
 				case "Vênus":
 					cm.transform.LookAt (planetas [1]);
 					Camera.main.fieldOfView = 10;
-					txt.text="Venus";
+					txt.text = "Venus";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=3) {
+					if (PlayerPrefs.GetInt ("Venus") == 1) {
 						cadeado.SetActive (false);
 						scene = "Venus";
-					}else {
+					} else {
 						cadeado.SetActive (true);
 						scene = "";
 					}
@@ -66,10 +65,10 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Earth";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=4) {
+					if (PlayerPrefs.GetInt ("Terra") == 1) {
 						cadeado.SetActive (false);
 						scene = "Terra";
-					}else {
+					} else {
 						cadeado.SetActive (true);
 						scene = " ";
 					}
@@ -78,14 +77,15 @@ public class EscolhaPL : MonoBehaviour {
 
 				case "Marte":
 					cm.transform.LookAt (planetas [3]);
-					Camera.main.fieldOfView =10;
-					txt.text="Mars";
+					Camera.main.fieldOfView = 10;
+					txt.text = "Mars";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=2) {Debug.Log ("ue");
+					if (PlayerPrefs.GetInt ("Marte") == 1) {
+						Debug.Log ("ue");
 						cadeado.SetActive (false);
 						scene = "Marte";
-					}else {
+					} else {
 						cadeado.SetActive (true);
 						scene = "";
 					}
@@ -94,13 +94,13 @@ public class EscolhaPL : MonoBehaviour {
 				case "Júpiter":
 					cm.transform.LookAt (planetas [4]);
 					Camera.main.fieldOfView = 20;
-					txt.text="Jupiter";
+					txt.text = "Jupiter";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=8) {
+					if (PlayerPrefs.GetInt ("Jupiter") == 1) {
 						cadeado.SetActive (false);
 						scene = "Júpiter";
-					}else {
+					} else {
 						cadeado.SetActive (true);
 						scene = "";
 					}
@@ -109,13 +109,13 @@ public class EscolhaPL : MonoBehaviour {
 				case "Saturno":
 					cm.transform.LookAt (planetas [5]);
 					Camera.main.fieldOfView = 20;
-					txt.text="Saturn";
+					txt.text = "Saturn";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=7) {
+					if (PlayerPrefs.GetInt ("Saturno") == 1) {
 						cadeado.SetActive (false);
 						scene = "Saturno";
-					}else {
+					} else {
 						cadeado.SetActive (true);
 						scene = "";
 					}
@@ -124,12 +124,12 @@ public class EscolhaPL : MonoBehaviour {
 				case "Urano":
 					cm.transform.LookAt (planetas [6]);
 					Camera.main.fieldOfView = 10;
-					txt.text="Uranus";
+					txt.text = "Uranus";
 					painel.SetActive (true);
-					if (lvl>=6) {
+					if (PlayerPrefs.GetInt ("Urano") == 1) {
 						cadeado.SetActive (false);
 						scene = "Urano";
-					}else {
+					} else {
 						cadeado.SetActive (true);
 						scene = "";
 					}
@@ -138,13 +138,13 @@ public class EscolhaPL : MonoBehaviour {
 				case "Netuno":
 					cm.transform.LookAt (planetas [7]);					
 					Camera.main.fieldOfView = 10;
-					txt.text="Neptune";
+					txt.text = "Neptune";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl>=5) {
+					if (PlayerPrefs.GetInt ("Netuno") == 1) {
 						cadeado.SetActive (false);
 						scene = "Netuno";
-					}else {
+					} else {
 						cadeado.SetActive (true);
 						scene = "";
 					}
@@ -156,20 +156,17 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Pluto";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (lvl >= 0) {
-						cadeado.SetActive (false);
-						scene = "Plutão";
-					} else {
-						scene = "";
-					}
-
+					cadeado.SetActive (false);
+					scene = "Plutão";
 					break;
+				
 				}
 			}
 		}
+	}
 
 	
-	}
+
 	public void close(){
 		Camera.main.fieldOfView = 70;
 		cm.transform.LookAt (planetas [9]);

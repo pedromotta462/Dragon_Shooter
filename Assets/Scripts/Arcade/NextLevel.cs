@@ -12,40 +12,34 @@ public class NextLevel : MonoBehaviour {
 		up++;
 		switch (SceneManager.GetActiveScene ().name) {
 		case"Twin":
-			lvl = 5;
+			PlayerPrefs.SetInt ("Netuno", 1);
 			break;
 		case"Mwin":
-			lvl = 2;
+			PlayerPrefs.SetInt ("Marte", 1);
 			break;
 		
 		case"Swin":
-			lvl = 8;
+			PlayerPrefs.SetInt ("Jupiter", 1);
 			break;
 
 		case"Marswin":
-			lvl = 3;
-			break;
-
-		case"Jwin":
-			lvl = 9;
+			PlayerPrefs.SetInt ("Venus", 1);
 			break;
 
 		case"Vwin":
-			lvl = 4;
+			PlayerPrefs.SetInt ("Terra", 1);
 			break;
 
 		case"Uwin":
-			lvl = 7;
+			PlayerPrefs.SetInt ("Saturno", 1);
 			break;
 
 		case"Nwin":
-			
-			lvl = 6;
+			PlayerPrefs.SetInt ("Urano", 1);
 			break;
 
 		case"Pwin":
 			PlayerPrefs.SetInt ("Mercurio", 1);
-
 			break;
 		}
 
