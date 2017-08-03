@@ -9,13 +9,16 @@ public class BossMoviment : MonoBehaviour {
 
 	public Transform segue;
 	Rigidbody inimigo;
+	GameObject player;
 	public GameObject tiro;
-	public float speed,danoNoPlayer,vidaBoss,time,shot;
+	public float speed,danoNoPlayer,time,shot;
 	public static bool go;
-
+	PM life;
 
 	// Use this for initialization
 	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Player");
+		life = player.GetComponent<PM> ();
 		go = false;
 		inimigo = GetComponent<Rigidbody> ();
 		segue = GameObject.FindGameObjectWithTag ("Earth").transform;
@@ -43,8 +46,8 @@ public class BossMoviment : MonoBehaviour {
 	void OnCollisionEnter(Collision coll){
 		if (coll.gameObject.tag=="Shot") {
 			Destroy (coll.gameObject);
-			vidaBoss --;
-		if (vidaBoss == 0) {
+			life.vidaBoss --;
+			if (life.vidaBoss == 0) {
 				Destroy (gameObject);
 			}
 		}
