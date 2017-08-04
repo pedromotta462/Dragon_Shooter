@@ -58,6 +58,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_NextStep = m_StepCycle/2f;
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
+			bonusSpedd += PlayerPrefs.GetFloat ("Speed");
+			rotacao += PlayerPrefs.GetFloat ("Rotação");
+			PlayerPrefs.Save ();
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 

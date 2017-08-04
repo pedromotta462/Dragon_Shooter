@@ -12,7 +12,10 @@ public class SpawOBS : MonoBehaviour {
 	Vector3[] position=new Vector3[2];
 	// Use this for initialization
 	void Start () {
-		
+		if (sorte>0) {
+			sorte -= PlayerPrefs.GetInt ("Sorte");
+		}
+
 		StartCoroutine (Spawn ());
 	}
 	

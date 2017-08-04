@@ -9,7 +9,7 @@ public class NextLevel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		up++;
+		up=10;
 		switch (SceneManager.GetActiveScene ().name) {
 		case"Twin":
 			PlayerPrefs.SetInt ("Netuno", 1);

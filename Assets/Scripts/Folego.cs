@@ -7,8 +7,10 @@ public class Folego : MonoBehaviour {
 	float i,gambiarra;
 	public static bool test;
 	public static float folego=0.2f;
+	public static float Vfolego = 0.1f;
 	// Use this for initialization
 	void Start () {
+		folego += PlayerPrefs.GetFloat ("Folego");
 		test = false;
 		i = 1;
 		pp = GetComponent<ParticleSystem> ();
@@ -21,7 +23,7 @@ public class Folego : MonoBehaviour {
 		if (i<1&&i>0.05f) {
 			gambiarra += Time.deltaTime;
 			if (gambiarra>=1) {
-				i += 0.1f;
+				i += Vfolego;
 				gambiarra = 0;
 			}
 		}
