@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
-
+using UnityEngine.UI;
 namespace UnityStandardAssets.Characters.FirstPerson
 {
 	
@@ -44,7 +44,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-		public static float bonusSpedd,rotacao;
+		public static float bonusSpedd;
+		public Slider sl;
         // Use this for initialization
         private void Start()
         {
@@ -59,8 +60,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			bonusSpedd += PlayerPrefs.GetFloat ("Speed");
-			rotacao += PlayerPrefs.GetFloat ("Rotação");
 			PlayerPrefs.Save ();
+			turnSpeed = sl.value;
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
@@ -243,7 +244,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-			transform.Rotate(Vector3.up * CrossPlatformInputManager.GetAxis ("Horizontal") * (turnSpeed+rotacao));
+			turnSpeed = sl.value;
+			transform.Rotate(Vector3.up * CrossPlatformInputManager.GetAxis ("Horizontal") * turnSpeed);
         //    m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 

@@ -20,8 +20,9 @@ public class Score : MonoBehaviour {
 		pontos = 0;
 
 		if (survivor) {
-			StartCoroutine (gg ());
 			total.text = "Score: " + pontos;
+			StartCoroutine (gg ());
+
 		}
 	}
 	void Update(){
@@ -42,7 +43,7 @@ public class Score : MonoBehaviour {
 				dificuldade = 0;
 				Debug.Log (dificuldade);
 			}
-			total.text = "Score: " + pontos;
+
 
 		}
 
@@ -57,6 +58,7 @@ public class Score : MonoBehaviour {
 
 	IEnumerator gg(){
 		while (true) {
+			total.text = "Score: " + pontos;
 			yield return new WaitForSeconds (1.5f);
 			pontos = pontos + 1;
 			if (control) {
@@ -66,6 +68,7 @@ public class Score : MonoBehaviour {
 				}
 
 			}
+
 			dificuldade =dificuldade + 1;
 
 

@@ -49,16 +49,7 @@ public class Atributos : MonoBehaviour {
 		}
 
 	}
-	public void rotação(){
-		if (PlayerPrefs.GetInt ("Up") >= 1) {
-			if (PlayerPrefs.GetFloat ("Rotação") >= 0) {
-				PlayerPrefs.SetFloat ("Rotação", PlayerPrefs.GetFloat ("Rotação") + 0.05f);
-			} else {
-				PlayerPrefs.SetFloat ("Rotação",0.05f);
-			}
 
-			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
-		} 
 
 	}
-}
+

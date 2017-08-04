@@ -21,7 +21,6 @@ public class Reset : MonoBehaviour {
 		PlayerPrefs.SetInt ("Mercurio", 0);
 		PlayerPrefs.SetInt ("Up", 0);
 		PlayerPrefs.SetFloat ("Speed", 0);
-		PlayerPrefs.SetFloat ("Rotação", 0);
 		txt.SetActive (true);
 	}
 	IEnumerator gg(){
