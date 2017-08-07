@@ -19,6 +19,7 @@ public class BossMoviment : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		life = player.GetComponent<PM> ();
+		life.vidaBoss += 5;
 		go = false;
 		inimigo = GetComponent<Rigidbody> ();
 		segue = GameObject.FindGameObjectWithTag ("Earth").transform;
@@ -47,7 +48,7 @@ public class BossMoviment : MonoBehaviour {
 		if (coll.gameObject.tag=="Shot") {
 			Destroy (coll.gameObject);
 			life.vidaBoss --;
-			if (life.vidaBoss == 0) {
+			if (life.vidaBoss <= 0) {
 				Destroy (gameObject);
 			}
 		}

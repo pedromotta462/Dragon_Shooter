@@ -12,6 +12,7 @@ public class EscolhaPL : MonoBehaviour {
 	public Text txt;
 	public GameObject painel, button,cadeado;
 	public static string scene;
+	public Material mat;
 
 	// Use this for initialization
 	void Start () {
@@ -157,6 +158,8 @@ public class EscolhaPL : MonoBehaviour {
 					painel.SetActive (true);
 					button.SetActive (false);
 					cadeado.SetActive (false);
+					mat.color = Color.white;
+
 					scene = "Plutão";
 					break;
 				
