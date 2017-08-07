@@ -5,7 +5,6 @@ public class Score : MonoBehaviour {
 	public Text total;
 	public static int pontos;
 	public float dificuldade;
-	bool survivor;
 	public static bool control = true;
 	public static int rank;
 	PM bonus;
@@ -16,17 +15,18 @@ public class Score : MonoBehaviour {
 	void Start()
 	{
 		bonus = GetComponent<PM> ();
-		survivor = PlayerPrefs.GetInt ("Survival") == 1;
+
 		pontos = 0;
 
-		if (survivor) {
+		if (PlayerPrefs.GetInt ("Survival") == 1) {
 			total.text = "Score: " + pontos;
 			StartCoroutine (gg ());
+			Debug.Log ("CARAI BORRACHA");
 
 		}
 	}
 	void Update(){
-		if (survivor) {
+		if (PlayerPrefs.GetInt ("Survival") == 1) {
 			if (dificuldade >= 100) {
 				if (SpawInimigo.maxTime > 1) {
 					SpawInimigo.maxTime -= 1;

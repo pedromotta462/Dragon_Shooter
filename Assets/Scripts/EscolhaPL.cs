@@ -24,7 +24,6 @@ public class EscolhaPL : MonoBehaviour {
 
 	void Update ()
 	{
-		///////////////////////////////////////////////////////////////////
 		RaycastHit hit;
 		if (Input.GetMouseButtonDown (0)) {
 			//hit.collider.gameObject.GetComponent<Click> ().o = !hit.collider.gameObject.GetComponent<Click> ().o;

@@ -71,7 +71,6 @@
      <Compile Include="Assets\Scripts\Reset.cs" />
      <Compile Include="Assets\Scripts\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
-     <Compile Include="Assets\Scripts\Score1.cs" />
      <Compile Include="Assets\Scripts\SentidoAranha.cs" />
      <Compile Include="Assets\Scripts\Shield.cs" />
      <Compile Include="Assets\Scripts\Shot.cs" />
