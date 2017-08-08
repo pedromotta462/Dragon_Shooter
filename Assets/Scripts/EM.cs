@@ -31,6 +31,7 @@ public class EM : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Time.timeScale==1) {
+			
 			transform.LookAt (world);
 			inimigo.MovePosition (inimigo.position + transform.forward * (speed+ dificuldade.vInimigo));
 			if (test) {

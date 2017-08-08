@@ -20,6 +20,30 @@ public class EscolhaPL : MonoBehaviour {
 		painel.SetActive (false);
 		button.SetActive (true);
 		cadeado.SetActive (false);
+		if (PlayerPrefs.GetInt("Mercurio")==1) {
+			mat [0].color = Color.white;
+		}
+		if (PlayerPrefs.GetInt("Marte")==1) {
+			mat [1].color = Color.white;
+		}
+		if (PlayerPrefs.GetInt("Venus")==1) {
+			mat [2].color = Color.white;
+		}
+		if (PlayerPrefs.GetInt("Terra")==1) {
+			mat [3].color = Color.white;
+		}
+		if (PlayerPrefs.GetInt("Netuno")==1) {
+			mat [4].color = Color.white;
+		}
+		if (PlayerPrefs.GetInt("Urano")==1) {
+			mat [5].color = Color.white;
+		}
+		if (PlayerPrefs.GetInt("Saturno")==1) {
+			mat [6].color = Color.white;
+		}
+		if (PlayerPrefs.GetInt("Jupiter")==1) {
+			mat [7].color = Color.white;
+		}
 	}
 
 	void Update ()
@@ -189,39 +213,39 @@ public class EscolhaPL : MonoBehaviour {
 	{ 
 		if (scene=="Plutão") {
 			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 		}
 		if (scene=="Venus") {
 			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 		}
 		if (scene=="Marte") {
-			SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			//SceneManager.LoadScene (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 		}
 		if (scene=="Júpiter") {
 			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 		}
 		if (scene=="Saturno") {
 			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 		}
 		if (scene=="Urano") {
 			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 		}
 		if (scene=="Netuno") {
 			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 		}
 		if (scene=="Terra") {
 			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 		}
 		if (scene=="Mercurio") {
 			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync (scene);
+			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
 
 		}
 	}

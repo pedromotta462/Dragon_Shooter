@@ -10,7 +10,7 @@ public class EscolhaCenaSurva : MonoBehaviour {
 
 	}
 
-	public void troca(int x){
+	public void troca(string x){
 		PlayerPrefs.SetInt ("Survival", 1);
 		SceneManager.LoadScene (x);
 	} 
