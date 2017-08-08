@@ -33,10 +33,10 @@ public class SpawInimArcade : MonoBehaviour {
 	IEnumerator Spawn() {
 	while (true) {
 
-			position [0] = new Vector3 (Random.Range (um.position.x, um1.position.x), 0, um.position.z);
-			position [1] = new Vector3 (Random.Range (dois.position.x, dois2.position.x), 0,dois.position.z);
-			position [2] = new Vector3 ( tres.position.x, 0,(Random.Range (tres.position.z, tres3.position.z)));
-			position [3] = new Vector3 ( quatro.position.x, 0,(Random.Range (tres.position.z, tres3.position.z)));
+			position [0] = new Vector3 (Random.Range (um.position.x, um1.position.x), -3.5f, um.position.z);
+			position [1] = new Vector3 (Random.Range (dois.position.x, dois2.position.x), -3.5f,dois.position.z);
+			position [2] = new Vector3 ( tres.position.x, -3.5f,(Random.Range (tres.position.z, tres3.position.z)));
+			position [3] = new Vector3 ( quatro.position.x, -3.5f,(Random.Range (tres.position.z, tres3.position.z)));
 
 			yield return new WaitForSeconds (Random.Range(minTime,maxTime));
 			//Espama um número de inimigos

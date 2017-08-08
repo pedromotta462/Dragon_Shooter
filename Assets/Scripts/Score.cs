@@ -21,8 +21,6 @@ public class Score : MonoBehaviour {
 		if (PlayerPrefs.GetInt ("Survival") == 1) {
 			total.text = "Score: " + pontos;
 			StartCoroutine (gg ());
-			Debug.Log ("CARAI BORRACHA");
-
 		}
 	}
 	void Update(){
