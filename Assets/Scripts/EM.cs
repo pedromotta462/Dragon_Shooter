@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class EM : MonoBehaviour {
 	
-	public Transform world;
+
 	Rigidbody inimigo;
-	public GameObject tiro;
+	public GameObject tiro,world;
 	GameObject player;
 	public static float speed=0.2f;
 	public bool test; 
@@ -15,7 +15,9 @@ public class EM : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
+
+		world=GameObject.FindWithTag("Earth");
 		player=GameObject.FindWithTag("Player");
 		inimigo = GetComponent<Rigidbody> ();
 		dificuldade = player.GetComponent<PM> ();
@@ -32,7 +34,7 @@ public class EM : MonoBehaviour {
 	void Update () {
 		if (Time.timeScale==1) {
 			
-			transform.LookAt (world);
+			transform.LookAt (world.transform);
 			inimigo.MovePosition (inimigo.position + transform.forward * (speed+ dificuldade.vInimigo));
 			if (test) {
 				time += Time.deltaTime;
