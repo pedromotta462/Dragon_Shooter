@@ -14,9 +14,9 @@ public class GameOver : MonoBehaviour {
 		surva = PlayerPrefs.GetInt ("Survival") == 1;
 		if (surva) {
 			txt.text = "Score final: " + PlayerPrefs.GetInt ("Score");
-			if (Score.pontos>Score.rank) {
+			if (Score.pontos>PlayerPrefs.GetInt("Rank")) {
 				ranked.text = "New Rank: " + PlayerPrefs.GetInt ("Score");
-				Score.rank = Score.pontos;
+				PlayerPrefs.SetInt ("Rank", PlayerPrefs.GetInt ("Score"));
 			} else {
 				ranked.text = "Rank Atual: " + PlayerPrefs.GetInt ("Rank");
 		

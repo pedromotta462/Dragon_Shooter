@@ -47,7 +47,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public static float bonusSpedd;
 		public Slider sl;
         // Use this for initialization
-        private void Start()
+		void Awake() {
+			sl.value = PlayerPrefs.GetFloat ("Slider");
+		}
+		private void Start()
         {
 			Cursor.visible = true;
             m_CharacterController = GetComponent<CharacterController>();
@@ -61,7 +64,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			bonusSpedd += PlayerPrefs.GetFloat ("Speed");
 			PlayerPrefs.Save ();
-			turnSpeed = sl.value;
+			turnSpeed =PlayerPrefs.GetFloat("Slider");
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
@@ -69,6 +72,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+			
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
@@ -244,7 +248,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-			turnSpeed = sl.value;
+			PlayerPrefs.SetFloat ("Slider", sl.value);
+			turnSpeed = PlayerPrefs.GetFloat("Slider");
 			transform.Rotate(Vector3.up * CrossPlatformInputManager.GetAxis ("Horizontal") * turnSpeed);
         //    m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
