@@ -64,6 +64,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			bonusSpedd += PlayerPrefs.GetFloat ("Speed");
 			PlayerPrefs.Save ();
+			sl.maxValue = 5;
 			turnSpeed =PlayerPrefs.GetFloat("Slider");
 			m_MouseLook.Init(transform , m_Camera.transform);
         }

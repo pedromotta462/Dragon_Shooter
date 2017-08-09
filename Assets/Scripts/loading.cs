@@ -34,6 +34,7 @@ public class Loading : MonoBehaviour {
 	}
 	IEnumerator cena(string cena){
 		AsyncOperation carregar = SceneManager.LoadSceneAsync (cena);
+
 		while (!carregar.isDone) {
 			progresso =(int) (carregar.progress * 100.0f);
 			yield return null;
