@@ -8,12 +8,13 @@ public class Loading : MonoBehaviour {
 	public float time = 5;
 	public enum carregando {Carregamento,TempoFixo};
 	public carregando load;
-	public Image barra;
 	public Text txt;
 	int progresso;
+	public RectTransform barraDois;
 	string texto;
 	// Use this for initialization
 	void Start () {
+
 		if (PlayerPrefs.GetInt ("Survival") == 1) {
 			proximacena = "Game";
 		} else {
@@ -27,10 +28,7 @@ public class Loading : MonoBehaviour {
 			StartCoroutine (tempofixo (proximacena));
 			break;
 		}
-		texto = txt.text;
-		barra.type = Image.Type.Filled;
-		barra.fillMethod = Image.FillMethod.Horizontal;
-		barra.fillOrigin = (int)Image.OriginHorizontal.Left;
+
 	}
 	IEnumerator cena(string cena){
 		AsyncOperation carregar = SceneManager.LoadSceneAsync (cena);
@@ -46,6 +44,7 @@ public class Loading : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
+		//barraDois.right = progresso * 100.0f;
 		switch (load) {
 		case carregando.Carregamento:
 			break;
@@ -54,6 +53,7 @@ public class Loading : MonoBehaviour {
 			break;
 		}
 		txt.text = texto + "" + progresso + "%";
-		barra.fillAmount = (progresso / 100.0f);
+		print (progresso);
+		barraDois.offsetMin = new Vector2 (progresso,barraDois.offsetMin.y);
 	}
 }

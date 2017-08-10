@@ -6,11 +6,7 @@ public class Score : MonoBehaviour {
 	public static int pontos;
 	public float dificuldade;
 	public static bool control = true;
-	public static int rank;
 	PM bonus;
-	void Awake() {
-		rank = PlayerPrefs.GetInt ("Rank");
-	}
 
 	void Start()
 	{
@@ -49,7 +45,6 @@ public class Score : MonoBehaviour {
 	}
 	void OnDestroy(){
 		PlayerPrefs.SetInt ("Score",pontos);
-		PlayerPrefs.SetInt ("Rank", rank);
 		PlayerPrefs.Save ();
 	}
 
@@ -59,22 +54,17 @@ public class Score : MonoBehaviour {
 			total.text = "Score: " + pontos;
 			yield return new WaitForSeconds (1.5f);
 			pontos = pontos + 1;
-			if (control) {
-				if (PlayerPrefs.GetInt("Rank")==0) {
-					rank += 1;
-					Debug.Log ("test");
-				}
-
+			dificuldade ++;
 			}
 
-			dificuldade =dificuldade + 1;
+
 
 
 		}
 
 	}
 
-	}
+	
 		
 
 

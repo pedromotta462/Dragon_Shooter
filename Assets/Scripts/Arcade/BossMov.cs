@@ -10,7 +10,6 @@ public class BossMov : MonoBehaviour {
 	public Transform pl;
 	Rigidbody inimigo;
 	public GameObject tiro;
-
 	public float speed;
 	bool test;
 	float time;
@@ -23,8 +22,7 @@ public class BossMov : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-		inimigo = GetComponent<Rigidbody> ();
+	   inimigo = GetComponent<Rigidbody> ();
 
 		test = false;		
 	}

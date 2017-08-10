@@ -138,7 +138,7 @@ public class EscolhaPL : MonoBehaviour {
 
 				case "Saturno":
 					cm.transform.LookAt (planetas [5]);
-					Camera.main.fieldOfView = 20;
+					Camera.main.fieldOfView = 25;
 					txt.text = "Saturn";
 					painel.SetActive (true);
 					button.SetActive (false);

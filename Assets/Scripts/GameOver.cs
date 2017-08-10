@@ -13,12 +13,12 @@ public class GameOver : MonoBehaviour {
 		Score.control = false;
 		surva = PlayerPrefs.GetInt ("Survival") == 1;
 		if (surva) {
-			txt.text = "Score final: " + PlayerPrefs.GetInt ("Score");
+			txt.text = "Final Score : " + PlayerPrefs.GetInt ("Score");
 			if (Score.pontos>PlayerPrefs.GetInt("Rank")) {
-				ranked.text = "New Rank: " + PlayerPrefs.GetInt ("Score");
 				PlayerPrefs.SetInt ("Rank", PlayerPrefs.GetInt ("Score"));
-			} else {
-				ranked.text = "Rank Atual: " + PlayerPrefs.GetInt ("Rank");
+				ranked.text = "New Rank: " + (PlayerPrefs.GetInt ("Rank"));
+				} else {
+				ranked.text = "Rank: " + PlayerPrefs.GetInt ("Rank");
 		
 			}
 		}
