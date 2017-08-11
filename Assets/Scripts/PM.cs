@@ -80,7 +80,7 @@ public class PM : MonoBehaviour {
 			txt.text = "you are distancing yourself from your objective,retun in: " + soma + " " + "seconds";
 			Debug.Log (soma);
 		if (soma <= 0f) {
-				SceneManager.LoadScene ("Over");			
+				SceneManager.LoadScene ("GameOver");			
 			}
 		}
 	}

@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Folego.cs" />
      <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\HeadBob.cs" />
+     <Compile Include="Assets\Scripts\Loading.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\MoveOBS.cs" />
      <Compile Include="Assets\Scripts\Opcoes.cs" />
@@ -81,7 +82,6 @@
      <Compile Include="Assets\Scripts\SpawOBS.cs" />
      <Compile Include="Assets\Scripts\TrocadeCena.cs" />
      <Compile Include="Assets\Scripts\audio.cs" />
-     <Compile Include="Assets\Scripts\loading.cs" />
      <Compile Include="Assets\Scripts\pauseButton.cs" />
      <Compile Include="Assets\_Completed-Assets\Scripts\Done_BGScroller.cs" />
      <Compile Include="Assets\_Completed-Assets\Scripts\Done_DestroyByBoundary.cs" />
@@ -92,6 +92,7 @@
      <Compile Include="Assets\_Completed-Assets\Scripts\Done_PlayerController.cs" />
      <Compile Include="Assets\_Completed-Assets\Scripts\Done_RandomRotator.cs" />
      <Compile Include="Assets\_Completed-Assets\Scripts\Done_WeaponController.cs" />
+     <Compile Include="Assets\cenas\Arcade\Wins\MovScript.cs" />
      <None Include="Assets\GalaxyBox1\instructions.txt" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

@@ -70,7 +70,7 @@ public class EarthLife : MonoBehaviour {
 		terra.sizeDelta = new Vector2 (vidas, 30f);
 		if (vidas <= 0) {
 			Cursor.lockState = CursorLockMode.None;
-			SceneManager.LoadScene ("Over");
+			SceneManager.LoadScene ("GameOver");
 		}
 
 	}
