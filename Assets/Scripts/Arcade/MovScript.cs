@@ -9,9 +9,10 @@ public class MovScript : MonoBehaviour {
 	private MovieTexture mov;
 	public RawImage screen;
 	public AudioSource audioS;
-
+	public GameObject botoes;
 	// Use this for initialization
 	void Start () {
+		botoes.SetActive (false);
 	/*	screen.texture = movie;
 		audioS.clip = movie.audioClip;
 		movie.Play ();
@@ -94,7 +95,7 @@ public class MovScript : MonoBehaviour {
 
 	void Update() {
 		if (!mov.isPlaying) {
-			
+			botoes.SetActive (true);
 		}
 	}
 

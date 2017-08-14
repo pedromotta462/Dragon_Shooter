@@ -6,7 +6,7 @@ public class SpawOBS : MonoBehaviour {
 	public GameObject obj;
 	public Transform um,dois,tres,quatro;
 	public float minTime , maxTime ;
-	int PosiX ;
+	int PosiX,luck ;
 	public static int sorte=6;
 
 	Vector3[] position=new Vector3[2];
@@ -30,10 +30,11 @@ public class SpawOBS : MonoBehaviour {
 		while (true) 
 		{
 			yield return new WaitForSeconds (Random.Range (minTime, maxTime));
-			PosiX= Random.Range (0, sorte);
+			PosiX= Random.Range (0, 2);
 			Debug.Log (PosiX);
 			Instantiate (obj, position [PosiX], Quaternion.identity);
-			if (PosiX==1) {
+			luck = Random.Range (0, sorte);
+			if (luck==1) {
 				MoveOBS.speed = 0.5f;
 			} else {
 				MoveOBS.speed = -0.5f;
