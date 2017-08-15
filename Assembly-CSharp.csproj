@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\Shield.cs" />
      <Compile Include="Assets\Scripts\Shot.cs" />
      <Compile Include="Assets\Scripts\ShotEn.cs" />
+     <Compile Include="Assets\Scripts\Singleton.cs" />
      <Compile Include="Assets\Scripts\SomGame.cs" />
      <Compile Include="Assets\Scripts\SpawBoss.cs" />
      <Compile Include="Assets\Scripts\SpawInimigo.cs" />
