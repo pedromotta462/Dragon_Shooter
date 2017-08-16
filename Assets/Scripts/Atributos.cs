@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 public class Atributos : MonoBehaviour {
-   
+	public Text txt;
 	// Use this for initialization
 	void Start () {
-		
+		txt.text="YOU HAVE "+PlayerPrefs.GetInt("Up")+ " point(s) to destribute";
 	}
 	
 	// Update is called once per frame

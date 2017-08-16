@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PM : MonoBehaviour {
 	
-	public GameObject aviso;
+	public GameObject aviso,escudo,AvisoEscudo;
 	public float sl;
 	EarthLife shiel;
 	public Text txt;
@@ -16,13 +16,21 @@ public class PM : MonoBehaviour {
 	public RectTransform pl;
 	public float vInimigo,vShotIni,cadenciaShot,vidaBoss;
 	void Start(){
+	//	AvisoEscudo.SetActive (false);
 		startYPosition = transform.position.y;
 		shiel = FindObjectOfType<EarthLife> ();
 		controle = false;
+
 }
 	void Update(){
 
 		pl.sizeDelta = new Vector2 (sl, 30f);
+//		if (shiel.sl <= 0) {
+//			AvisoEscudo.SetActive (true);
+//			escudo.SetActive (false);
+//		} else {
+//			escudo.SetActive (true);
+//		}
 		if (sl<=0) {
 			Cursor.lockState = CursorLockMode.None;
 			SceneManager.LoadScene ("Over");
@@ -34,7 +42,6 @@ public class PM : MonoBehaviour {
 		if (coll.gameObject.tag=="NaoSai") {
 			aviso.SetActive (false);
 			soma = 11;
-			Debug.Log ("dentro");
 		}
 		if (coll.gameObject.tag=="ShotEM") {
 			sl -= dInimigo;
@@ -78,12 +85,18 @@ public class PM : MonoBehaviour {
 			yield return new WaitForSeconds (1);
 			soma-= 1;
 			txt.text = "you are distancing yourself from your objective,retun in: " + soma + " " + "seconds";
-			Debug.Log (soma);
 		if (soma <= 0f) {
 				SceneManager.LoadScene ("GameOver");			
 			}
 		}
 	}
+//	IEnumerator protect(){
+//		while (true) {
+//			yield return new WaitForSeconds (3);
+//			AvisoEscudo.SetActive (false);
+//		}
+//	
+//	}
 
 	void LateUpdate() {
 		Vector3 v = transform.position;

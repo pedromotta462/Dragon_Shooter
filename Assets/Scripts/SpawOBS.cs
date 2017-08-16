@@ -31,7 +31,6 @@ public class SpawOBS : MonoBehaviour {
 		{
 			yield return new WaitForSeconds (Random.Range (minTime, maxTime));
 			PosiX= Random.Range (0, 2);
-			Debug.Log (PosiX);
 			Instantiate (obj, position [PosiX], Quaternion.identity);
 			luck = Random.Range (0, sorte);
 			if (luck==1) {
