@@ -86,7 +86,11 @@ public class PM : MonoBehaviour {
 			soma-= 1;
 			txt.text = "you are distancing yourself from your objective,retun in: " + soma + " " + "seconds";
 		if (soma <= 0f) {
-				SceneManager.LoadScene ("GameOver");			
+				if (PlayerPrefs.GetInt("Suvival")==1) {
+					SceneManager.LoadScene ("Over");		
+				} else {
+					SceneManager.LoadScene ("GameOver");
+				}			
 			}
 		}
 	}

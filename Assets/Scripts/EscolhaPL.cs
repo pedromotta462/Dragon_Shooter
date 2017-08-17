@@ -20,11 +20,7 @@ public class EscolhaPL : MonoBehaviour {
 		painel.SetActive (false);
 		button.SetActive (true);
 		cadeado.SetActive (false);
-		if (PlayerPrefs.GetInt ("Mercurio") == 1) {
-			mat [0].color = Color.white;
-		} else {
-			mat [0].color = new Color (0.31f,0.31f,0.31f,1f);
-		}
+	
 		if (PlayerPrefs.GetInt("Marte")==1) {
 			mat [1].color = Color.white;
 		} else {
@@ -74,16 +70,12 @@ public class EscolhaPL : MonoBehaviour {
 					cm.transform.LookAt (planetas [0]);
 					Camera.main.fieldOfView = 5;
 					txt.text = "Mercury";
+
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (PlayerPrefs.GetInt ("Mercurio") == 1) {
-						cadeado.SetActive (false);
-						scene = "Mercurio";
-						mat[1].color = Color.white;	
-					} else {
-						cadeado.SetActive (true);
-						scene = "";
-					}
+					cadeado.SetActive (false);
+					scene = "Mercurio";
+						
 					break;
 				case "Vênus":
 					cm.transform.LookAt (planetas [1]);
@@ -198,17 +190,6 @@ public class EscolhaPL : MonoBehaviour {
 						scene = "";
 					}
 					break;
-
-				case "Plutão":
-					cm.transform.LookAt (planetas [8]);
-					Camera.main.fieldOfView = 5;
-					txt.text = "Pluto";
-					painel.SetActive (true);
-					button.SetActive (false);
-					cadeado.SetActive (false);
-					scene = "Plutão";
-					mat[0].color = Color.white;
-					break;
 				
 				}
 			}
@@ -227,10 +208,6 @@ public class EscolhaPL : MonoBehaviour {
 	}
 	public void Play()
 	{ 
-		if (scene=="Plutão") {
-			//SceneManager.LoadScene (scene);
-			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
-		}
 		if (scene=="Venus") {
 			//SceneManager.LoadScene (scene);
 			AsyncOperation load = SceneManager.LoadSceneAsync ("Load");
