@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class audio : MonoBehaviour {
 	public AudioSource som; 
-	public GameObject canva,slider;
+	public GameObject canva;
 	public Slider sl;
 	// Use this for initialization
 	void Awake () {
@@ -65,11 +65,6 @@ public class audio : MonoBehaviour {
 
 
 
-		if (SceneManager.GetActiveScene().name=="Opçoes") {
-			slider.SetActive (true);
-		} else {
-			slider.SetActive (false);
-		}
 
 
 	

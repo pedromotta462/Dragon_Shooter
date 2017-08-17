@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 public class Reset : MonoBehaviour {
 	
 	public List<GameObject> objs;
-	 
+	public Slider sl;
+	GameObject slider;
+	AudioSource som;
 	// Use this for initialization
 	void Start () {
+		slider = GameObject.FindGameObjectWithTag ("Slider");
+		som = slider.GetComponent<AudioSource> ();
 		objs[1].SetActive (false);
-		StartCoroutine (gg ());
+
+	}
+	void Update(){
+		som.volume = sl.value ;
 	}
 	
 	public void click2(){
@@ -44,12 +51,8 @@ public class Reset : MonoBehaviour {
 		objs[1].SetActive (false);
 		objs[2].SetActive (true);
 		objs[3].SetActive (true);
+
+	}
+		
 	}
 
-	IEnumerator gg(){
-		while (true) {
-			yield return new WaitForSeconds (3);
-			objs[0].SetActive (false);
-		}
-	}
-}

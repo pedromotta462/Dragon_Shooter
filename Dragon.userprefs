@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Arcade\MovScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\audio.cs">
     <Files>
       <File FileName="Assets\Scripts\EM.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Shot.cs" Line="1" Column="1" />
@@ -11,24 +11,26 @@
       <File FileName="Assets\Scripts\SpawBoss.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SpawOBS.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Arcade\NextLevel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Reset.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\audio.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EscolhaCenaSurva.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Reset.cs" Line="20" Column="25" />
+      <File FileName="Assets\Scripts\audio.cs" Line="67" Column="3" />
       <File FileName="Assets\Scripts\SentidoAranha.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpawInimigo.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RigidbodyFirstPersonController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SomGame.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SomGame.cs" Line="16" Column="1" />
       <File FileName="Assets\Scripts\Arcade\SpawInimArcade.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EscolhaPL.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameOver.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Opcoes.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PM.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Loading.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Arcade\MovScript.cs" Line="8" Column="35" />
       <File FileName="Assets\Scripts\Score.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Shield.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EarthLife.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Arcade\BossMov.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Singleton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EscolhaPL.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TrocadeCena.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MouseLook.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PM.cs" Line="91" Column="13" NotebookId="1" />
+      <File FileName="Assets\Scripts\SpawInimigo.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Scripts\RigidbodyFirstPersonController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Scripts\Opcoes.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Scripts\Arcade\MovScript.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Scripts\Arcade\BossMov.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Scripts\ShotEn.cs" Line="15" Column="3" NotebookId="1" />
+      <File FileName="Assets\Scripts\EarthLife.cs" Line="78" Column="17" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
