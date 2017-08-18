@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class audio : MonoBehaviour {
 	public AudioSource som; 
 	public GameObject canva;
-	public Slider sl;
 	// Use this for initialization
 	void Awake () {
 		DontDestroyOnLoad (canva);
@@ -20,7 +19,7 @@ public class audio : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		AudioListener.volume = sl.value;
+		AudioListener.volume = PlayerPrefs.GetFloat ("Slider");
 		switch (SceneManager.GetActiveScene ().name) {
 		case"Over":
 			som.UnPause ();

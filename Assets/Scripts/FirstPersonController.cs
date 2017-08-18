@@ -48,7 +48,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public Slider sl;
         // Use this for initialization
 		void Awake() {
-			sl.value = PlayerPrefs.GetFloat ("Slider");
+			sl.value = PlayerPrefs.GetFloat ("Rotação");
 		}
 		private void Start()
         {
@@ -65,7 +65,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			bonusSpedd += PlayerPrefs.GetFloat ("Speed");
 			PlayerPrefs.Save ();
 			sl.maxValue = 5;
-			turnSpeed =PlayerPrefs.GetFloat("Slider");
+			turnSpeed =PlayerPrefs.GetFloat("Rotação");
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
@@ -249,8 +249,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-			PlayerPrefs.SetFloat ("Slider", sl.value);
-			turnSpeed = PlayerPrefs.GetFloat("Slider");
+			PlayerPrefs.SetFloat ("Rotação", sl.value);
+			turnSpeed = PlayerPrefs.GetFloat("Rotação");
 			transform.Rotate(Vector3.up * CrossPlatformInputManager.GetAxis ("Horizontal") * turnSpeed);
         //    m_MouseLook.LookRotation (transform, m_Camera.transform);
         }

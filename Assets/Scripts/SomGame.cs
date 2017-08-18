@@ -8,12 +8,15 @@ public class SomGame : MonoBehaviour {
 	public Slider sl;
 	// Use this for initialization
 	void Start () {
+		sl.value = PlayerPrefs.GetFloat ("Slider");
 		som= GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		PlayerPrefs.GetFloat ("Slider", sl.value);
 		AudioListener.volume = sl.value;
+		Debug.Log (PlayerPrefs.GetFloat ("Slider"));
 	}
 
 	public void onClick()

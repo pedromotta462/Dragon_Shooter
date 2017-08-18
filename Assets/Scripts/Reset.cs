@@ -7,17 +7,16 @@ public class Reset : MonoBehaviour {
 	
 	public List<GameObject> objs;
 	public Slider sl;
-	GameObject slider;
-	AudioSource som;
+
 	// Use this for initialization
 	void Start () {
-		slider = GameObject.FindGameObjectWithTag ("Slider");
-		som = slider.GetComponent<AudioSource> ();
+		sl.value = PlayerPrefs.GetFloat ("Slider");
 		objs[1].SetActive (false);
 
 	}
 	void Update(){
-		som.volume = sl.value ;
+		PlayerPrefs.SetFloat ("Slider", sl.value);
+		Debug.Log (PlayerPrefs.GetFloat ("Slider"));
 	}
 	
 	public void click2(){
@@ -43,7 +42,7 @@ public class Reset : MonoBehaviour {
 		objs[1].SetActive (true);
 		objs[2].SetActive (false);
 		objs[3].SetActive (false);
-
+		objs [4].SetActive (false);
 	}
 	public void closar()
 	{
@@ -51,7 +50,7 @@ public class Reset : MonoBehaviour {
 		objs[1].SetActive (false);
 		objs[2].SetActive (true);
 		objs[3].SetActive (true);
-
+		objs [4].SetActive (true);
 	}
 		
 	}
