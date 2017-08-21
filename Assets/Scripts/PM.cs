@@ -10,27 +10,33 @@ public class PM : MonoBehaviour {
 	EarthLife shiel;
 	public Text txt;
 	int soma = 11;
-	bool controle;
+	bool controle,mensagem;
 	public Score score;
 	public float startYPosition,dInimigo,dBoss;
 	public RectTransform pl;
 	public float vInimigo,vShotIni,cadenciaShot,vidaBoss;
 	void Start(){
-	//	AvisoEscudo.SetActive (false);
+		AvisoEscudo.SetActive (false);
 		startYPosition = transform.position.y;
 		shiel = FindObjectOfType<EarthLife> ();
 		controle = false;
+		StartCoroutine (protect ());
 
 }
 	void Update(){
-
+		Debug.Log (vInimigo);
 		pl.sizeDelta = new Vector2 (sl, 30f);
-//		if (shiel.sl <= 0) {
-//			AvisoEscudo.SetActive (true);
-//			escudo.SetActive (false);
-//		} else {
-//			escudo.SetActive (true);
-//		}
+	if (shiel.sl <= 0) {
+			if (mensagem) {
+				AvisoEscudo.SetActive (true);
+				escudo.SetActive (false);
+				mensagem = false;
+			}
+		
+	} else {
+		escudo.SetActive (true);
+			mensagem = true;
+		}
 		if (sl<=0) {
 			Cursor.lockState = CursorLockMode.None;
 			SceneManager.LoadScene ("Over");
@@ -70,7 +76,7 @@ public class PM : MonoBehaviour {
 		if (coll.gameObject.tag=="Shield") {
 			Destroy (coll.gameObject);
 			if (shiel.sl<=125) {
-				shiel.sl += 21;
+				shiel.sl += 80;
 			}
 			}
 		if (coll.gameObject.tag=="Boss") {
@@ -94,13 +100,13 @@ public class PM : MonoBehaviour {
 			}
 		}
 	}
-//	IEnumerator protect(){
-//		while (true) {
-//			yield return new WaitForSeconds (3);
-//			AvisoEscudo.SetActive (false);
-//		}
-//	
-//	}
+	IEnumerator protect(){
+		while (true) {
+			yield return new WaitForSeconds (3);
+			AvisoEscudo.SetActive (false);
+		}
+			
+	}
 
 	void LateUpdate() {
 		Vector3 v = transform.position;

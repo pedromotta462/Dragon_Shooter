@@ -199,7 +199,7 @@ public class EscolhaPL : MonoBehaviour {
 	
 
 	public void close(){
-		Camera.main.fieldOfView = 70;
+		Camera.main.fieldOfView = 72;
 		cm.transform.LookAt (planetas [9]);
 		painel.SetActive (false);
 		button.SetActive (true);
