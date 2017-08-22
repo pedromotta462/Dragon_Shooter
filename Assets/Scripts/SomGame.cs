@@ -16,6 +16,7 @@ public class SomGame : MonoBehaviour {
 	void Update () {
 		PlayerPrefs.GetFloat ("Slider", sl.value);
 		AudioListener.volume = sl.value;
+		PlayerPrefs.SetFloat ("Slider", sl.value);
 	}
 
 	public void onClick()
