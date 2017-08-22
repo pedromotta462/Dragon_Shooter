@@ -1,0 +1,1476 @@
+fileFormatVersion: 2
+guid: 4ab88444a09b8e540be1d416bbf76401
+timeCreated: 1503415443
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: "Bra\xE7o Direito"
+    100002: "Bra\xE7o Esquerdo"
+    100004: 'Cauda '
+    100006: Chifre Direito 1
+    100008: Chifre Direito 2
+    100010: Chifre Esquerdo 1
+    100012: Chifre Esquerdo 2
+    100014: Corpo 1
+    100016: Corpo 10
+    100018: Corpo 2
+    100020: Corpo 3
+    100022: Corpo 4
+    100024: Corpo 5
+    100026: Corpo 6
+    100028: Corpo 7
+    100030: Corpo 8
+    100032: Corpo 9
+    100034: Cranio
+    100036: //RootNode
+    100038: Espinho Corpo 1
+    100040: Espinho Corpo 1 1
+    100042: Espinho Corpo 1 2
+    100044: Espinho Corpo 10
+    100046: Espinho Corpo 10 1
+    100048: Espinho Corpo 10 2
+    100050: Espinho Corpo 10 3
+    100052: Espinho Corpo 10 4
+    100054: Espinho Corpo 10 5
+    100056: Espinho Corpo 2
+    100058: Espinho Corpo 2 1
+    100060: Espinho Corpo 2 2
+    100062: Espinho Corpo 2 3
+    100064: Espinho Corpo 2 4
+    100066: Espinho Corpo 2 5
+    100068: Espinho Corpo 3
+    100070: Espinho Corpo 3 1
+    100072: Espinho Corpo 3 2
+    100074: Espinho Corpo 4
+    100076: Espinho Corpo 4 1
+    100078: Espinho Corpo 4 2
+    100080: Espinho Corpo 4 3
+    100082: Espinho Corpo 4 4
+    100084: Espinho Corpo 4 5
+    100086: Espinho Corpo 5
+    100088: Espinho Corpo 5 1
+    100090: Espinho Corpo 5 2
+    100092: Espinho Corpo 6
+    100094: Espinho Corpo 6 1
+    100096: Espinho Corpo 6 2
+    100098: Espinho Corpo 6 3
+    100100: Espinho Corpo 6 4
+    100102: Espinho Corpo 6 5
+    100104: Espinho Corpo 7
+    100106: Espinho Corpo 7 1
+    100108: Espinho Corpo 7 2
+    100110: Espinho Corpo 8
+    100112: Espinho Corpo 8 1
+    100114: Espinho Corpo 8 2
+    100116: Espinho Corpo 8 3
+    100118: Espinho Corpo 8 4
+    100120: Espinho Corpo 8 5
+    100122: Espinho Corpo 9
+    100124: Espinho Corpo 9 1
+    100126: Espinho Corpo 9 2
+    100128: Mandibula
+    100130: Olho Direito
+    100132: Olho Esquerdo
+    100134: Pelo Cauda 1
+    100136: Pelo Cauda 10
+    100138: Pelo Cauda 11
+    100140: Pelo Cauda 12
+    100142: Pelo Cauda 13
+    100144: Pelo Cauda 14
+    100146: Pelo Cauda 15
+    100148: Pelo Cauda 16
+    100150: Pelo Cauda 17
+    100152: Pelo Cauda 18
+    100154: Pelo Cauda 19
+    100156: Pelo Cauda 2
+    100158: Pelo Cauda 20
+    100160: Pelo Cauda 21
+    100162: Pelo Cauda 22
+    100164: Pelo Cauda 23
+    100166: Pelo Cauda 24
+    100168: Pelo Cauda 25
+    100170: Pelo Cauda 26
+    100172: Pelo Cauda 27
+    100174: Pelo Cauda 28
+    100176: Pelo Cauda 29
+    100178: Pelo Cauda 3
+    100180: Pelo Cauda 30
+    100182: Pelo Cauda 31
+    100184: Pelo Cauda 32
+    100186: Pelo Cauda 4
+    100188: Pelo Cauda 5
+    100190: Pelo Cauda 6
+    100192: Pelo Cauda 7
+    100194: Pelo Cauda 8
+    100196: Pelo Cauda 9
+    100198: Pelo Corpo 1
+    100200: Pelo Corpo 1 1
+    100202: Pelo Corpo 10
+    100204: Pelo Corpo 2
+    100206: Pelo Corpo 3
+    100208: Pelo Corpo 3 1
+    100210: Pelo Corpo 4
+    100212: Pelo Corpo 5
+    100214: Pelo Corpo 5 1
+    100216: Pelo Corpo 6
+    100218: Pelo Corpo 7
+    100220: Pelo Corpo 7 1
+    100222: Pelo Corpo 8
+    100224: Pelo Corpo 9
+    100226: Pelo Corpo 9 1
+    100228: Pelo Cranio Direito 1
+    100230: Pelo Cranio Direito 2
+    100232: Pelo Cranio Direito 3
+    100234: Pelo Cranio Direito 4
+    100236: Pelo Cranio Direito 5
+    100238: Pelo Cranio Direito 6
+    100240: Pelo Cranio Esquerdo 1
+    100242: Pelo Cranio Esquerdo 2
+    100244: Pelo Cranio Esquerdo 3
+    100246: Pelo Cranio Esquerdo 4
+    100248: Pelo Cranio Esquerdo 5
+    100250: Pelo Cranio Esquerdo 6
+    100252: Perna Direita
+    100254: Perna Esquerda
+    100256: 'Piercing '
+    400000: "Bra\xE7o Direito"
+    400002: "Bra\xE7o Esquerdo"
+    400004: 'Cauda '
+    400006: Chifre Direito 1
+    400008: Chifre Direito 2
+    400010: Chifre Esquerdo 1
+    400012: Chifre Esquerdo 2
+    400014: Corpo 1
+    400016: Corpo 10
+    400018: Corpo 2
+    400020: Corpo 3
+    400022: Corpo 4
+    400024: Corpo 5
+    400026: Corpo 6
+    400028: Corpo 7
+    400030: Corpo 8
+    400032: Corpo 9
+    400034: Cranio
+    400036: //RootNode
+    400038: Espinho Corpo 1
+    400040: Espinho Corpo 1 1
+    400042: Espinho Corpo 1 2
+    400044: Espinho Corpo 10
+    400046: Espinho Corpo 10 1
+    400048: Espinho Corpo 10 2
+    400050: Espinho Corpo 10 3
+    400052: Espinho Corpo 10 4
+    400054: Espinho Corpo 10 5
+    400056: Espinho Corpo 2
+    400058: Espinho Corpo 2 1
+    400060: Espinho Corpo 2 2
+    400062: Espinho Corpo 2 3
+    400064: Espinho Corpo 2 4
+    400066: Espinho Corpo 2 5
+    400068: Espinho Corpo 3
+    400070: Espinho Corpo 3 1
+    400072: Espinho Corpo 3 2
+    400074: Espinho Corpo 4
+    400076: Espinho Corpo 4 1
+    400078: Espinho Corpo 4 2
+    400080: Espinho Corpo 4 3
+    400082: Espinho Corpo 4 4
+    400084: Espinho Corpo 4 5
+    400086: Espinho Corpo 5
+    400088: Espinho Corpo 5 1
+    400090: Espinho Corpo 5 2
+    400092: Espinho Corpo 6
+    400094: Espinho Corpo 6 1
+    400096: Espinho Corpo 6 2
+    400098: Espinho Corpo 6 3
+    400100: Espinho Corpo 6 4
+    400102: Espinho Corpo 6 5
+    400104: Espinho Corpo 7
+    400106: Espinho Corpo 7 1
+    400108: Espinho Corpo 7 2
+    400110: Espinho Corpo 8
+    400112: Espinho Corpo 8 1
+    400114: Espinho Corpo 8 2
+    400116: Espinho Corpo 8 3
+    400118: Espinho Corpo 8 4
+    400120: Espinho Corpo 8 5
+    400122: Espinho Corpo 9
+    400124: Espinho Corpo 9 1
+    400126: Espinho Corpo 9 2
+    400128: Mandibula
+    400130: Olho Direito
+    400132: Olho Esquerdo
+    400134: Pelo Cauda 1
+    400136: Pelo Cauda 10
+    400138: Pelo Cauda 11
+    400140: Pelo Cauda 12
+    400142: Pelo Cauda 13
+    400144: Pelo Cauda 14
+    400146: Pelo Cauda 15
+    400148: Pelo Cauda 16
+    400150: Pelo Cauda 17
+    400152: Pelo Cauda 18
+    400154: Pelo Cauda 19
+    400156: Pelo Cauda 2
+    400158: Pelo Cauda 20
+    400160: Pelo Cauda 21
+    400162: Pelo Cauda 22
+    400164: Pelo Cauda 23
+    400166: Pelo Cauda 24
+    400168: Pelo Cauda 25
+    400170: Pelo Cauda 26
+    400172: Pelo Cauda 27
+    400174: Pelo Cauda 28
+    400176: Pelo Cauda 29
+    400178: Pelo Cauda 3
+    400180: Pelo Cauda 30
+    400182: Pelo Cauda 31
+    400184: Pelo Cauda 32
+    400186: Pelo Cauda 4
+    400188: Pelo Cauda 5
+    400190: Pelo Cauda 6
+    400192: Pelo Cauda 7
+    400194: Pelo Cauda 8
+    400196: Pelo Cauda 9
+    400198: Pelo Corpo 1
+    400200: Pelo Corpo 1 1
+    400202: Pelo Corpo 10
+    400204: Pelo Corpo 2
+    400206: Pelo Corpo 3
+    400208: Pelo Corpo 3 1
+    400210: Pelo Corpo 4
+    400212: Pelo Corpo 5
+    400214: Pelo Corpo 5 1
+    400216: Pelo Corpo 6
+    400218: Pelo Corpo 7
+    400220: Pelo Corpo 7 1
+    400222: Pelo Corpo 8
+    400224: Pelo Corpo 9
+    400226: Pelo Corpo 9 1
+    400228: Pelo Cranio Direito 1
+    400230: Pelo Cranio Direito 2
+    400232: Pelo Cranio Direito 3
+    400234: Pelo Cranio Direito 4
+    400236: Pelo Cranio Direito 5
+    400238: Pelo Cranio Direito 6
+    400240: Pelo Cranio Esquerdo 1
+    400242: Pelo Cranio Esquerdo 2
+    400244: Pelo Cranio Esquerdo 3
+    400246: Pelo Cranio Esquerdo 4
+    400248: Pelo Cranio Esquerdo 5
+    400250: Pelo Cranio Esquerdo 6
+    400252: Perna Direita
+    400254: Perna Esquerda
+    400256: 'Piercing '
+    2300000: "Bra\xE7o Direito"
+    2300002: "Bra\xE7o Esquerdo"
+    2300004: 'Cauda '
+    2300006: Chifre Direito 1
+    2300008: Chifre Direito 2
+    2300010: Chifre Esquerdo 1
+    2300012: Chifre Esquerdo 2
+    2300014: Corpo 1
+    2300016: Corpo 10
+    2300018: Corpo 2
+    2300020: Corpo 3
+    2300022: Corpo 4
+    2300024: Corpo 5
+    2300026: Corpo 6
+    2300028: Corpo 7
+    2300030: Corpo 8
+    2300032: Corpo 9
+    2300034: Cranio
+    2300036: Espinho Corpo 1
+    2300038: Espinho Corpo 1 1
+    2300040: Espinho Corpo 1 2
+    2300042: Espinho Corpo 10
+    2300044: Espinho Corpo 10 1
+    2300046: Espinho Corpo 10 2
+    2300048: Espinho Corpo 10 3
+    2300050: Espinho Corpo 10 4
+    2300052: Espinho Corpo 10 5
+    2300054: Espinho Corpo 2
+    2300056: Espinho Corpo 2 1
+    2300058: Espinho Corpo 2 2
+    2300060: Espinho Corpo 2 3
+    2300062: Espinho Corpo 2 4
+    2300064: Espinho Corpo 2 5
+    2300066: Espinho Corpo 3
+    2300068: Espinho Corpo 3 1
+    2300070: Espinho Corpo 3 2
+    2300072: Espinho Corpo 4
+    2300074: Espinho Corpo 4 1
+    2300076: Espinho Corpo 4 2
+    2300078: Espinho Corpo 4 3
+    2300080: Espinho Corpo 4 4
+    2300082: Espinho Corpo 4 5
+    2300084: Espinho Corpo 5
+    2300086: Espinho Corpo 5 1
+    2300088: Espinho Corpo 5 2
+    2300090: Espinho Corpo 6
+    2300092: Espinho Corpo 6 1
+    2300094: Espinho Corpo 6 2
+    2300096: Espinho Corpo 6 3
+    2300098: Espinho Corpo 6 4
+    2300100: Espinho Corpo 6 5
+    2300102: Espinho Corpo 7
+    2300104: Espinho Corpo 7 1
+    2300106: Espinho Corpo 7 2
+    2300108: Espinho Corpo 8
+    2300110: Espinho Corpo 8 1
+    2300112: Espinho Corpo 8 2
+    2300114: Espinho Corpo 8 3
+    2300116: Espinho Corpo 8 4
+    2300118: Espinho Corpo 8 5
+    2300120: Espinho Corpo 9
+    2300122: Espinho Corpo 9 1
+    2300124: Espinho Corpo 9 2
+    2300126: Mandibula
+    2300128: Olho Direito
+    2300130: Olho Esquerdo
+    2300132: Pelo Cauda 1
+    2300134: Pelo Cauda 10
+    2300136: Pelo Cauda 11
+    2300138: Pelo Cauda 12
+    2300140: Pelo Cauda 13
+    2300142: Pelo Cauda 14
+    2300144: Pelo Cauda 15
+    2300146: Pelo Cauda 16
+    2300148: Pelo Cauda 17
+    2300150: Pelo Cauda 18
+    2300152: Pelo Cauda 19
+    2300154: Pelo Cauda 2
+    2300156: Pelo Cauda 20
+    2300158: Pelo Cauda 21
+    2300160: Pelo Cauda 22
+    2300162: Pelo Cauda 23
+    2300164: Pelo Cauda 24
+    2300166: Pelo Cauda 25
+    2300168: Pelo Cauda 26
+    2300170: Pelo Cauda 27
+    2300172: Pelo Cauda 28
+    2300174: Pelo Cauda 29
+    2300176: Pelo Cauda 3
+    2300178: Pelo Cauda 30
+    2300180: Pelo Cauda 31
+    2300182: Pelo Cauda 32
+    2300184: Pelo Cauda 4
+    2300186: Pelo Cauda 5
+    2300188: Pelo Cauda 6
+    2300190: Pelo Cauda 7
+    2300192: Pelo Cauda 8
+    2300194: Pelo Cauda 9
+    2300196: Pelo Corpo 1
+    2300198: Pelo Corpo 1 1
+    2300200: Pelo Corpo 10
+    2300202: Pelo Corpo 2
+    2300204: Pelo Corpo 3
+    2300206: Pelo Corpo 3 1
+    2300208: Pelo Corpo 4
+    2300210: Pelo Corpo 5
+    2300212: Pelo Corpo 5 1
+    2300214: Pelo Corpo 6
+    2300216: Pelo Corpo 7
+    2300218: Pelo Corpo 7 1
+    2300220: Pelo Corpo 8
+    2300222: Pelo Corpo 9
+    2300224: Pelo Corpo 9 1
+    2300226: Pelo Cranio Direito 1
+    2300228: Pelo Cranio Direito 2
+    2300230: Pelo Cranio Direito 3
+    2300232: Pelo Cranio Direito 4
+    2300234: Pelo Cranio Direito 5
+    2300236: Pelo Cranio Direito 6
+    2300238: Pelo Cranio Esquerdo 1
+    2300240: Pelo Cranio Esquerdo 2
+    2300242: Pelo Cranio Esquerdo 3
+    2300244: Pelo Cranio Esquerdo 4
+    2300246: Pelo Cranio Esquerdo 5
+    2300248: Pelo Cranio Esquerdo 6
+    2300250: Perna Direita
+    2300252: Perna Esquerda
+    2300254: 'Piercing '
+    3300000: "Bra\xE7o Direito"
+    3300002: "Bra\xE7o Esquerdo"
+    3300004: 'Cauda '
+    3300006: Chifre Direito 1
+    3300008: Chifre Direito 2
+    3300010: Chifre Esquerdo 1
+    3300012: Chifre Esquerdo 2
+    3300014: Corpo 1
+    3300016: Corpo 10
+    3300018: Corpo 2
+    3300020: Corpo 3
+    3300022: Corpo 4
+    3300024: Corpo 5
+    3300026: Corpo 6
+    3300028: Corpo 7
+    3300030: Corpo 8
+    3300032: Corpo 9
+    3300034: Cranio
+    3300036: Espinho Corpo 1
+    3300038: Espinho Corpo 1 1
+    3300040: Espinho Corpo 1 2
+    3300042: Espinho Corpo 10
+    3300044: Espinho Corpo 10 1
+    3300046: Espinho Corpo 10 2
+    3300048: Espinho Corpo 10 3
+    3300050: Espinho Corpo 10 4
+    3300052: Espinho Corpo 10 5
+    3300054: Espinho Corpo 2
+    3300056: Espinho Corpo 2 1
+    3300058: Espinho Corpo 2 2
+    3300060: Espinho Corpo 2 3
+    3300062: Espinho Corpo 2 4
+    3300064: Espinho Corpo 2 5
+    3300066: Espinho Corpo 3
+    3300068: Espinho Corpo 3 1
+    3300070: Espinho Corpo 3 2
+    3300072: Espinho Corpo 4
+    3300074: Espinho Corpo 4 1
+    3300076: Espinho Corpo 4 2
+    3300078: Espinho Corpo 4 3
+    3300080: Espinho Corpo 4 4
+    3300082: Espinho Corpo 4 5
+    3300084: Espinho Corpo 5
+    3300086: Espinho Corpo 5 1
+    3300088: Espinho Corpo 5 2
+    3300090: Espinho Corpo 6
+    3300092: Espinho Corpo 6 1
+    3300094: Espinho Corpo 6 2
+    3300096: Espinho Corpo 6 3
+    3300098: Espinho Corpo 6 4
+    3300100: Espinho Corpo 6 5
+    3300102: Espinho Corpo 7
+    3300104: Espinho Corpo 7 1
+    3300106: Espinho Corpo 7 2
+    3300108: Espinho Corpo 8
+    3300110: Espinho Corpo 8 1
+    3300112: Espinho Corpo 8 2
+    3300114: Espinho Corpo 8 3
+    3300116: Espinho Corpo 8 4
+    3300118: Espinho Corpo 8 5
+    3300120: Espinho Corpo 9
+    3300122: Espinho Corpo 9 1
+    3300124: Espinho Corpo 9 2
+    3300126: Mandibula
+    3300128: Olho Direito
+    3300130: Olho Esquerdo
+    3300132: Pelo Cauda 1
+    3300134: Pelo Cauda 10
+    3300136: Pelo Cauda 11
+    3300138: Pelo Cauda 12
+    3300140: Pelo Cauda 13
+    3300142: Pelo Cauda 14
+    3300144: Pelo Cauda 15
+    3300146: Pelo Cauda 16
+    3300148: Pelo Cauda 17
+    3300150: Pelo Cauda 18
+    3300152: Pelo Cauda 19
+    3300154: Pelo Cauda 2
+    3300156: Pelo Cauda 20
+    3300158: Pelo Cauda 21
+    3300160: Pelo Cauda 22
+    3300162: Pelo Cauda 23
+    3300164: Pelo Cauda 24
+    3300166: Pelo Cauda 25
+    3300168: Pelo Cauda 26
+    3300170: Pelo Cauda 27
+    3300172: Pelo Cauda 28
+    3300174: Pelo Cauda 29
+    3300176: Pelo Cauda 3
+    3300178: Pelo Cauda 30
+    3300180: Pelo Cauda 31
+    3300182: Pelo Cauda 32
+    3300184: Pelo Cauda 4
+    3300186: Pelo Cauda 5
+    3300188: Pelo Cauda 6
+    3300190: Pelo Cauda 7
+    3300192: Pelo Cauda 8
+    3300194: Pelo Cauda 9
+    3300196: Pelo Corpo 1
+    3300198: Pelo Corpo 1 1
+    3300200: Pelo Corpo 10
+    3300202: Pelo Corpo 2
+    3300204: Pelo Corpo 3
+    3300206: Pelo Corpo 3 1
+    3300208: Pelo Corpo 4
+    3300210: Pelo Corpo 5
+    3300212: Pelo Corpo 5 1
+    3300214: Pelo Corpo 6
+    3300216: Pelo Corpo 7
+    3300218: Pelo Corpo 7 1
+    3300220: Pelo Corpo 8
+    3300222: Pelo Corpo 9
+    3300224: Pelo Corpo 9 1
+    3300226: Pelo Cranio Direito 1
+    3300228: Pelo Cranio Direito 2
+    3300230: Pelo Cranio Direito 3
+    3300232: Pelo Cranio Direito 4
+    3300234: Pelo Cranio Direito 5
+    3300236: Pelo Cranio Direito 6
+    3300238: Pelo Cranio Esquerdo 1
+    3300240: Pelo Cranio Esquerdo 2
+    3300242: Pelo Cranio Esquerdo 3
+    3300244: Pelo Cranio Esquerdo 4
+    3300246: Pelo Cranio Esquerdo 5
+    3300248: Pelo Cranio Esquerdo 6
+    3300250: Perna Direita
+    3300252: Perna Esquerda
+    3300254: 'Piercing '
+    4300000: Cranio
+    4300002: Pelo Cranio Esquerdo 2
+    4300004: Olho Direito
+    4300006: Pelo Cranio Esquerdo 3
+    4300008: Olho Esquerdo
+    4300010: Pelo Cranio Esquerdo 1
+    4300012: Chifre Esquerdo 2
+    4300014: Pelo Cranio Esquerdo 6
+    4300016: Pelo Cranio Esquerdo 4
+    4300018: Pelo Cranio Esquerdo 5
+    4300020: Pelo Cranio Direito 6
+    4300022: Pelo Cranio Direito 3
+    4300024: 'Piercing '
+    4300026: Chifre Esquerdo 1
+    4300028: Mandibula
+    4300030: Pelo Cranio Direito 5
+    4300032: Chifre Direito 2
+    4300034: Pelo Cranio Direito 1
+    4300036: Pelo Cranio Direito 2
+    4300038: Pelo Cranio Direito 4
+    4300040: Chifre Direito 1
+    4300042: Corpo 1
+    4300044: Corpo 2
+    4300046: Corpo 3
+    4300048: Corpo 4
+    4300050: Corpo 5
+    4300052: Corpo 6
+    4300054: Corpo 7
+    4300056: Perna Direita
+    4300058: Perna Esquerda
+    4300060: Corpo 8
+    4300062: Corpo 9
+    4300064: Corpo 10
+    4300066: 'Cauda '
+    4300068: Pelo Cauda 16
+    4300070: Pelo Cauda 5
+    4300072: Pelo Cauda 19
+    4300074: Pelo Cauda 12
+    4300076: Pelo Cauda 11
+    4300078: Pelo Cauda 25
+    4300080: Pelo Cauda 31
+    4300082: Pelo Cauda 18
+    4300084: Pelo Cauda 3
+    4300086: Pelo Cauda 15
+    4300088: Pelo Cauda 10
+    4300090: Pelo Cauda 27
+    4300092: Pelo Cauda 30
+    4300094: Pelo Cauda 23
+    4300096: Pelo Cauda 4
+    4300098: Pelo Cauda 20
+    4300100: Pelo Cauda 9
+    4300102: Pelo Cauda 24
+    4300104: Pelo Cauda 6
+    4300106: Pelo Cauda 26
+    4300108: Pelo Cauda 32
+    4300110: Pelo Cauda 17
+    4300112: Pelo Cauda 14
+    4300114: Pelo Cauda 22
+    4300116: Pelo Cauda 7
+    4300118: Pelo Cauda 8
+    4300120: Pelo Cauda 13
+    4300122: Pelo Cauda 21
+    4300124: Pelo Cauda 28
+    4300126: Pelo Cauda 29
+    4300128: Pelo Cauda 1
+    4300130: Pelo Cauda 2
+    4300132: Espinho Corpo 10
+    4300134: Espinho Corpo 10
+    4300136: Pelo Corpo 10
+    4300138: Espinho Corpo 10
+    4300140: Espinho Corpo 10
+    4300142: Espinho Corpo 10
+    4300144: Espinho Corpo 10
+    4300146: Pelo Corpo 9
+    4300148: Pelo Corpo 9
+    4300150: Espinho Corpo 9
+    4300152: Espinho Corpo 9
+    4300154: Espinho Corpo 9
+    4300156: Espinho Corpo 8
+    4300158: Espinho Corpo 8
+    4300160: Pelo Corpo 8
+    4300162: Espinho Corpo 8
+    4300164: Espinho Corpo 8
+    4300166: Espinho Corpo 8
+    4300168: Espinho Corpo 8
+    4300170: Pelo Corpo 7
+    4300172: Pelo Corpo 7
+    4300174: Espinho Corpo 7
+    4300176: Espinho Corpo 7
+    4300178: Espinho Corpo 7
+    4300180: Espinho Corpo 6
+    4300182: Espinho Corpo 6
+    4300184: Espinho Corpo 6
+    4300186: Pelo Corpo 6
+    4300188: Espinho Corpo 6
+    4300190: Espinho Corpo 6
+    4300192: Espinho Corpo 6
+    4300194: Pelo Corpo 5
+    4300196: Espinho Corpo 5
+    4300198: Espinho Corpo 5
+    4300200: Espinho Corpo 5
+    4300202: Pelo Corpo 5
+    4300204: Espinho Corpo 4
+    4300206: Espinho Corpo 4
+    4300208: Espinho Corpo 4
+    4300210: Espinho Corpo 4
+    4300212: Espinho Corpo 4
+    4300214: Pelo Corpo 4
+    4300216: Espinho Corpo 4
+    4300218: Pelo Corpo 3
+    4300220: Espinho Corpo 3
+    4300222: Espinho Corpo 3
+    4300224: Pelo Corpo 3
+    4300226: Espinho Corpo 3
+    4300228: Espinho Corpo 2
+    4300230: Espinho Corpo 2
+    4300232: Espinho Corpo 2
+    4300234: Pelo Corpo 2
+    4300236: Espinho Corpo 2
+    4300238: Espinho Corpo 2
+    4300240: Espinho Corpo 2
+    4300242: "Bra\xE7o Esquerdo"
+    4300244: "Bra\xE7o Direito"
+    4300246: Espinho Corpo 1
+    4300248: Pelo Corpo 1
+    4300250: Espinho Corpo 1
+    4300252: Espinho Corpo 1
+    4300254: Pelo Corpo 1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Corpo 1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Espinho Corpo 2 4
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Espinho Corpo 1 1
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Corpo 3
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Corpo 5
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Corpo 7
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Corpo 8
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Corpo 10
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: 'Cauda '
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pelo Cauda 23
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pelo Cauda 15
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pelo Cauda 20
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pelo Cauda 16
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pelo Cauda 14
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: "Drag\xE3o (2)(Clone)"
+      parentName: 
+      position: {x: 4.301219, y: 1.4491814, z: -0.032089394}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Corpo 1
+      parentName: "Drag\xE3o (2)(Clone)"
+      position: {x: -0.89178276, y: 0.006937543, z: -0.02953308}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0731531, y: 1.5117704, z: 1.0731531}
+    - name: Corpo 2
+      parentName: Corpo 1
+      position: {x: -0.64491296, y: -0.008168624, z: -0.007305271}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "Bra\xE7o Direito"
+      parentName: Corpo 2
+      position: {x: 0.43206432, y: 0.34239122, z: -0.020981276}
+      rotation: {x: -0.0000005082395, y: 1, z: 0.0000005693014, w: -0.0000000034716408}
+      scale: {x: -0.99999976, y: -1.0000001, z: -1}
+    - name: "Bra\xE7o Esquerdo"
+      parentName: Corpo 2
+      position: {x: 0.4351153, y: -0.33090952, z: 0.027623992}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Corpo 3
+      parentName: Corpo 2
+      position: {x: -0.55106634, y: 0.028286075, z: 0.020915292}
+      rotation: {x: 0.0077328077, y: 0.5321629, z: -0, w: 0.8466067}
+      scale: {x: 0.9281604, y: 0.9281605, z: 0.9281604}
+    - name: Corpo 4
+      parentName: Corpo 3
+      position: {x: -0.5665248, y: 0.013137431, z: -0.008826593}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Corpo 5
+      parentName: Corpo 4
+      position: {x: -0.6006569, y: -0.0010979465, z: 0.0124932295}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9360782, y: 0.93607813, z: 0.9360782}
+    - name: Corpo 6
+      parentName: Corpo 5
+      position: {x: -0.64603734, y: 0, z: 0.018325238}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Corpo 7
+      parentName: Corpo 6
+      position: {x: -0.52145016, y: -0.0019190265, z: 0.025161449}
+      rotation: {x: 0.0012945742, y: -0.39858562, z: 0.0030176274, w: 0.91712534}
+      scale: {x: 0.88827705, y: 0.888277, z: 0.88827705}
+    - name: Corpo 8
+      parentName: Corpo 7
+      position: {x: -0.61138177, y: 0.000000006055832, z: -0.0054705963}
+      rotation: {x: 0.0003173655, y: -0.117959395, z: 0.001103867, w: 0.9930178}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Corpo 9
+      parentName: Corpo 8
+      position: {x: -0.5214115, y: -0.0017867611, z: 0.019624965}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.8959771, y: 0.89597714, z: 0.8959771}
+    - name: Corpo 10
+      parentName: Corpo 9
+      position: {x: -0.6056123, y: -0.000000006055832, z: -0.014903935}
+      rotation: {x: 0.0002564975, y: -0.0038489462, z: -0.0036983239, w: 0.99998575}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: 'Cauda '
+      parentName: Corpo 10
+      position: {x: -1.5785348, y: -0.0771743, z: 0.0017225692}
+      rotation: {x: 0.064805515, y: -0.9967094, z: 0.022217356, w: 0.043326035}
+      scale: {x: 1.4461703, y: 1.1754631, z: 1.4461703}
+    - name: Pelo Cauda 1
+      parentName: 'Cauda '
+      position: {x: 0.8614478, y: -0.054234717, z: 0.171369}
+      rotation: {x: 0.010318574, y: 0.99829495, z: -0.04815452, w: 0.03133593}
+      scale: {x: -0.69148153, y: -0.8521967, z: -0.6902904}
+    - name: Pelo Cauda 2
+      parentName: 'Cauda '
+      position: {x: 0.8614478, y: 0.08201863, z: 0.171369}
+      rotation: {x: 0.048154492, y: -0.031336322, z: 0.010318316, w: 0.9982949}
+      scale: {x: 0.6914814, y: 0.8521967, z: 0.69029033}
+    - name: Pelo Cauda 3
+      parentName: 'Cauda '
+      position: {x: 0.56190133, y: -0.056534436, z: 0.16144034}
+      rotation: {x: 0.038005564, y: 0.9809757, z: -0.19021285, w: 0.007836672}
+      scale: {x: -0.6914814, y: -0.872303, z: -0.6743792}
+    - name: Pelo Cauda 4
+      parentName: 'Cauda '
+      position: {x: 0.56190133, y: 0.060397465, z: 0.16144034}
+      rotation: {x: 0.19021301, y: -0.007836372, z: 0.03800539, w: 0.9809757}
+      scale: {x: 0.6914814, y: 0.87230295, z: 0.6743793}
+    - name: Pelo Cauda 5
+      parentName: 'Cauda '
+      position: {x: 0.23090063, y: -0.01791808, z: 0.05913825}
+      rotation: {x: 0.13018927, y: 0.9558604, z: -0.21297048, w: 0.1550011}
+      scale: {x: -0.69148153, y: -0.8879232, z: -0.6625155}
+    - name: Pelo Cauda 6
+      parentName: 'Cauda '
+      position: {x: 0.22290461, y: -0.00951924, z: 0.070717774}
+      rotation: {x: 0.12556516, y: -0.14209202, z: 0.13883103, w: 0.9719924}
+      scale: {x: 0.6914815, y: 0.8755693, z: 0.67186344}
+    - name: Pelo Cauda 7
+      parentName: 'Cauda '
+      position: {x: 0.8614478, y: -0.13941613, z: 0.10488081}
+      rotation: {x: 0.03812057, y: 0.9992732, z: 0.00000026537393, w: 0.000000015240301}
+      scale: {x: -0.69029826, y: -0.85218704, z: -0.6914814}
+    - name: Pelo Cauda 8
+      parentName: 'Cauda '
+      position: {x: 0.86144817, y: 0.16217785, z: 0.10488081}
+      rotation: {x: 0, y: 0, z: 0.0381207, w: 0.9992732}
+      scale: {x: 0.69029814, y: 0.85218704, z: 0.6914814}
+    - name: Pelo Cauda 9
+      parentName: 'Cauda '
+      position: {x: 0.561901, y: -0.11717965, z: 0.10488081}
+      rotation: {x: 0.03812057, y: 0.9992732, z: 0.00000026537393, w: 0.000000015240301}
+      scale: {x: -0.69029826, y: -0.85218704, z: -0.6914814}
+    - name: Pelo Cauda 10
+      parentName: 'Cauda '
+      position: {x: 0.56190133, y: 0.13994132, z: 0.10488081}
+      rotation: {x: 0, y: 0, z: 0.0381207, w: 0.9992732}
+      scale: {x: 0.69029814, y: 0.85218704, z: 0.6914814}
+    - name: Pelo Cauda 11
+      parentName: 'Cauda '
+      position: {x: 0.27193397, y: -0.044230822, z: 0.050517265}
+      rotation: {x: 0.11256791, y: 0.98473513, z: 0.023564128, w: 0.1306523}
+      scale: {x: -0.68170595, y: -0.8629276, z: -0.69148153}
+    - name: Pelo Cauda 12
+      parentName: 'Cauda '
+      position: {x: 0.27193397, y: 0.038546965, z: 0.050517168}
+      rotation: {x: -0.023563933, y: -0.1306523, z: 0.112567976, w: 0.98473513}
+      scale: {x: 0.6817061, y: 0.8629275, z: 0.6914815}
+    - name: Pelo Cauda 13
+      parentName: 'Cauda '
+      position: {x: 0.8627101, y: -0.18641083, z: 0.006862759}
+      rotation: {x: -0.00000033275793, y: 1, z: 0.00000026149826, w: -8.701561e-14}
+      scale: {x: -0.6914814, y: -0.85072833, z: -0.6914815}
+    - name: Pelo Cauda 14
+      parentName: 'Cauda '
+      position: {x: 0.83014816, y: 0.21863288, z: 0.006862759}
+      rotation: {x: 0, y: 0, z: 0.0381207, w: 0.9992732}
+      scale: {x: 0.69029814, y: 0.85218704, z: 0.6914814}
+    - name: Pelo Cauda 15
+      parentName: 'Cauda '
+      position: {x: 0.56901, y: -0.09221749, z: 0.006862759}
+      rotation: {x: 0.19216645, y: 0.98136234, z: 0.00000025938914, w: 0.00000007411067}
+      scale: {x: -0.66790384, y: -0.8807603, z: -0.6914814}
+    - name: Pelo Cauda 16
+      parentName: 'Cauda '
+      position: {x: 0.6198073, y: 0.14032316, z: 0.006862759}
+      rotation: {x: 0, y: 0, z: 0.0381207, w: 0.9992732}
+      scale: {x: 0.69029814, y: 0.85218704, z: 0.6914814}
+    - name: Pelo Cauda 17
+      parentName: 'Cauda '
+      position: {x: 0.33171618, y: -0.059740316, z: 0.006862759}
+      rotation: {x: 0.11468481, y: 0.99340194, z: 0.00000026336923, w: 0.00000004529771}
+      scale: {x: -0.681706, y: -0.86292785, z: -0.6914814}
+    - name: Pelo Cauda 18
+      parentName: 'Cauda '
+      position: {x: 0.37441048, y: 0.07560161, z: 0.006862759}
+      rotation: {x: 0, y: 0, z: 0.0381207, w: 0.9992732}
+      scale: {x: 0.69029814, y: 0.85218704, z: 0.6914814}
+    - name: Pelo Cauda 19
+      parentName: 'Cauda '
+      position: {x: 0.08305675, y: -0.018028446, z: -0.020397205}
+      rotation: {x: 0.11374794, y: 0.9895478, z: 0.01569438, w: 0.087237276}
+      scale: {x: -0.681706, y: -0.8629275, z: -0.69148153}
+    - name: Pelo Cauda 20
+      parentName: 'Cauda '
+      position: {x: 0.10927162, y: 0.02433741, z: 0.006862759}
+      rotation: {x: 0, y: 0, z: 0.0381207, w: 0.9992732}
+      scale: {x: 0.69029814, y: 0.85218704, z: 0.6914814}
+    - name: Pelo Cauda 21
+      parentName: 'Cauda '
+      position: {x: 0.86144817, y: -0.12728088, z: -0.078333296}
+      rotation: {x: 0.9992732, y: -0.03812062, z: 0.0000000057657905, w: 0.00000008571162}
+      scale: {x: 0.69029814, y: 0.85218704, z: 0.6914814}
+    - name: Pelo Cauda 22
+      parentName: 'Cauda '
+      position: {x: 0.8614478, y: 0.17431307, z: -0.078333296}
+      rotation: {x: 0.000000012209494, y: -0.00000009852923, z: 0.9992731, w: -0.038120907}
+      scale: {x: -0.690298, y: -0.8521869, z: -0.6914814}
+    - name: Pelo Cauda 23
+      parentName: 'Cauda '
+      position: {x: 0.5579892, y: -0.12666143, z: -0.015166322}
+      rotation: {x: 0.9954616, y: -0.037795145, z: -0.087170765, w: 0.005383796}
+      scale: {x: 0.69029796, y: 0.8521869, z: 0.69148135}
+    - name: Pelo Cauda 24
+      parentName: 'Cauda '
+      position: {x: 0.5636417, y: 0.09867433, z: -0.056640632}
+      rotation: {x: 0.1782816, y: 0.17770436, z: 0.9652723, w: -0.069901064}
+      scale: {x: -0.69148153, y: -0.87230295, z: -0.67437905}
+    - name: Pelo Cauda 25
+      parentName: 'Cauda '
+      position: {x: 0.28238237, y: 0.05165908, z: -0.02089979}
+      rotation: {x: 0.9810802, y: -0.12135947, z: -0.013058736, w: -0.15027659}
+      scale: {x: 0.69148153, y: 0.8755692, z: 0.6718636}
+    - name: Pelo Cauda 26
+      parentName: 'Cauda '
+      position: {x: 0.27568626, y: 0.057510678, z: 0.010393164}
+      rotation: {x: 0.04365943, y: -0.007843144, z: 0.992438, w: -0.114451595}
+      scale: {x: -0.681706, y: -0.8629277, z: -0.6914816}
+    - name: Pelo Cauda 27
+      parentName: 'Cauda '
+      position: {x: 0.27568626, y: -0.025267096, z: 0.010393164}
+      rotation: {x: 0.992438, y: -0.11445141, z: -0.043659385, w: 0.007843377}
+      scale: {x: 0.681706, y: 0.86292756, z: 0.6914814}
+    - name: Pelo Cauda 28
+      parentName: 'Cauda '
+      position: {x: 0.8614478, y: 0.09637459, z: -0.13718493}
+      rotation: {x: 0.031335976, y: 0.04815444, z: 0.99829495, w: -0.01031859}
+      scale: {x: -0.6914815, y: -0.85219663, z: -0.6902904}
+    - name: Pelo Cauda 29
+      parentName: 'Cauda '
+      position: {x: 0.8614478, y: -0.039878763, z: -0.13718493}
+      rotation: {x: 0.9982949, y: -0.010318466, z: -0.031336494, w: -0.04815478}
+      scale: {x: 0.6914815, y: 0.85219675, z: 0.6902904}
+    - name: Pelo Cauda 30
+      parentName: 'Cauda '
+      position: {x: 0.5636417, y: -0.0182576, z: -0.056640632}
+      rotation: {x: 0.96527237, y: -0.06990078, z: -0.17828138, w: -0.17770474}
+      scale: {x: 0.69148165, y: 0.87230307, z: 0.67437917}
+    - name: Pelo Cauda 31
+      parentName: 'Cauda '
+      position: {x: 0.2871104, y: 0.06005795, z: -0.0076450757}
+      rotation: {x: 0.028394839, y: 0.2330609, z: 0.96674186, w: -0.10142301}
+      scale: {x: -0.69148123, y: -0.88792306, z: -0.6625156}
+    - name: Pelo Cauda 32
+      parentName: 'Cauda '
+      position: {x: 0.5579892, y: 0.13045946, z: -0.015166322}
+      rotation: {x: 0.08717086, y: -0.0053841434, z: 0.9954616, w: -0.037795313}
+      scale: {x: -0.690298, y: -0.8521869, z: -0.69148135}
+    - name: Espinho Corpo 10
+      parentName: Corpo 10
+      position: {x: 0.48399246, y: -0.0734283, z: 0.28597403}
+      rotation: {x: 0.2947961, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898609, z: 0.8404344}
+    - name: Espinho Corpo 10 1
+      parentName: Corpo 10
+      position: {x: 0.30400586, y: 0.05466427, z: 0.28607595}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898607, z: 0.84043443}
+    - name: Espinho Corpo 10 2
+      parentName: Corpo 10
+      position: {x: 0.1343453, y: -0.0734283, z: 0.28597403}
+      rotation: {x: 0.2947961, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898609, z: 0.8404344}
+    - name: Espinho Corpo 10 3
+      parentName: Corpo 10
+      position: {x: 0.1343453, y: 0.05466427, z: 0.28607595}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898607, z: 0.84043443}
+    - name: Espinho Corpo 10 4
+      parentName: Corpo 10
+      position: {x: 0.48399246, y: 0.05466427, z: 0.28607595}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898607, z: 0.84043443}
+    - name: Espinho Corpo 10 5
+      parentName: Corpo 10
+      position: {x: 0.30400586, y: -0.0734283, z: 0.28597403}
+      rotation: {x: 0.2947961, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898609, z: 0.8404344}
+    - name: Pelo Corpo 10
+      parentName: Corpo 10
+      position: {x: 0.3464742, y: -0.0000049173354, z: -0.3156693}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Espinho Corpo 9
+      parentName: Corpo 9
+      position: {x: 0.168574, y: -0.028301554, z: 0.27215722}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 9 1
+      parentName: Corpo 9
+      position: {x: 0.51822126, y: -0.028301554, z: 0.27215722}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 9 2
+      parentName: Corpo 9
+      position: {x: 0.3382347, y: -0.028301554, z: 0.27215722}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pelo Corpo 9
+      parentName: Corpo 9
+      position: {x: 0.28803706, y: 0.26569086, z: 0.024205886}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pelo Corpo 9 1
+      parentName: Corpo 9
+      position: {x: 0.2817545, y: -0.32645315, z: 0.014673523}
+      rotation: {x: -0.00000034923667, y: 1, z: 0.00000046185514, w: -0.00000006024213}
+      scale: {x: -1, y: -1.0000004, z: -1}
+    - name: Espinho Corpo 8
+      parentName: Corpo 8
+      position: {x: 0.36194044, y: 0.05466425, z: 0.27120185}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.95556015}
+      scale: {x: 1, y: 1.1898608, z: 0.84043443}
+    - name: Espinho Corpo 8 1
+      parentName: Corpo 8
+      position: {x: 0.19227988, y: -0.0734283, z: 0.27109933}
+      rotation: {x: 0.2947963, y: 0, z: -0, w: 0.95556015}
+      scale: {x: 1, y: 1.1898608, z: 0.8404343}
+    - name: Espinho Corpo 8 2
+      parentName: Corpo 8
+      position: {x: 0.36194044, y: -0.0734283, z: 0.27109933}
+      rotation: {x: 0.2947963, y: 0, z: -0, w: 0.95556015}
+      scale: {x: 1, y: 1.1898608, z: 0.8404343}
+    - name: Espinho Corpo 8 3
+      parentName: Corpo 8
+      position: {x: 0.19227988, y: 0.05466425, z: 0.27120185}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.95556015}
+      scale: {x: 1, y: 1.1898608, z: 0.84043443}
+    - name: Espinho Corpo 8 4
+      parentName: Corpo 8
+      position: {x: 0.54192716, y: 0.05466425, z: 0.27120185}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.95556015}
+      scale: {x: 1, y: 1.1898608, z: 0.84043443}
+    - name: Espinho Corpo 8 5
+      parentName: Corpo 8
+      position: {x: 0.54192716, y: -0.0734283, z: 0.27109933}
+      rotation: {x: 0.2947963, y: 0, z: -0, w: 0.95556015}
+      scale: {x: 1, y: 1.1898608, z: 0.8404343}
+    - name: Pelo Corpo 8
+      parentName: Corpo 8
+      position: {x: 0.38287112, y: -0.000004935503, z: -0.31473505}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 7
+      parentName: Corpo 7
+      position: {x: 0.39039922, y: -0.028301567, z: 0.26671666}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 7 1
+      parentName: Corpo 7
+      position: {x: 0.22073852, y: -0.028301567, z: 0.26671666}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 7 2
+      parentName: Corpo 7
+      position: {x: 0.5703859, y: -0.028301567, z: 0.26671666}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pelo Corpo 7
+      parentName: Corpo 7
+      position: {x: 0.3469291, y: -0.35404417, z: 0.013381354}
+      rotation: {x: -0.00000033206575, y: 1, z: 0.0000005037706, w: -0.000000017991978}
+      scale: {x: -1, y: -0.9999999, z: -1.0000002}
+    - name: Pelo Corpo 7 1
+      parentName: Corpo 7
+      position: {x: 0.3533184, y: 0.26799023, z: 0.024968632}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Perna Direita
+      parentName: Corpo 7
+      position: {x: -0.21838468, y: 0.2707278, z: -0.014562289}
+      rotation: {x: -0.0000001629207, y: 1, z: 0.00000016292068, w: -2.6543153e-14}
+      scale: {x: -1.1919467, y: -1.1919469, z: -1.1919467}
+    - name: Perna Esquerda
+      parentName: Corpo 7
+      position: {x: -0.21838468, y: -0.2844354, z: -0.014562289}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1919467, y: 1.1919469, z: 1.1919467}
+    - name: Espinho Corpo 6
+      parentName: Corpo 6
+      position: {x: 0.5841076, y: 0.05466424, z: 0.2704548}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898608, z: 0.8404345}
+    - name: Espinho Corpo 6 1
+      parentName: Corpo 6
+      position: {x: 0.5841076, y: -0.073428296, z: 0.2703523}
+      rotation: {x: 0.29479617, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898612, z: 0.8404344}
+    - name: Espinho Corpo 6 2
+      parentName: Corpo 6
+      position: {x: 0.23446035, y: 0.05466424, z: 0.2704548}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898608, z: 0.8404345}
+    - name: Espinho Corpo 6 3
+      parentName: Corpo 6
+      position: {x: 0.40412086, y: -0.073428296, z: 0.2703523}
+      rotation: {x: 0.29479617, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898612, z: 0.8404344}
+    - name: Espinho Corpo 6 4
+      parentName: Corpo 6
+      position: {x: 0.40412086, y: 0.05466424, z: 0.2704548}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898608, z: 0.8404345}
+    - name: Espinho Corpo 6 5
+      parentName: Corpo 6
+      position: {x: 0.23446035, y: -0.073428296, z: 0.2703523}
+      rotation: {x: 0.29479617, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 0.99999994, y: 1.1898612, z: 0.8404344}
+    - name: Pelo Corpo 6
+      parentName: Corpo 6
+      position: {x: 0.41145918, y: -0.000004929447, z: -0.30961055}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Espinho Corpo 5
+      parentName: Corpo 5
+      position: {x: 0.22826329, y: -0.02830157, z: 0.28976545}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Espinho Corpo 5 1
+      parentName: Corpo 5
+      position: {x: 0.39792415, y: -0.02830157, z: 0.28976545}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Espinho Corpo 5 2
+      parentName: Corpo 5
+      position: {x: 0.577911, y: -0.02830157, z: 0.28976545}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Pelo Corpo 5
+      parentName: Corpo 5
+      position: {x: 0.35262606, y: -0.3211368, z: 0.04914351}
+      rotation: {x: -0.0000003516907, y: 1, z: 0.0000004315062, w: 0.000000047944983}
+      scale: {x: -1, y: -1.0000001, z: -0.99999976}
+    - name: Pelo Corpo 5 1
+      parentName: Corpo 5
+      position: {x: 0.36256567, y: 0.28182015, z: 0.03006677}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Espinho Corpo 4
+      parentName: Corpo 4
+      position: {x: 0.5310231, y: -0.073428296, z: 0.28800383}
+      rotation: {x: 0.2947961, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898609, z: 0.8404343}
+    - name: Espinho Corpo 4 1
+      parentName: Corpo 4
+      position: {x: 0.5310231, y: 0.05466426, z: 0.28810614}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898609, z: 0.84043443}
+    - name: Espinho Corpo 4 2
+      parentName: Corpo 4
+      position: {x: 0.18137546, y: -0.073428296, z: 0.28800383}
+      rotation: {x: 0.2947961, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898609, z: 0.8404343}
+    - name: Espinho Corpo 4 3
+      parentName: Corpo 4
+      position: {x: 0.18137546, y: 0.05466426, z: 0.28810614}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898609, z: 0.84043443}
+    - name: Espinho Corpo 4 4
+      parentName: Corpo 4
+      position: {x: 0.3510366, y: -0.073428296, z: 0.28800383}
+      rotation: {x: 0.2947961, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898609, z: 0.8404343}
+    - name: Espinho Corpo 4 5
+      parentName: Corpo 4
+      position: {x: 0.3510366, y: 0.05466426, z: 0.28810614}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898609, z: 0.84043443}
+    - name: Pelo Corpo 4
+      parentName: Corpo 4
+      position: {x: 0.37482393, y: -0.0000049112796, z: -0.30816433}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 3
+      parentName: Corpo 3
+      position: {x: 0.6043387, y: -0.015164127, z: 0.28026554}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Espinho Corpo 3 1
+      parentName: Corpo 3
+      position: {x: 0.4243518, y: -0.015164127, z: 0.28026554}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Espinho Corpo 3 2
+      parentName: Corpo 3
+      position: {x: 0.25469142, y: -0.015164127, z: 0.28026554}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Pelo Corpo 3
+      parentName: Corpo 3
+      position: {x: 0.40459797, y: -0.3292985, z: 0.048170507}
+      rotation: {x: -0.0000003292098, y: 1, z: 0.00000047124414, w: -0.00000002992041}
+      scale: {x: -1.0000001, y: -0.99999976, z: -0.99999994}
+    - name: Pelo Corpo 3 1
+      parentName: Corpo 3
+      position: {x: 0.35921276, y: 0.2991062, z: 0.011392425}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Espinho Corpo 2
+      parentName: Corpo 2
+      position: {x: 0.42637473, y: 0.09637791, z: 0.28608012}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898608, z: 0.84043443}
+    - name: Espinho Corpo 2 1
+      parentName: Corpo 2
+      position: {x: 0.25671378, y: 0.09637791, z: 0.28608012}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898608, z: 0.84043443}
+    - name: Espinho Corpo 2 2
+      parentName: Corpo 2
+      position: {x: 0.60636044, y: 0.09637791, z: 0.28608012}
+      rotation: {x: -0.2947962, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.1898608, z: 0.84043443}
+    - name: Espinho Corpo 2 3
+      parentName: Corpo 2
+      position: {x: 0.60636044, y: -0.031714626, z: 0.28597808}
+      rotation: {x: 0.29479617, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.189861, z: 0.84043443}
+    - name: Espinho Corpo 2 4
+      parentName: Corpo 2
+      position: {x: 0.25671378, y: -0.031714626, z: 0.28597808}
+      rotation: {x: 0.29479617, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.189861, z: 0.84043443}
+    - name: Espinho Corpo 2 5
+      parentName: Corpo 2
+      position: {x: 0.42637473, y: -0.031714626, z: 0.28597808}
+      rotation: {x: 0.29479617, y: 0, z: -0, w: 0.9555602}
+      scale: {x: 1, y: 1.189861, z: 0.84043443}
+    - name: Pelo Corpo 2
+      parentName: Corpo 2
+      position: {x: 0.446708, y: 0.041708745, z: -0.30112746}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 1
+      parentName: Corpo 1
+      position: {x: 0.21392958, y: 0.0052434993, z: 0.27976102}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 1 1
+      parentName: Corpo 1
+      position: {x: 0.5635768, y: 0.0052434993, z: 0.27976102}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espinho Corpo 1 2
+      parentName: Corpo 1
+      position: {x: 0.38359016, y: 0.0052434993, z: 0.27976102}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pelo Corpo 1
+      parentName: Corpo 1
+      position: {x: 0.4244981, y: 0.33302185, z: 0.033137027}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pelo Corpo 1 1
+      parentName: Corpo 1
+      position: {x: 0.4166943, y: -0.28749418, z: 0.00083948363}
+      rotation: {x: -0.00000038595394, y: 1, z: 0.00000042350464, w: -0.0000000021697577}
+      scale: {x: -0.9999999, y: -1.0000001, z: -0.9999999}
+    - name: Cranio
+      parentName: "Drag\xE3o (2)(Clone)"
+      position: {x: -0.034512233, y: 0.020602776, z: 0.026396062}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0731531, y: 1.1065178, z: 1.0731531}
+    - name: Chifre Direito 1
+      parentName: Cranio
+      position: {x: 0.24828601, y: 0.18940133, z: 0.26849106}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Chifre Direito 2
+      parentName: Cranio
+      position: {x: 0.080148205, y: 0.27375862, z: 0.21149911}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Chifre Esquerdo 1
+      parentName: Cranio
+      position: {x: 0.24828601, y: -0.1721849, z: 0.26849106}
+      rotation: {x: -0.0000003450847, y: 1, z: 0.00000063004984, w: 0.000000055541392}
+      scale: {x: -0.9999995, y: -1.0000005, z: -1}
+    - name: Chifre Esquerdo 2
+      parentName: Cranio
+      position: {x: 0.080148205, y: -0.2565423, z: 0.21149911}
+      rotation: {x: -0.0000003450847, y: 1, z: 0.00000063004984, w: 0.000000055541392}
+      scale: {x: -0.9999995, y: -1.0000005, z: -1}
+    - name: Mandibula
+      parentName: Cranio
+      position: {x: 0.5492281, y: -0.000000006055832, z: -0.08122081}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Olho Direito
+      parentName: Cranio
+      position: {x: 0.40192664, y: 0.19226094, z: 0.1451332}
+      rotation: {x: 0.2184117, y: 0, z: -0, w: 0.9758567}
+      scale: {x: 0.9318335, y: 0.6614761, z: 0.9318332}
+    - name: Olho Esquerdo
+      parentName: Cranio
+      position: {x: 0.40192664, y: -0.14193958, z: 0.1451332}
+      rotation: {x: -0.00000041934396, y: 0.9758567, z: -0.21841177, w: 0.000000109125466}
+      scale: {x: -0.93183345, y: -0.66147614, z: -0.9318335}
+    - name: Pelo Cranio Direito 1
+      parentName: Cranio
+      position: {x: 0.08986157, y: 0.41166422, z: 0.2730526}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Pelo Cranio Direito 2
+      parentName: Cranio
+      position: {x: 0.2350872, y: 0.40478343, z: 0.29040563}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Pelo Cranio Direito 3
+      parentName: Cranio
+      position: {x: 0.20756523, y: 0.38915798, z: 0.20087203}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Pelo Cranio Direito 4
+      parentName: Cranio
+      position: {x: 0.25638977, y: 0.41696447, z: 0.11480568}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Pelo Cranio Direito 5
+      parentName: Cranio
+      position: {x: 0.20730014, y: 0.4259883, z: 0.059563417}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Pelo Cranio Direito 6
+      parentName: Cranio
+      position: {x: 0.044871293, y: 0.33293992, z: -0.21462013}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Pelo Cranio Esquerdo 1
+      parentName: Cranio
+      position: {x: 0.1189222, y: -0.38241023, z: 0.23311765}
+      rotation: {x: -0.0000003450847, y: 1, z: 0.00000063004984, w: 0.000000055541392}
+      scale: {x: -0.9999995, y: -1.0000005, z: -1}
+    - name: Pelo Cranio Esquerdo 2
+      parentName: Cranio
+      position: {x: 0.23367372, y: -0.3545505, z: 0.27254567}
+      rotation: {x: -0.0000003450847, y: 1, z: 0.00000063004984, w: 0.000000055541392}
+      scale: {x: -0.9999995, y: -1.0000005, z: -1}
+    - name: Pelo Cranio Esquerdo 3
+      parentName: Cranio
+      position: {x: 0.22353132, y: -0.35397765, z: 0.19996095}
+      rotation: {x: -0.0000003450847, y: 1, z: 0.00000063004984, w: 0.000000055541392}
+      scale: {x: -0.9999995, y: -1.0000005, z: -1}
+    - name: Pelo Cranio Esquerdo 4
+      parentName: Cranio
+      position: {x: 0.22353132, y: -0.35397765, z: 0.10693107}
+      rotation: {x: -0.0000003450847, y: 1, z: 0.00000063004984, w: 0.000000055541392}
+      scale: {x: -0.9999995, y: -1.0000005, z: -1}
+    - name: Pelo Cranio Esquerdo 5
+      parentName: Cranio
+      position: {x: 0.23221606, y: -0.3597951, z: 0.0072099282}
+      rotation: {x: -0.0000003450847, y: 1, z: 0.00000063004984, w: 0.000000055541392}
+      scale: {x: -0.9999995, y: -1.0000005, z: -1}
+    - name: Pelo Cranio Esquerdo 6
+      parentName: Cranio
+      position: {x: 0.0668498, y: -0.33403164, z: -0.22740443}
+      rotation: {x: -0.0000003450847, y: 1, z: 0.00000063004984, w: 0.000000055541392}
+      scale: {x: -0.9999995, y: -1.0000005, z: -1}
+    - name: 'Piercing '
+      parentName: Cranio
+      position: {x: 1.0746844, y: 0.01706628, z: 0.051768158}
+      rotation: {x: 0, y: -0.119732015, z: -0, w: 0.99280626}
+      scale: {x: 0.99999934, y: 0.91345274, z: 0.91345245}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
