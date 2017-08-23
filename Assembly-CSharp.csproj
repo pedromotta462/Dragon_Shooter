@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\GalaxyBox1\examplescene.cs" />
      <Compile Include="Assets\Planet Earth Free\SpinFree.cs" />
+     <Compile Include="Assets\Scripts\Acelerometro.cs" />
      <Compile Include="Assets\Scripts\Arcade\BossMov.cs" />
      <Compile Include="Assets\Scripts\Arcade\MovScript.cs" />
      <Compile Include="Assets\Scripts\Arcade\NextLevel.cs" />
