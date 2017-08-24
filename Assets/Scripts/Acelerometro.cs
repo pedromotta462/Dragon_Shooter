@@ -5,6 +5,7 @@ using UnityEngine;
 public class Acelerometro : MonoBehaviour {
 	//Rigidbody rb;
 	Camera cam;
+	public float w;
 	// Use this for initialization
 	void Start () {
 		//rb = GetComponent<Rigidbody> ();
@@ -13,11 +14,10 @@ public class Acelerometro : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		var rot = transform.rotation;
-		Vector3 acele = Input.acceleration;
-
-		cam.transform.rotation = Quaternion.Euler(acele.x,acele.y,acele.z);
-	
+		Vector3 acele = Vector3.zero;
+		acele.x = Input.acceleration.y;
+		acele.y = Input.acceleration.x;
+		transform.rotation = new Quaternion(acele.x,0,0,w);	
 
 
 	}

@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\PM.cs" />
      <Compile Include="Assets\Scripts\Reset.cs" />
      <Compile Include="Assets\Scripts\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\Scripts\RotateCamera.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\SentidoAranha.cs" />
      <Compile Include="Assets\Scripts\Shield.cs" />
