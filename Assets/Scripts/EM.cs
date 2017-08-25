@@ -35,7 +35,7 @@ public class EM : MonoBehaviour {
 		if (Time.timeScale==1) {
 			transform.LookAt (world.transform);
 			inimigo.MovePosition (inimigo.position + transform.forward * (speed+ dificuldade.vInimigo));
-			if (test) {
+			if (test) { 
 				time += Time.deltaTime;
 				if (time >= dificuldade.cadenciaShot) {
 					Instantiate (tiro, transform.position, Quaternion.identity);

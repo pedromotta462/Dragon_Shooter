@@ -65,6 +65,7 @@ public class EscolhaPL : MonoBehaviour {
 			//hit.collider.gameObject.GetComponent<Click> ().o = !hit.collider.gameObject.GetComponent<Click> ().o;
 			Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out hit, reach); 
 			if (hit.collider) {
+				
 				switch (hit.collider.gameObject.tag) {
 				case "Mercurio":
 					cm.transform.LookAt (planetas [0]);
