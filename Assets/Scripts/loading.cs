@@ -17,9 +17,7 @@ public class Loading : MonoBehaviour {
 
 		if (PlayerPrefs.GetInt ("Survival") == 1) {
 			proximacena = "Game";
-			Debug.Log ("ue2");
 		} else {
-			Debug.Log ("ue");
 			proximacena = EscolhaPL.scene;
 		}
 		switch (load) {

@@ -13,17 +13,13 @@ public class BossMov : MonoBehaviour {
 	public float speed;
 	bool test;
 	float time;
-
-	public float vidaBoss;
-
-	public Slider life;
-
-	public float danoNoPlayer;
+	 float vidaBoss;
+	public float danoNoPlayer,plusLife;
 
 	// Use this for initialization
 	void Start () {
 	   inimigo = GetComponent<Rigidbody> ();
-
+		vidaBoss = 5+plusLife;
 		test = false;		
 	}
 	
@@ -59,12 +55,7 @@ public class BossMov : MonoBehaviour {
 				Destroy (gameObject);
 			}
 		}
-		if (coll.gameObject.tag=="Player") {
-			life.value -= danoNoPlayer;
-			if (life.value == 0) {
-				SceneManager.LoadScene("Over");
-			}
-		}
+
 	}
 
 }

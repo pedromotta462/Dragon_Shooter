@@ -12,7 +12,7 @@ public class EM : MonoBehaviour {
 	public bool test; 
 	public float time;
 	PM dificuldade;
-
+	public bool bonus;
 	// Use this for initialization
 	void Start () {
 
@@ -51,6 +51,9 @@ public class EM : MonoBehaviour {
 	}
 
 	void OnDestroy(){
+		if (bonus) {
+			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") + 1);
+		}
 		if (PlayerPrefs.GetInt("Survival") == 0) {
 			SpawInimArcade.enemy.RemoveAt (0);
 		}

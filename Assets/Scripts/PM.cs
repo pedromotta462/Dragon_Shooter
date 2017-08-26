@@ -24,7 +24,6 @@ public class PM : MonoBehaviour {
 
 }
 	void Update(){
-		Debug.Log (vInimigo);
 		pl.sizeDelta = new Vector2 (sl, 30f);
 	if (shiel.sl <= 0) {
 			if (mensagem) {
@@ -39,8 +38,42 @@ public class PM : MonoBehaviour {
 		}
 		if (sl<=0) {
 			Cursor.lockState = CursorLockMode.None;
-			SceneManager.LoadScene ("Over");
+			if (PlayerPrefs.GetInt("Suvival")==1) {
+				SceneManager.LoadScene ("Over");		
+			} else {
+				SceneManager.LoadScene ("GameOver");
+			}			
+		
 		}			
+	}
+	void OnCollisionEnter(Collision coll){
+		if (coll.gameObject.tag=="Bonus") {
+			Destroy	(coll.gameObject);
+			sl -= 125;
+		}
+		if (coll.gameObject.tag=="Boss") {
+			Destroy (coll.gameObject);
+			sl -= 80;
+		}
+		if (coll.gameObject.tag=="Obstaculo") {
+			sl -= 125;
+			Destroy (coll.gameObject);
+		}
+
+		if (coll.gameObject.tag=="Inimigo") {
+			sl -= dInimigo;
+			Debug.Log ("ueeee");
+			Destroy (coll.gameObject);
+
+		}
+
+		if (coll.gameObject.tag=="Shield") {
+			Destroy (coll.gameObject);
+			if (shiel.sl<=125) {
+				shiel.sl += 80;
+				Destroy (coll.gameObject);
+			}
+		}
 	}
 
 	void OnTriggerEnter(Collider coll){
@@ -62,28 +95,7 @@ public class PM : MonoBehaviour {
 		}
 	}
 
-	void OnControllerColliderHit(ControllerColliderHit coll){
-		if (coll.gameObject.tag=="Obstaculo") {
-			sl -= 125;
-		}
 
-		if (coll.gameObject.tag=="Inimigo") {
-			sl -= dInimigo;
-			Destroy (coll.gameObject);
-
-		}
-
-		if (coll.gameObject.tag=="Shield") {
-			Destroy (coll.gameObject);
-			if (shiel.sl<=125) {
-				shiel.sl += 80;
-			}
-			}
-		if (coll.gameObject.tag=="Boss") {
-			sl -= dBoss;
-		}
-
-	}
 
 
 	IEnumerator cont(){
