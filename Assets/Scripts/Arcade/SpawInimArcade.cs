@@ -40,7 +40,7 @@ public class SpawInimArcade : MonoBehaviour {
 
 			yield return new WaitForSeconds (Random.Range(minTime,maxTime));
 			//Espama um número de inimigos
-			Instantiate (boss, position [0], Quaternion.identity);
+
 			if (cont <= nEnemy && spaw==0) {
 				cont++;
 				if (fasesfinais) {
@@ -153,7 +153,7 @@ public class SpawInimArcade : MonoBehaviour {
 					}
 				Debug.Log ("ta ai: " + spaw);
 			}
-			if (BossMoviment.go && spaw >= 5) {
+			if (BossMoviment.go && spaw >= 1) {
 				SceneManager.LoadScene (nextscene);
 			}
 		}

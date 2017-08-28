@@ -20,7 +20,7 @@ public class BossMoviment : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		life = player.GetComponent<PM> ();
-		vida=life.vidaBoss;
+		vida+=life.vidaBoss;
 		go = false;
 		inimigo = GetComponent<Rigidbody> ();
 		segue = GameObject.FindGameObjectWithTag ("Earth").transform;
