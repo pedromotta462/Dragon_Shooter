@@ -153,7 +153,7 @@ public class SpawInimArcade : MonoBehaviour {
 					}
 				Debug.Log ("ta ai: " + spaw);
 			}
-			if (BossMoviment.go && spaw >= 1) {
+			if (BossMoviment.go && spaw >= 5) {
 				SceneManager.LoadScene (nextscene);
 			}
 		}

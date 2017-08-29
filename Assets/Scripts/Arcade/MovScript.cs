@@ -5,69 +5,50 @@ using UnityEngine.UI;
 
 public class MovScript : MonoBehaviour {
 
-	public List <Handheld> filme;
 	private Handheld mov;
-	public RawImage screen;
-	public AudioSource audioS;
+	string videos;
 	public GameObject botoes;
 	// Use this for initialization
 	void Start () {
+		switch (EscolhaPL.scene) {
+		case "Mercurio":
+			videos = "mercurio";
+			break;
+		case "Venus":
+			videos = "venus";
+			break;
+		case "Terra":
+			videos = "terra";
+			break;
+		case "Marte":
+			videos = "marte";
+			break;
+		case "Júpiter":
+			videos = "jupiter";
+			break;
+		case "Saturno":
+			videos = "saturno";
+			break;
+		case "Urano":
+			videos = "urano";
+			break;
+		case "Netuno":
+			videos = "netuno";
+			break;
+
+
+		}
 		botoes.SetActive (false);
 		StartCoroutine (video ());
-		//Handheld.PlayFullScreenMovie ("Video.mp4",Color.black,FullScreenMovieControlMode.Hidden,FullScreenMovieScalingMode.Fill);
-	/*	screen.texture = movie;
-		audioS.clip = movie.audioClip;
-		movie.Play ();
-		audioS.Play ();
-*/
-//		switch (EscolhaPL.scene) {
-//		case "Mercurio":
-//
-//		
-//			break;
-//		case "Venus":
-//
-//			break;
-//
-//		case "Terra":
-//			
-//			break;
-//
-//		case "Marte":
-//
-//			break;
-//
-//		case "Júpiter":
-//
-//			break;
-//
-//		case "Saturno":
-//	
-//			break;
-//
-//		case "Urano":
-//
-//			break;
-//
-//		case "Netuno":
-//	
-//			break;
-//
-//		case "Plutão":
-//			
-//			break;
-//		
-//		}
-		//Handheld.PlayFullScreenMovie (Application.streamingAssetsPath +	"/" + variavelString + ".mp4");
+	
 	}
 
 	void Update() {
-		if (Handheld.PlayFullScreenMovie ("Video.mp4",Color.black,FullScreenMovieControlMode.Hidden) == null) {
-			botoes.SetActive (true);
-		}
+
 	}
 	IEnumerator video(){
-		Handheld.PlayFullScreenMovie ("Video.mp4", Color.black, FullScreenMovieControlMode.Hidden, FullScreenMovieScalingMode.Fill);
+		print (videos);
+		Handheld.PlayFullScreenMovie (videos+".mp4", Color.black, FullScreenMovieControlMode.Hidden, FullScreenMovieScalingMode.Fill);
 		yield return new WaitForEndOfFrame ();
 		botoes.SetActive (true);
 	}

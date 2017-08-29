@@ -41,6 +41,7 @@ public class BossMoviment : MonoBehaviour {
 
 	void OnTriggerEnter(Collider coll){
 		if (coll.gameObject.tag=="Player") {
+			
 			segue = GameObject.FindGameObjectWithTag ("Player").transform;
 		} 
 	}

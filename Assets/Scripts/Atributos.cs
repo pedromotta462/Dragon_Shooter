@@ -4,10 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 public class Atributos : MonoBehaviour {
-	public Text txt;
+	public Text txt,Pfolego,Pspeed,Psorte,Prange;
+	int pp;
 	// Use this for initialization
 	void Start () {
 		txt.text="YOU HAVE "+PlayerPrefs.GetInt("Up")+ " point(s) to destribute";
+		Pfolego.text = "" + pp;
+		Psorte.text = "" + 0;
+		Prange.text = "" + 0;
+		Pspeed.text = "" + 0;
 	}
 	
 	// Update is called once per frame
@@ -16,6 +21,7 @@ public class Atributos : MonoBehaviour {
 	}
 	public void speed(){
 		if (PlayerPrefs.GetInt ("Up") >= 1) {
+			Pspeed.text = "" + 0;
 			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
 			if (PlayerPrefs.GetFloat ("Speed") >= 5) {
 				PlayerPrefs.SetFloat ("Speed", PlayerPrefs.GetFloat ("Speed") + 5);
@@ -28,6 +34,8 @@ public class Atributos : MonoBehaviour {
 	}
 	public void folego(){
 		if (PlayerPrefs.GetInt ("Up") >= 1) {
+			pp++;
+			Pfolego.text = "" + pp;
 			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
 			if (PlayerPrefs.GetFloat ("Folego") >= 0.02f) {
 				PlayerPrefs.SetFloat ("Folego", PlayerPrefs.GetFloat ("Folego") + 0.02f);
@@ -41,6 +49,7 @@ public class Atributos : MonoBehaviour {
 	}
 	public void sorte(){
 		if (PlayerPrefs.GetInt ("Up") >= 1) {
+			Psorte.text = "" + 0;
 			if (PlayerPrefs.GetInt ("Sorte") >= 1) {
 				PlayerPrefs.SetInt ("Sorte", PlayerPrefs.GetInt ("Sorte") + 1);
 			} else {
