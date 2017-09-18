@@ -10,7 +10,7 @@ public class Folego : MonoBehaviour {
 	public static float Vfolego = 0.1f;
 	// Use this for initialization
 	void Start () {
-		folego += PlayerPrefs.GetFloat ("Folego");
+		folego -= PlayerPrefs.GetFloat ("Folego");
 		test = false;
 		i = 1;
 		pp = GetComponent<ParticleSystem> ();

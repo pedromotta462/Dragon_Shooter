@@ -8,20 +8,21 @@ public class Atributos : MonoBehaviour {
 	int pp;
 	// Use this for initialization
 	void Start () {
-		txt.text="YOU HAVE "+PlayerPrefs.GetInt("Up")+ " point(s) to destribute";
-		Pfolego.text = "" + pp;
-		Psorte.text = "" + 0;
+
+		Pfolego.text = "" + PlayerPrefs.GetInt("Breath");
+		Psorte.text = "" + PlayerPrefs.GetInt("Lucky");;
 		Prange.text = "" + 0;
-		Pspeed.text = "" + 0;
+		Pspeed.text = "" + PlayerPrefs.GetInt("Velocidade");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		txt.text="YOU HAVE "+PlayerPrefs.GetInt("Up")+ " point(s) to destribute";
 	}
 	public void speed(){
 		if (PlayerPrefs.GetInt ("Up") >= 1) {
-			Pspeed.text = "" + 0;
+			PlayerPrefs.SetInt ("Velocidade", PlayerPrefs.GetInt ("Velocidade") + 1);
+			Pspeed.text = "" + PlayerPrefs.GetInt("Velocidade");
 			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
 			if (PlayerPrefs.GetFloat ("Speed") >= 5) {
 				PlayerPrefs.SetFloat ("Speed", PlayerPrefs.GetFloat ("Speed") + 5);
@@ -29,13 +30,12 @@ public class Atributos : MonoBehaviour {
 				PlayerPrefs.SetFloat ("Speed", 5);
 			}
 			PlayerPrefs.Save ();
-		} 
-
+		}
 	}
 	public void folego(){
 		if (PlayerPrefs.GetInt ("Up") >= 1) {
-			pp++;
-			Pfolego.text = "" + pp;
+			PlayerPrefs.SetInt ("Breath", PlayerPrefs.GetInt ("Breath") + 1);
+			Pfolego.text = "" + PlayerPrefs.GetInt("Breath");
 			PlayerPrefs.SetInt ("Up", PlayerPrefs.GetInt ("Up") - 1);
 			if (PlayerPrefs.GetFloat ("Folego") >= 0.02f) {
 				PlayerPrefs.SetFloat ("Folego", PlayerPrefs.GetFloat ("Folego") + 0.02f);
@@ -49,7 +49,8 @@ public class Atributos : MonoBehaviour {
 	}
 	public void sorte(){
 		if (PlayerPrefs.GetInt ("Up") >= 1) {
-			Psorte.text = "" + 0;
+			PlayerPrefs.SetInt("Lucky", PlayerPrefs.GetInt("Lucky") + 1);
+			Psorte.text = "" + PlayerPrefs.GetInt("Lucky");;
 			if (PlayerPrefs.GetInt ("Sorte") >= 1) {
 				PlayerPrefs.SetInt ("Sorte", PlayerPrefs.GetInt ("Sorte") + 1);
 			} else {

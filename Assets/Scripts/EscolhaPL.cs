@@ -84,7 +84,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Venus";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (PlayerPrefs.GetInt ("Venus") == 1) {
+					if (PlayerPrefs.GetInt ("Venus") == 1) {//
 						cadeado.SetActive (false);
 						scene = "Venus";
 						mat[2].color = Color.white;
@@ -101,7 +101,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Earth";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (PlayerPrefs.GetInt ("Terra") == 1) {
+					if (PlayerPrefs.GetInt ("Terra") == 1) {//
 						cadeado.SetActive (false);
 						scene = "Terra";
 						mat[3].color = Color.white;
@@ -118,7 +118,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Mars";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (PlayerPrefs.GetInt ("Marte") == 1) {
+					if (PlayerPrefs.GetInt ("Marte") == 1) {//
 						Debug.Log ("ue");
 						cadeado.SetActive (false);
 						scene = "Marte";
@@ -135,7 +135,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Jupiter";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (PlayerPrefs.GetInt ("Jupiter") == 1) {
+					if (PlayerPrefs.GetInt ("Jupiter") == 1) {//
 						cadeado.SetActive (false);
 						scene = "Júpiter";
 						mat[5].color = Color.white;
@@ -151,7 +151,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Saturn";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (PlayerPrefs.GetInt ("Saturno") == 1) {
+					if (PlayerPrefs.GetInt ("Saturno") == 1) {//
 						cadeado.SetActive (false);
 						scene = "Saturno";
 						mat[6].color = Color.white;
@@ -166,7 +166,7 @@ public class EscolhaPL : MonoBehaviour {
 					Camera.main.fieldOfView = 10;
 					txt.text = "Uranus";
 					painel.SetActive (true);
-					if (PlayerPrefs.GetInt ("Urano") == 1) {
+					if (PlayerPrefs.GetInt ("Urano") == 1) {//
 						cadeado.SetActive (false);
 						scene = "Urano";
 						mat[7].color = Color.white;
@@ -182,7 +182,7 @@ public class EscolhaPL : MonoBehaviour {
 					txt.text = "Neptune";
 					painel.SetActive (true);
 					button.SetActive (false);
-					if (PlayerPrefs.GetInt ("Netuno") == 1) {
+					if (PlayerPrefs.GetInt ("Netuno") == 1) {//
 						cadeado.SetActive (false);
 						scene = "Netuno";
 						mat[8].color = Color.white;
@@ -243,6 +243,8 @@ public class EscolhaPL : MonoBehaviour {
 
 		}
 	}
+
+
 }
 
 

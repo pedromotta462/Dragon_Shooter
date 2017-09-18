@@ -20,6 +20,9 @@ public class Reset : MonoBehaviour {
 	}
 	
 	public void click2(){
+		PlayerPrefs.SetInt ("Velocidade",0);
+		PlayerPrefs.SetInt ("Breath", 0);
+		PlayerPrefs.SetInt("Lucky", 0);
 		SceneManager.LoadScene ("PLay");
 		PlayerPrefs.SetInt ("Netuno", 0);
 		PlayerPrefs.SetInt ("Marte", 0);

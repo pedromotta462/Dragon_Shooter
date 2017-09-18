@@ -16,6 +16,7 @@ public class EarthLife : MonoBehaviour {
 		StartCoroutine (msn ());
 		pp = GetComponent<ParticleSystem> ();
 		sl = 125;
+		EscolhaPL.scene = SceneManager.GetActiveScene ().name;
 	}
 	void Update()
 	{

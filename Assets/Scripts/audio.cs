@@ -12,7 +12,6 @@ public class audio : MonoBehaviour {
 		som= GetComponent<AudioSource> ();
 		if (SceneManager.GetActiveScene ().name == "pregame") {
 			Score.pontos = 0;
-			SceneManager.LoadScene ("Play");	
 		}
 
 	}
@@ -79,6 +78,7 @@ public class audio : MonoBehaviour {
 			som.Play ();
 		}
 	}
+
 	}
 
 
