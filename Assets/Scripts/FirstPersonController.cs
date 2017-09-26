@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
@@ -46,6 +48,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private AudioSource m_AudioSource;
 		public static float bonusSpedd;
 		public Slider sl;
+		bool corouti;
+		int cont;
         // Use this for initialization
 		void Awake() {
 			sl.value = PlayerPrefs.GetFloat ("Rotação");
@@ -68,8 +72,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			turnSpeed =PlayerPrefs.GetFloat("Rotação");
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
-
-
+			
         // Update is called once per frame
         private void Update()
         {
@@ -245,7 +248,26 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 StartCoroutine(!m_IsWalking ? m_FovKick.FOVKickUp() : m_FovKick.FOVKickDown());
             }
         }
-
+		IEnumerator go(){
+			while (corouti) {
+				yield return new WaitForSeconds(1);
+				cont++;
+				print (cont);
+				if (cont>3) {
+					m_IsWalking = false;
+				}	
+			}
+		}
+		public void nitro(){
+			corouti = true;
+			StartCoroutine (go ());
+				
+		}
+		public void normal(){
+			cont = 0;
+			corouti = false;
+			m_IsWalking = true;
+		}
 
         private void RotateView()
         {
@@ -271,5 +293,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
     }
+
 }

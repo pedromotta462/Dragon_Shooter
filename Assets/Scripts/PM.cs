@@ -36,7 +36,6 @@ public class PM : MonoBehaviour {
 		escudo.SetActive (true);
 			mensagem = true;
 		}
-		Debug.Log (PlayerPrefs.GetInt ("Survival"));
 		if (sl<=0) {
 			Cursor.lockState = CursorLockMode.None;
 			if (PlayerPrefs.GetInt("Survival")==1) {
