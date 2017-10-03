@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Folego : MonoBehaviour {
 	ParticleSystem pp;
-	float i,gambiarra;
+	public static float i,gambiarra;
 	public static bool test;
 	public static float folego=0.2f;
 	public static float Vfolego = 0.1f;

@@ -50,6 +50,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public Slider sl;
 		bool corouti;
 		int cont;
+		float lifetime=1;
         // Use this for initialization
 		void Awake() {
 			sl.value = PlayerPrefs.GetFloat ("Rotação");
@@ -252,13 +253,23 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			while (corouti) {
 				yield return new WaitForSeconds(1);
 				cont++;
-				print (cont);
+				//print (cont);
 				if (cont>3) {
-					m_IsWalking = false;
+					if (Folego.i > 0.05f) {
+						lifetime -= 0.2f;
+						Folego.i = lifetime;
+						Debug.Log (Folego.i);
+						m_IsWalking = false;
+					} else {
+						lifetime = 1;
+						m_IsWalking = true;
+					}
+
 				}	
 			}
 		}
 		public void nitro(){
+			
 			corouti = true;
 			StartCoroutine (go ());
 				
