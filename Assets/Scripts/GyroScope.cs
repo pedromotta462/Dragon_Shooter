@@ -1,25 +1,50 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GyroScope : MonoBehaviour {
 	GameObject camParent;
-	public float speed;
-
+	public Text txt;
+	public float speed, inverseY;
+	public Toggle tt;
+	//public Toggle inverseYToggle;
 	void Start(){
 		camParent = new GameObject ("CamParent");
 		camParent.transform.position = this.transform.position;
 		this.transform.parent = camParent.transform;
 		Input.gyro.enabled = true;
-
+		inverseY = 1f;
 
 	}
 	void Update(){
 		if (Time.timeScale==1) {
-			speed = PlayerPrefs.GetFloat ("Rotação");
-			//camParent.transform.Rotate (0, Input.gyro.rotationRateUnbiased.y*speed, 0);
-			this.transform.Rotate (Input.gyro.rotationRateUnbiased.x*speed, 0, 0);
-		}
+			if (PlayerPrefs.GetInt("Bool")==1) {
+				speed = PlayerPrefs.GetFloat ("Rotação");
+				this.transform.Rotate (inverseY*Input.gyro.rotationRateUnbiased.x*speed, 0, 0);
+			}
 
+			//camParent.transform.Rotate (0, Input.gyro.rotationRateUnbiased.y*speed, 0);
+
+		}
 	}
+	public void InverseY(){
+		inverseY *= -1f;
+	}
+	public void Hard (string x){
+		PlayerPrefs.SetInt ("Bool", 1);
+		if (SystemInfo.supportsGyroscope) {
+			SceneManager.LoadScene (x);
+		} else {
+			tt.isOn = false;
+			txt.text="Seu andoid não possui os requisitos minímos para execução deste modo";
+			
+		}
+	}
+	public void normal(string x){
+		PlayerPrefs.SetInt ("Bool", 0);
+		SceneManager.LoadScene (x);
+	}
+
 }

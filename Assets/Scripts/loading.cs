@@ -53,7 +53,6 @@ public class Loading : MonoBehaviour {
 			break;
 		}
 		txt.text = texto + "" + progresso + "%";
-		print (progresso);
 		barraDois.offsetMin = new Vector2 (progresso,barraDois.offsetMin.y);
 	}
 }
