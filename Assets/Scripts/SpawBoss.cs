@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawBoss : MonoBehaviour {
 	public GameObject obj;
-	public Transform um,um1,dois,dois2,tres,tres3,quatro,quatro4;
+	public Transform position1,position1_1,position2,position2_2,position3,position3_3,position4,position4_4;
 	public float minTime , maxTime ;
 	public bool status;
 	int PosiX ;
@@ -27,10 +27,10 @@ public class SpawBoss : MonoBehaviour {
 	IEnumerator Spawn() {
 		while (true) 
 		{
-			position [0] = new Vector3 (Random.Range (um.position.x, um1.position.x), 0, um.position.z);
-			position [1] = new Vector3 (Random.Range (dois.position.x, dois2.position.x), 0,dois.position.z);
-			position [2] = new Vector3 ( tres.position.x, 0,(Random.Range (tres.position.z, tres3.position.z)));
-			position [3] = new Vector3 ( quatro.position.x, 0,(Random.Range (tres.position.z, tres3.position.z)));
+			position [0] = new Vector3 (Random.Range (position1.position.x, position1_1.position.x), 0, position1.position.z);
+			position [1] = new Vector3 (Random.Range (position2.position.x, position2_2.position.x), 0,position2.position.z);
+			position [2] = new Vector3 ( position3.position.x, 0,(Random.Range (position3.position.z, position3_3.position.z)));
+			position [3] = new Vector3 ( position4.position.x, 0,(Random.Range (position3.position.z, position3_3.position.z)));
 
 			yield return new WaitForSeconds (Random.Range (minTime, maxTime));
 			if (Score.pontos>300) {

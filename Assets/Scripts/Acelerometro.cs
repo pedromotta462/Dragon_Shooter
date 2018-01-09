@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Acelerometro : MonoBehaviour {
 	
-	public float w;
+	public float speed;
 	// Update is called once per frame
 	void Update () {
 		float test = Input.acceleration.y;
-		transform.Rotate(test*w,0,0);
+		transform.Rotate(test*speed,0,0);
 	
 	}
 

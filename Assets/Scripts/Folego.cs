@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Folego : MonoBehaviour {
 	ParticleSystem pp;
-	public static float i,gambiarra;
+	public static float cont,time;
 	public static bool test;
 	public static float folego=0.2f;
 	public static float Vfolego = 0.1f;
@@ -12,34 +12,34 @@ public class Folego : MonoBehaviour {
 	void Start () {
 		folego -= PlayerPrefs.GetFloat ("Folego");
 		test = false;
-		i = 1;
+		cont = 1;
 		pp = GetComponent<ParticleSystem> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		var ps = pp.main;
-		ps.startLifetime = i;
-		if (i<1&&i>0.05f) {
-			gambiarra += Time.deltaTime;
-			if (gambiarra>=1) {
-				i += Vfolego;
-				gambiarra = 0;
+		ps.startLifetime = cont;
+		if (cont<1&&cont>0.05f) {
+			time += Time.deltaTime;
+			if (time>=1) {
+				cont += Vfolego;
+				time = 0;
 			}
 		}
-		if (i<=0.05f) {
+		if (cont<=0.05f) {
 			test = true;
-			gambiarra += Time.deltaTime;
-			if (gambiarra>=5) {
-				i = 1;
+			time += Time.deltaTime;
+			if (time>=5) {
+				cont = 1;
 				test = false;
-				gambiarra = 0;
+				time = 0;
 			}
 		}
 	}
 	public void shot(){
 		if (test==false) {
-			i -= folego;
+			cont -= folego;
 		}
 
 	}

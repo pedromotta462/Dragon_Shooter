@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class EM : MonoBehaviour {
+public class Enemy_movement : MonoBehaviour {
 	
 
 	Rigidbody inimigo;

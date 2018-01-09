@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawOBS : MonoBehaviour {
 	public GameObject obj;
-	public Transform um,dois,tres,quatro;
+	public Transform P1,P2,P3,P4;
 	public float minTime , maxTime ;
 	int PosiX,luck ;
 	public static int sorte=6;
@@ -21,8 +21,8 @@ public class SpawOBS : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		position [0] = new Vector3 (Random.Range (um.position.x,dois.position.x), 0, um.position.z);
-		position [1] = new Vector3  (Random.Range(tres.position.x,quatro.position.x ), 0, tres.position.z);
+		position [0] = new Vector3 (Random.Range (P1.position.x,P2.position.x), 0, P1.position.z);
+		position [1] = new Vector3  (Random.Range(P3.position.x,P4.position.x ), 0, P3.position.z);
 
 	}
 	IEnumerator Spawn() {

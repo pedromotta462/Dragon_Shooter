@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement; 
 public class Loading : MonoBehaviour {
-	 string proximacena;
+	string proximacena;
 	public float time = 5;
 	public enum carregando {Carregamento,TempoFixo};
 	public carregando load;
 	public Text txt;
 	int progresso;
-	public RectTransform barraDois;
+	public RectTransform backbar;
 	string texto;
 	// Use this for initialization
 	void Start () {
@@ -53,6 +53,6 @@ public class Loading : MonoBehaviour {
 			break;
 		}
 		txt.text = texto + "" + progresso + "%";
-		barraDois.offsetMin = new Vector2 (progresso,barraDois.offsetMin.y);
+		backbar.offsetMin = new Vector2 (progresso,backbar.offsetMin.y);
 	}
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MovScript : MonoBehaviour {
+public class Movie  : MonoBehaviour {
 
 	private Handheld mov;
 	string videos;

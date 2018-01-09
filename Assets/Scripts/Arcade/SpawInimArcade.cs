@@ -4,21 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SpawInimArcade : MonoBehaviour {
 	public GameObject obj;
-	public Transform um,um1,dois,dois2,tres,tres3,quatro,quatro4;
+	public Transform position1,position1_1,position2,position2_2,position3,position3_3,position4,position4_4;
 	public float minTime , maxTime ;
 	public bool status,fasesfinais;
 	int PosiX,cont,spaw ;
 	public GameObject boss;
 	public bool spawboss;
 	Vector3[] position=new Vector3[4];
-	public static List<EM> enemy;
-	int WTF;
+	public static List<Enemy_movement> enemy;
+	int next_spaw;
 	public int nEnemy;
 
 	public string nextscene;
 
 	void Awake() {
-		enemy = new List<EM> ();
+		enemy = new List<Enemy_movement> ();
 	}
 
 	// Use this for initialization
@@ -33,10 +33,10 @@ public class SpawInimArcade : MonoBehaviour {
 	IEnumerator Spawn() {
 	while (true) {
 
-			position [0] = new Vector3 (Random.Range (um.position.x, um1.position.x), -3.5f, um.position.z);
-			position [1] = new Vector3 (Random.Range (dois.position.x, dois2.position.x), -3.5f,dois.position.z);
-			position [2] = new Vector3 ( tres.position.x, -3.5f,(Random.Range (tres.position.z, tres3.position.z)));
-			position [3] = new Vector3 ( quatro.position.x, -3.5f,(Random.Range (tres.position.z, tres3.position.z)));
+			position [0] = new Vector3 (Random.Range (position1.position.x, position1_1.position.x), -3.5f, position1.position.z);
+			position [1] = new Vector3 (Random.Range (position2.position.x, position2_2.position.x), -3.5f,position2.position.z);
+			position [2] = new Vector3 ( position3.position.x, -3.5f,(Random.Range (position3.position.z, position3_3.position.z)));
+			position [3] = new Vector3 ( position4.position.x, -3.5f,(Random.Range (position3.position.z, position3_3.position.z)));
 
 			yield return new WaitForSeconds (Random.Range(minTime,maxTime));
 			//Espama um número de inimigos
@@ -44,8 +44,8 @@ public class SpawInimArcade : MonoBehaviour {
 			if (cont <= nEnemy && spaw==0) {
 				cont++;
 				if (fasesfinais) {
-					if (WTF==0) {
-						WTF++;
+					if (next_spaw==0) {
+						next_spaw++;
 						PosiX = Random.Range (0, 4);
 					}
 						Instantiate (obj, position [PosiX], Quaternion.identity);
@@ -65,17 +65,17 @@ public class SpawInimArcade : MonoBehaviour {
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==1 && cont <= nEnemy + 2) {
+			if (BossMoviment.x && spaw==1 && cont <= nEnemy + 2) {
 				if (fasesfinais) {
-					if (WTF==1) {
-						WTF++;
+					if (next_spaw==1) {
+						next_spaw++;
 						PosiX = Random.Range (0, 4);
 					}
 					Instantiate (obj, position [PosiX], Quaternion.identity);
 				} else {
 					Instantiate (obj, position [1], Quaternion.identity);
 				}		
-				EM.speed = 0.3f;
+				Enemy_movement.speed = 0.3f;
 				cont++;
 				minTime = 1;
 			}
@@ -86,14 +86,14 @@ public class SpawInimArcade : MonoBehaviour {
 					spawboss = true;
 					cont = 0;
 					spaw++;
-					BossMoviment.go = false;
+					BossMoviment.x = false;
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==2&& cont <= nEnemy + 4) {
+			if (BossMoviment.x && spaw==2&& cont <= nEnemy + 4) {
 				if (fasesfinais) {
-					if (WTF==2) {
-						WTF++;
+					if (next_spaw==2) {
+						next_spaw++;
 						PosiX = Random.Range (0, 4);
 					}
 					Instantiate (obj, position [PosiX], Quaternion.identity);
@@ -109,14 +109,14 @@ public class SpawInimArcade : MonoBehaviour {
 					spawboss = false;
 					cont = 0;
 					spaw++;
-					BossMoviment.go = false;
+					BossMoviment.x = false;
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==3 && cont <= nEnemy + 6) {
+			if (BossMoviment.x && spaw==3 && cont <= nEnemy + 6) {
 				if (fasesfinais) {
-					if (WTF==3) {
-						WTF++;
+					if (next_spaw==3) {
+						next_spaw++;
 						PosiX = Random.Range (0, 4);
 					}
 					Instantiate (obj, position [PosiX], Quaternion.identity);
@@ -133,11 +133,11 @@ public class SpawInimArcade : MonoBehaviour {
 					spawboss = true;
 					cont = 0;
 					spaw++;
-					BossMoviment.go = false;
+					BossMoviment.x = false;
 				}
 			}
 			//Espama um número de inimigos
-			if (BossMoviment.go && spaw==4 && cont <= nEnemy + 8) {
+			if (BossMoviment.x && spaw==4 && cont <= nEnemy + 8) {
 				PosiX = Random.Range (0, 4);
 				cont++;
 			
@@ -149,11 +149,11 @@ public class SpawInimArcade : MonoBehaviour {
 							PosiX = Random.Range (0, 4);
 							spaw++;
 						Instantiate (boss, position [PosiX], Quaternion.identity);
-					BossMoviment.go = false;
+					BossMoviment.x = false;
 					}
 				Debug.Log ("ta ai: " + spaw);
 			}
-			if (BossMoviment.go && spaw >= 5) {
+			if (BossMoviment.x && spaw >= 5) {
 				SceneManager.LoadScene (nextscene);
 			}
 		}

@@ -12,7 +12,7 @@ public class BossMoviment : MonoBehaviour {
 	GameObject player;
 	public GameObject tiro;
 	public float speed,danoNoPlayer,time,shot;
-	public static bool go;
+	public static bool x;
 	float vida=5;
 	PM life;
 
@@ -21,7 +21,7 @@ public class BossMoviment : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		life = player.GetComponent<PM> ();
 		vida+=life.vidaBoss;
-		go = false;
+		x = false;
 		inimigo = GetComponent<Rigidbody> ();
 		segue = GameObject.FindGameObjectWithTag ("Earth").transform;
 	}
@@ -65,6 +65,6 @@ public class BossMoviment : MonoBehaviour {
 
 
 	void OnDestroy(){
-		go = true;
+		x = true;
 	}
 }

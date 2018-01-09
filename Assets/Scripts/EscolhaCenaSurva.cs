@@ -4,20 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class EscolhaCenaSurva : MonoBehaviour {
 	// Use this for initialization
-	public GameObject df;
+	public GameObject painel;
 	void Start () {
-		df.SetActive (false);
+		painel.SetActive (false);
 		PlayerPrefs.SetInt ("Survival", 0);
 
 	}
 	public void back(){
 		PlayerPrefs.SetInt ("Survival", 0);
-		df.SetActive (false);
+		painel.SetActive (false);
 
 	}
 	public void troca(string x){
 		PlayerPrefs.SetInt ("Survival", 1);
-		df.SetActive (true);
+		painel.SetActive (true);
 
 	} 
 	// Update is called once per frame

@@ -8,13 +8,13 @@ public class EarthLife : MonoBehaviour {
 	
 	public float sl,dPlayer,dInimigo,dBoss,dObs,vidas;
 	public GameObject text;
-	public ParticleSystem pp;
+	public ParticleSystem particle;
 	public RectTransform terra, escudo;
 
 	void Start(){
 		text.SetActive (false);
 		StartCoroutine (msn ());
-		pp = GetComponent<ParticleSystem> ();
+		particle = GetComponent<ParticleSystem> ();
 		sl = 125;
 		EscolhaPL.scene = SceneManager.GetActiveScene ().name;
 	}

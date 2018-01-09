@@ -8,7 +8,7 @@ public class GyroScope : MonoBehaviour {
 	GameObject camParent;
 	public Text txt;
 	public float speed, inverseY;
-	public Toggle tt;
+	public Toggle markingbox;
 	//public Toggle inverseYToggle;
 	void Start(){
 		camParent = new GameObject ("CamParent");
@@ -37,7 +37,7 @@ public class GyroScope : MonoBehaviour {
 		if (SystemInfo.supportsGyroscope) {
 			SceneManager.LoadScene (x);
 		} else {
-			tt.isOn = false;
+			markingbox.isOn = false;
 			txt.text="Seu andoid não possui os requisitos minímos para execução deste modo";
 			
 		}

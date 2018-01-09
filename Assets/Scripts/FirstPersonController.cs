@@ -255,10 +255,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 				cont++;
 				//print (cont);
 				if (cont>3) {
-					if (Folego.i > 0.05f) {
+					if (Folego.cont > 0.05f) {
 						lifetime -= 0.2f;
-						Folego.i = lifetime;
-						Debug.Log (Folego.i);
+						Folego.cont = lifetime;
+						Debug.Log (Folego.cont);
 						m_IsWalking = false;
 					} else {
 						lifetime = 1;

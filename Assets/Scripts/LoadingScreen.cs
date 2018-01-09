@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class frescura : MonoBehaviour {
+public class LoadingScreen : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

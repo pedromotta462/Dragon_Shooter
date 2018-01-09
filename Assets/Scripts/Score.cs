@@ -25,8 +25,8 @@ public class Score : MonoBehaviour {
 				if (SpawInimigo.maxTime > 1) {
 					SpawInimigo.maxTime -= 1;
 				}
-				if (EM.speed < 0.8f) {
-					EM.speed += 0.1f;
+				if (Enemy_movement.speed < 0.8f) {
+					Enemy_movement.speed += 0.1f;
 				}
 				if (bonus.cadenciaShot<=3) {
 					bonus.cadenciaShot -= 1;
