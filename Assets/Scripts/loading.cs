@@ -14,7 +14,7 @@ public class Loading : MonoBehaviour {
 	string texto;
 	// Use this for initialization
 	void Start () {
-
+		//barra de carregamento e escolha da fase de acordo com a fase e o modo
 		if (PlayerPrefs.GetInt ("Survival") == 1) {
 			proximacena = "Game";
 		} else {

@@ -23,7 +23,7 @@ public class SpawBoss : MonoBehaviour {
 	void Update(){
 		
 	}
-	// Update is called once per frame
+	// spaw do boss em uma das 4 posições no survival 
 	IEnumerator Spawn() {
 		while (true) 
 		{

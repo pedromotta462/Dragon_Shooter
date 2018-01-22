@@ -13,7 +13,7 @@ public class Tutorial : MonoBehaviour {
 		menu.SetActive (false);
 	}
 	
-	// Update is called once per frame
+	// troca de quadros do tutorial 
 	public void click(){
 		menu.SetActive (true);
 		print_1.SetActive (false);

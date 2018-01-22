@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Reset : MonoBehaviour {
-	
+	//reseta todas as fases e as pontuações dos atributos junto com todas as preferencias de volume rotação etc
 	public List<GameObject> objs;
 	public Slider sl;
 

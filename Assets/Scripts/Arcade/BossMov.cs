@@ -23,7 +23,7 @@ public class BossMov : MonoBehaviour {
 		test = false;		
 	}
 	
-	// Update is called once per frame
+	// movimento do boss de acordo com o on trigger 
 	void Update () {
 
 		transform.LookAt (pl);

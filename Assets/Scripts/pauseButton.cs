@@ -16,13 +16,7 @@ public class pauseButton : MonoBehaviour {
         painel.SetActive (false);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		//if (Input.GetKeyDown("escape")) {
-		//	pause (true);
-		//}
-	}
-
+	// pause do jogo e abertura do menu 
 	public void pause()
 	{       folego.SetActive (false);
 		    painel.SetActive (true);

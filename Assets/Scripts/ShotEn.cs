@@ -7,7 +7,7 @@ public class ShotEn : MonoBehaviour {
 	public bool boss;
 	PM dificuldade;
 	GameObject player,world;
-	// Use this for initialization
+	// tiro do inimigo em direção ao planeta se for o boss e entrar no range do player vai no player 
 	void Start () {
 		world=GameObject.FindWithTag("Earth");
 		player = GameObject.FindWithTag ("Player");

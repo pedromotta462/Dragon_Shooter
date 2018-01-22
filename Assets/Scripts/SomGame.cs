@@ -12,7 +12,7 @@ public class SomGame : MonoBehaviour {
 		som= GetComponent<AudioSource> ();
 	}
 	
-	// Update is called once per frame
+	// controle de som dentro do game 
 	void Update () {
 		PlayerPrefs.GetFloat ("Slider", sl.value);
 		AudioListener.volume = sl.value;

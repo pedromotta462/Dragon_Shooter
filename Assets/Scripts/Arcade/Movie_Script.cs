@@ -43,9 +43,7 @@ public class Movie  : MonoBehaviour {
 	
 	}
 
-	void Update() {
-
-	}
+	//videos de game over de cada fase 
 	IEnumerator video(){
 		print (videos);
 		Handheld.PlayFullScreenMovie (videos+".mp4", Color.black, FullScreenMovieControlMode.Hidden, FullScreenMovieScalingMode.Fill);

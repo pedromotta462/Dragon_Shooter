@@ -12,6 +12,7 @@ public class EarthLife : MonoBehaviour {
 	public RectTransform terra, escudo;
 
 	void Start(){
+		//mensagem de aviso quando o planeta for atacado e a vida do escudo e o nome da fase que encontra 
 		text.SetActive (false);
 		StartCoroutine (msn ());
 		particle = GetComponent<ParticleSystem> ();
@@ -20,10 +21,12 @@ public class EarthLife : MonoBehaviour {
 	}
 	void Update()
 	{
+		//barra de vida do escudo 
 		escudo.sizeDelta = new Vector2 (sl, 30f);
 
 	}
 	void OnCollisionEnter (Collision coll){
+		//dano que cada objeto e personagens causam a terra 
 		if (coll.gameObject.tag=="Obstaculo") {
 			sl -= dObs;
 			Destroy (coll.gameObject);
@@ -65,6 +68,7 @@ public class EarthLife : MonoBehaviour {
 
 		}
 }
+	//vida da terra até ser destruida e dar game over
 	public void perdervida(GameObject g, float dano){
 		vidas -=  dano; 
 		Destroy (g);
@@ -79,7 +83,7 @@ public class EarthLife : MonoBehaviour {
 		}
 
 	}
-
+	//mensagem que a terra está sobre ataque 
 	IEnumerator msn(){
 		while (true) {
 			yield return new WaitForSeconds (3);

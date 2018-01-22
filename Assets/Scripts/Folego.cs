@@ -5,18 +5,18 @@ using UnityEngine;
 public class Folego : MonoBehaviour {
 	ParticleSystem pp;
 	public static float cont,time;
-	public static bool test;
+	public static bool condicional;
 	public static float folego=0.2f;
 	public static float Vfolego = 0.1f;
 	// Use this for initialization
 	void Start () {
 		folego -= PlayerPrefs.GetFloat ("Folego");
-		test = false;
+		condicional = false;
 		cont = 1;
 		pp = GetComponent<ParticleSystem> ();
 	}
 	
-	// Update is called once per frame
+	//perca de folego do player e tempo para voltar a atirar
 	void Update () {
 		var ps = pp.main;
 		ps.startLifetime = cont;
@@ -28,17 +28,17 @@ public class Folego : MonoBehaviour {
 			}
 		}
 		if (cont<=0.05f) {
-			test = true;
+			condicional = true;
 			time += Time.deltaTime;
 			if (time>=5) {
 				cont = 1;
-				test = false;
+				condicional = false;
 				time = 0;
 			}
 		}
 	}
 	public void shot(){
-		if (test==false) {
+		if (condicional==false) {
 			cont -= folego;
 		}
 

@@ -19,14 +19,14 @@ public class SpawOBS : MonoBehaviour {
 		StartCoroutine (Spawn ());
 	}
 	
-	// Update is called once per frame
+	// spaw dos asteroides vindo de duas posições 
 	void Update () {
 		position [0] = new Vector3 (Random.Range (P1.position.x,P2.position.x), 0, P1.position.z);
 		position [1] = new Vector3  (Random.Range(P3.position.x,P4.position.x ), 0, P3.position.z);
 
 	}
+	//sempre indo em frente de acordo coma pespectiva do player
 	IEnumerator Spawn() {
-
 		while (true) 
 		{
 			yield return new WaitForSeconds (Random.Range (minTime, maxTime));

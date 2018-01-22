@@ -12,7 +12,7 @@ public class TrocadeCena : MonoBehaviour {
 	}
 	void Update () {
 		
-		
+		//troca de cena genérica 
 	}
 	public void troca(string x){
 		SceneManager.LoadScene (x);

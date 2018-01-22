@@ -16,9 +16,11 @@ public class MoveOBS : MonoBehaviour {
 		speed = 0.5f;
 		
 	}
+	//movimentação dos ateróides 
 	void Update(){
 		obs.MovePosition (obs.position + transform.forward * speed);	
 	}
+	//dano que os asteróides recebem do player 
 	void OnCollisionEnter (Collision coll){
 	   if (coll.gameObject.tag=="Shot") {
 			perdervida (1);

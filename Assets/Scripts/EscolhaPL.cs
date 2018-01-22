@@ -16,6 +16,7 @@ public class EscolhaPL : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//level que o player está e o mini painel na seleção 
 		lvl=PlayerPrefs.GetInt ("Level");
 		painel.SetActive (false);
 		button.SetActive (true);
@@ -24,6 +25,8 @@ public class EscolhaPL : MonoBehaviour {
 
 	void Update ()
 	{
+		//escolha de planetas pelo toque, a mudança de zoom da camera para focar o planeta selecionado e mostrar o painel junto com o cadeado se ele estiver bloqueado
+		//preenche a string que define a fase que player vai ir 
 		RaycastHit hit;
 		if (Input.GetMouseButtonDown (0)) {
 			Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out hit, reach); 
@@ -159,7 +162,7 @@ public class EscolhaPL : MonoBehaviour {
 	}
 
 	
-
+	//zera a string quando fechar o painel do planeta selecionado 
 	public void close(){
 		Camera.main.fieldOfView = 72;
 		cm.transform.LookAt (planetas [9]);
@@ -168,6 +171,7 @@ public class EscolhaPL : MonoBehaviour {
 		scene = "";
 
 	}
+	//vai para cena de acordo com a string do planeta 
 	public void Play()
 	{ 
 		if (scene=="Venus") {

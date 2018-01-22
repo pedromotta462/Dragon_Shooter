@@ -39,7 +39,7 @@ public class SpawInimArcade : MonoBehaviour {
 			position [3] = new Vector3 ( position4.position.x, -3.5f,(Random.Range (position3.position.z, position3_3.position.z)));
 
 			yield return new WaitForSeconds (Random.Range(minTime,maxTime));
-			//Espama um número de inimigos
+			//Espama um número de inimigos em ondas até completar os quatros cantos depois começa aleátorio mas sempre um numero já calculado de inimigos 
 
 			if (cont <= nEnemy && spaw==0) {
 				cont++;

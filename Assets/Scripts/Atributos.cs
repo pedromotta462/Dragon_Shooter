@@ -8,7 +8,7 @@ public class Atributos : MonoBehaviour {
 	int pp;
 	// Use this for initialization
 	void Start () {
-
+		//Numero de pontos de cada atributo 
 		Pfolego.text = "" + PlayerPrefs.GetInt("Breath");
 		Psorte.text = "" + PlayerPrefs.GetInt("Lucky");;
 		Prange.text = "" + 0;
@@ -17,8 +17,10 @@ public class Atributos : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//quantidade de pontos a ser distribuidos 
 		txt.text="YOU HAVE "+PlayerPrefs.GetInt("Up")+ " point(s) to destribute";
 	}
+	//aumentos de cada classe dos atributos usando valores já guardados 
 	public void speed(){
 		if (PlayerPrefs.GetInt ("Up") >= 1) {
 			PlayerPrefs.SetInt ("Velocidade", PlayerPrefs.GetInt ("Velocidade") + 1);

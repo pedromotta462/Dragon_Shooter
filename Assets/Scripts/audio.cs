@@ -8,6 +8,7 @@ public class audio : MonoBehaviour {
 	public GameObject canva;
 	// Use this for initialization
 	void Awake () {
+		//deixar o som rolando depois de passar de cena e zerar a pontuação do survival
 		DontDestroyOnLoad (canva);
 		som= GetComponent<AudioSource> ();
 		if (SceneManager.GetActiveScene ().name == "pregame") {
@@ -18,6 +19,7 @@ public class audio : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//pausar a música inicial nas fases do game e no survival e voltar quando for game over ou paassar de fase  
 		AudioListener.volume = PlayerPrefs.GetFloat ("Slider");
 		switch (SceneManager.GetActiveScene ().name) {
 		case"Over":

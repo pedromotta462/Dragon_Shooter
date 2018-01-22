@@ -13,10 +13,7 @@ public class SentidoAranha : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	// campo para identificar inimigos ou asteroides se aproximando do planeta
 	void OnTriggerEnter(Collider coll){
 		if (coll.gameObject.tag=="Inimigo") {
 			text.SetActive (true);

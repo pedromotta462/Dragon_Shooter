@@ -11,6 +11,7 @@ public class GyroScope : MonoBehaviour {
 	public Toggle markingbox;
 	//public Toggle inverseYToggle;
 	void Start(){
+		//implementação da movimentação em todos os angulos no hard
 		camParent = new GameObject ("CamParent");
 		camParent.transform.position = this.transform.position;
 		this.transform.parent = camParent.transform;
@@ -19,6 +20,7 @@ public class GyroScope : MonoBehaviour {
 
 	}
 	void Update(){
+		//rotção para cima e baixo de acordo com a rotação definida pelo player 
 		if (Time.timeScale==1) {
 			if (PlayerPrefs.GetInt("Bool")==1) {
 				speed = PlayerPrefs.GetFloat ("Rotação");
@@ -29,9 +31,11 @@ public class GyroScope : MonoBehaviour {
 
 		}
 	}
+	//inverter eixo 
 	public void InverseY(){
 		inverseY *= -1f;
 	}
+	//verificação se o aparelho suporta o gyroscope
 	public void Hard (string x){
 		PlayerPrefs.SetInt ("Bool", 1);
 		if (SystemInfo.supportsGyroscope) {

@@ -10,11 +10,7 @@ public class Opcoes : MonoBehaviour {
 		somfundo.SetActive (false);
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	//botoes do menu de opções 
 	public void click(){
 		botoes.SetActive (false);
 		somfundo.SetActive (true);

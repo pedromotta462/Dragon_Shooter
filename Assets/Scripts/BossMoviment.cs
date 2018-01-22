@@ -18,6 +18,7 @@ public class BossMoviment : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//identificar o player e a terra, e adicionar vida no bos dependendo da dificuldade da fase  (o que já foi estabelecido em cada fase)
 		player = GameObject.FindGameObjectWithTag ("Player");
 		life = player.GetComponent<PM> ();
 		vida+=life.vidaBoss;
@@ -28,6 +29,7 @@ public class BossMoviment : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		//movimento do bos, ele sempre vai seguir alguem, caso entre no range do player ele segue o player caso saia ele vai para o planeta
 		if (Time.timeScale==1) {
 			transform.LookAt (segue.position);
 			inimigo.MovePosition (inimigo.position + transform.forward * speed);
@@ -45,7 +47,7 @@ public class BossMoviment : MonoBehaviour {
 			segue = GameObject.FindGameObjectWithTag ("Player").transform;
 		} 
 	}
-
+	//dano que o bos sofre e depois sua destruição  
 	void OnCollisionEnter(Collision coll){
 		if (coll.gameObject.tag=="Shot") {
 			Destroy (coll.gameObject);

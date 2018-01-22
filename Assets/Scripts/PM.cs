@@ -16,6 +16,7 @@ public class PM : MonoBehaviour {
 	public RectTransform pl;
 	public float vInimigo,vShotIni,cadenciaShot,vidaBoss;
 	void Start(){
+		
 		AvisoEscudo.SetActive (false);
 		startYPosition = transform.position.y;
 		shiel = FindObjectOfType<EarthLife> ();
@@ -46,6 +47,7 @@ public class PM : MonoBehaviour {
 		
 		}			
 	}
+	//dano que os inimigos e obstáculos causam ao player 
 	void OnCollisionEnter(Collision coll){
 		if (coll.gameObject.tag=="Bonus") {
 			Destroy	(coll.gameObject);
@@ -62,18 +64,16 @@ public class PM : MonoBehaviour {
 
 		if (coll.gameObject.tag=="Inimigo") {
 			sl -= dInimigo;
-			Debug.Log ("ueeee");
 			Destroy (coll.gameObject);
 
 		}
-
-		if (coll.gameObject.tag=="Shield") {
-			Destroy (coll.gameObject);
-			if (shiel.sl<=125) {
-				shiel.sl += 80;
-				Destroy (coll.gameObject);
+		if (coll.gameObject.tag =="Shield") {
+			if (shiel.sl <= 85) {
+				shiel.sl += 40;
 			}
+			Destroy (coll.gameObject);
 		}
+
 	}
 
 	void OnTriggerEnter(Collider coll){
@@ -97,7 +97,7 @@ public class PM : MonoBehaviour {
 
 
 
-
+	//aviso que o player está saindo da aéra para proteger o planeta 
 	IEnumerator cont(){
 		while (controle) {
 			yield return new WaitForSeconds (1);

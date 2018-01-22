@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour {
 	bool surva;
 	int rank,pontos;
 
-	// Use this for initialization
+	//game over survival com o rank e sua pontuação 
 	void Start () {
 		Score.control = false;
 		surva = PlayerPrefs.GetInt ("Survival") == 1;

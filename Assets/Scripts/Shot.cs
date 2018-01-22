@@ -9,7 +9,7 @@ public class Shot : MonoBehaviour {
 	Rigidbody rb;
 
 
-	// Use this for initialization
+	// vida do tiro e sua velocidade
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		plus = FindObjectOfType<Score> ();

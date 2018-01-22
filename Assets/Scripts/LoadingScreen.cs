@@ -8,11 +8,7 @@ public class LoadingScreen : MonoBehaviour {
 	void Start () {
 		StartCoroutine (ff ());
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	//passagem da cena inicial 
 	IEnumerator ff(){
 		while (true) {
 			yield return new WaitForSeconds (3);

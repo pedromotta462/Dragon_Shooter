@@ -7,7 +7,7 @@ public class Score : MonoBehaviour {
 	public float dificuldade;
 	public static bool control = true;
 	PM bonus;
-
+	//score e o aumento de difilcudade a partir dele
 	void Start()
 	{
 		bonus = GetComponent<PM> ();

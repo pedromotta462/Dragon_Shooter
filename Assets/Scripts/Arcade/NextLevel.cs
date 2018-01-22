@@ -9,7 +9,7 @@ public class NextLevel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		//ganho de ponto para os atributos e desbloqueio da próxima fase 
 		switch (SceneManager.GetActiveScene ().name) {
 		case"Jwin":
 			if (PlayerPrefs.GetInt ("Final") == 0) {
